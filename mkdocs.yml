@@ -1,0 +1,73 @@
+site_name: 先进芯片全栈设计与实践
+site_description: 北京大学先进芯片全栈设计与实践课程实验指导
+site_author: PKU-PACIFIC Lab
+site_url: https://pku-pacific-lab-team.github.io/Course-Tapeout/
+copyright: Copyright &copy; 2026 School of Integrated Circuits, Peking University
+
+docs_dir: 2026-fall
+
+theme:
+  name: material
+  language: zh
+  logo: assets/brand/pku_logo.png
+  favicon: assets/brand/pku_logo_red.png
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/refresh-auto
+        name: 跟随系统主题
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到深色主题
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色主题
+  font:
+    code: JetBrainsMono
+  features:
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.arithmatex
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+extra_css:
+  - assets/extra.css
+
+extra_javascript:
+  - assets/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+
+nav:
+  - 课程主页: index.md
+  - Lab 0: lab-0.md
+  - Lab 1: lab-1.md
+  - Lab 2: lab-2.md
+  - Lab 3: lab-3.md
+  - Lab 4: lab-4.md
+  - Lab 5: lab-5.md
+  - Lab 6: lab-6.md
+  - Final Project: final-project.md
