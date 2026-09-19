@@ -1,4 +1,7 @@
-# Lab 0：Claude Code + Icarus Verilog 入门
+# Lab 0：CLab setup & 先进 AI 工具使用
+
+!!! note "CLab setup 部分尚未发布"
+    本页目前只包含「先进 AI 工具使用」部分。CLab setup 的内容待补充，确定后本页会更新。
 
 ## 实验目的
 
