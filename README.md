@@ -15,13 +15,16 @@ mkdocs serve
 
 ## 发布
 
-推送到 `main` 或 `master` 分支后，GitHub Actions 会运行 `mkdocs gh-deploy --force`，将网站发布到 GitHub Pages，地址为 <https://pku-pacific-lab-team.github.io/Course-Tapeout/>。
+推送到 `main` 或 `master` 分支后，GitHub Actions 会运行 `mkdocs gh-deploy --force`，将网站发布到 GitHub Pages，地址为 <https://full-stack-ai-chip.tianyuj.com/>。
+
+自定义域名由 `2026-fall/CNAME` 指定。该文件必须放在 `docs_dir` 内：`gh-deploy --force` 每次都会重建 `gh-pages` 分支，只有 `docs_dir` 里的文件才会被带过去。若只在 GitHub Settings → Pages 里手动填写自定义域名，下一次部署就会被覆盖，域名随即失效。
 
 ## 目录结构
 
 ```text
 .
 ├── 2026-fall/          # 2026 秋季课程内容
+│   ├── CNAME           # 自定义域名，必须放在 docs_dir 内，否则每次部署会被覆盖
 │   ├── index.md        # 课程主页
 │   ├── lab-0.md ~ lab-6.md
 │   ├── final-project.md

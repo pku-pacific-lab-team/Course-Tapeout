@@ -1,7 +1,7 @@
 site_name: 先进芯片全栈设计与实践
 site_description: 北京大学先进芯片全栈设计与实践课程实验指导
 site_author: PKU-PACIFIC Lab
-site_url: https://pku-pacific-lab-team.github.io/Course-Tapeout/
+site_url: https://full-stack-ai-chip.tianyuj.com/
 copyright: Copyright &copy; 2026 School of Integrated Circuits, Peking University
 
 docs_dir: 2026-fall
