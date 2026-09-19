@@ -338,6 +338,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -354,6 +372,523 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 实验目标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-modelsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 安装 ModelSim
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 安装 ModelSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 下载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 为什么要配 PATH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 配置步骤（Windows）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 不配 PATH 也可以
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-git-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 关于 Git Bash
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 实验环境
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 背景知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 背景知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 SoC 结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-aximasterslave-xbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 AXI：Master、Slave 与 Xbar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-axi2mem-axi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 axi2mem：从 AXI 到类存储器端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 行为级 SRAM 与读延迟
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 CPU 的启动流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-filelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 filelist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-pass-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 PASS / FAIL 的判定机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 仿真流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 仿真流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 运行仿真
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 查看波形
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 清理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 手动分步执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实验任务
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 实验任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-1-filelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 · 重建 filelist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-bootram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 · 编写 bootram 的引导指令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-axi2mem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 · 连接 axi2mem 到主存
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-4-sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4 · 补完行为级 SRAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 推进顺序与分步自检
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 推进顺序与分步自检">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键观察信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 完成标志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 关于使用 AI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 思考题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-vlog-cannot-resolve-module-xxx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 vlog 报 Cannot resolve module 'xxx'
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-vlog-package-xxx_pkg-not-found-unknown-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 vlog 报 Package 'xxx_pkg' not found 或 Unknown type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-vlog-include" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 vlog 报某个文件的 `include 找不到头文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-vsim-instantiation-of-my_soc_top-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q4 编译通过，但 vsim 报 Instantiation of 'my_soc_top' failed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5-timeout-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q5 一直 TIMEOUT，但四个 Task 都已完成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q6 修改了 RTL，但仿真结果没有变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q7-no-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q7 波形窗口中信号显示 "No Data"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q8-powershell-bash-simscriptsrun_simsh-vsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q8 PowerShell 中 bash sim/scripts/run_sim.sh 提示找不到 vsim
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 延伸阅读
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -514,6 +1049,512 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 实验目标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-modelsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 安装 ModelSim
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 安装 ModelSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 下载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 为什么要配 PATH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 配置步骤（Windows）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 不配 PATH 也可以
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-git-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 关于 Git Bash
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 实验环境
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 背景知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 背景知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 SoC 结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-aximasterslave-xbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 AXI：Master、Slave 与 Xbar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-axi2mem-axi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 axi2mem：从 AXI 到类存储器端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 行为级 SRAM 与读延迟
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 CPU 的启动流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-filelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 filelist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-pass-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 PASS / FAIL 的判定机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 仿真流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 仿真流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 运行仿真
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 查看波形
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 清理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 手动分步执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实验任务
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 实验任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-1-filelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 · 重建 filelist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-bootram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 · 编写 bootram 的引导指令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-axi2mem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 · 连接 axi2mem 到主存
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-4-sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4 · 补完行为级 SRAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 推进顺序与分步自检
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 推进顺序与分步自检">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键观察信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 完成标志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 关于使用 AI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 思考题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-vlog-cannot-resolve-module-xxx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 vlog 报 Cannot resolve module 'xxx'
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-vlog-package-xxx_pkg-not-found-unknown-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 vlog 报 Package 'xxx_pkg' not found 或 Unknown type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-vlog-include" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 vlog 报某个文件的 `include 找不到头文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-vsim-instantiation-of-my_soc_top-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q4 编译通过，但 vsim 报 Instantiation of 'my_soc_top' failed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5-timeout-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q5 一直 TIMEOUT，但四个 Task 都已完成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q6 修改了 RTL，但仿真结果没有变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q7-no-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q7 波形窗口中信号显示 "No Data"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q8-powershell-bash-simscriptsrun_simsh-vsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q8 PowerShell 中 bash sim/scripts/run_sim.sh 提示找不到 vsim
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 延伸阅读
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -531,10 +1572,684 @@
 
 
 <h1 id="lab-2cpu">Lab 2：CPU 仿真</h1>
-<div class="admonition note">
-<p class="admonition-title">尚未发布</p>
-<p>本次实验的具体要求尚未确定，确定后本页会更新为完整的实验说明。</p>
+<div class="admonition info">
+<p class="admonition-title">开始之前</p>
+<ul>
+<li><strong>主题</strong>：SoC 仿真集成与总线调试</li>
+<li><strong>板卡</strong>：无（纯 ModelSim 仿真）</li>
+<li><strong>课时</strong>：2 次实验课</li>
+<li><strong>发布目录</strong>：<code>lab2-ST/SoC_cv32e40p_ST/</code></li>
+<li><strong>完成标准</strong>：ModelSim 打印 <code>RESULT: PASS</code>。<strong>本实验不需要提交任何材料</strong></li>
+</ul>
 </div>
+<h2 id="1">1. 实验目标</h2>
+<p>在此前的实验中，被测硬件是孤立的：testbench 直接驱动模块端口，观察波形即可判断对错。
+真实芯片不是这样工作的——硬件挂在总线上，由 CPU 通过地址访问，而 CPU 执行的是编译好的程序。
+在这种系统里，一个模块接错一根线、filelist 少写一个文件、存储的读延迟差一拍，
+表现出来的现象都是"跑不起来"，而错误的表象与真正的原因之间往往隔得很远。</p>
+<p>本实验提供一个结构完整、但被刻意破坏了四处的 SoC。任务是把它修复到能正常运行。</p>
+<p>四处破坏分别对应 SoC 集成中四类典型问题：</p>
+<table>
+<thead>
+<tr>
+<th>任务</th>
+<th>破坏点</th>
+<th>对应的工程问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Task 1</td>
+<td>filelist 被删除</td>
+<td>编译单元的组织与依赖顺序</td>
+</tr>
+<tr>
+<td>Task 2</td>
+<td><code>bootram</code> 中没有引导指令</td>
+<td>复位后的启动流程与机器码</td>
+</tr>
+<tr>
+<td>Task 3</td>
+<td><code>axi2mem</code> 的端口未连接</td>
+<td>总线桥接：协议侧与存储侧的信号对应</td>
+</tr>
+<tr>
+<td>Task 4</td>
+<td><code>sram_ff</code> 的读写逻辑为空</td>
+<td>行为级存储建模：同步读、字节使能、读延迟</td>
+</tr>
+</tbody>
+</table>
+<p>四个任务全部修复后才会 PASS。任何一个未完成，现象都是"编译失败"或"TIMEOUT"。
+因此本实验实际考察的是定位能力：在一组高度相似的失败现象中判断是哪一环断开。</p>
+<p>Task 的编号顺序就是推荐的完成顺序，它沿着信号路径从 CPU 一路走到存储，
+这样每完成一步都能单独验证。详见第 7 节。</p>
+<h2 id="2-modelsim">2. 安装 ModelSim</h2>
+<p>在开始实验之前先装好仿真器。已经装过并且 <code>vsim</code> 可以在命令行直接调用的，可以跳过本节。</p>
+<h3 id="21">2.1 下载</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>下载地址</td>
+<td><a href="https://disk.pku.edu.cn/link/AA2EBD4EF43A214E549727E1731FC03BA2">https://disk.pku.edu.cn/link/AA2EBD4EF43A214E549727E1731FC03BA2</a></td>
+</tr>
+<tr>
+<td>文件名</td>
+<td><code>modelsim_se_2019.zip</code></td>
+</tr>
+<tr>
+<td>链接有效期</td>
+<td>2026-10-18 12:11</td>
+</tr>
+</tbody>
+</table>
+<p>破解版安装步骤写在压缩包内的说明文件里，按其操作即可，安装路径为D:\modeltech64_2019.2。
+本节只补充说明安装完成后<strong>如何配置 PATH</strong>，因为压缩包里的说明没有覆盖这一步，而后续所有命令都依赖它。</p>
+<h3 id="22-path">2.2 为什么要配 PATH</h3>
+<p>安装完成后，<code>vsim.exe</code>、<code>vlog.exe</code>、<code>vlib.exe</code> 这些程序位于安装目录的 <code>win64</code> 子目录下，
+例如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>D:\modeltech64_2019.2\win64
+</code></pre></div>
+<p>如果不做任何配置，在终端里直接输入 <code>vsim</code> 会提示找不到命令，必须每次都写完整路径。
+把这个 <code>win64</code> 目录加入 PATH 环境变量之后，就可以在任意目录直接输入 <code>vsim</code>。</p>
+<h3 id="23-windows">2.3 配置步骤（Windows）</h3>
+<ol>
+<li>
+<p>先确认自己的 <code>win64</code> 目录在哪。打开安装目录，找到里面含有 <code>vsim.exe</code> 的那个
+   <code>win64</code> 文件夹，在资源管理器地址栏复制它的完整路径。
+   本文后续一律以 <code>D:\modeltech64_2019.2\win64</code> 为例，请替换成你自己的路径。</p>
+</li>
+<li>
+<p>按 <code>Win + R</code>，输入 <code>sysdm.cpl</code>，回车。</p>
+</li>
+<li>
+<p>切换到「高级」选项卡，点击右下角的「环境变量」。</p>
+</li>
+<li>
+<p>在上方的「用户变量」列表中选中 <code>Path</code>，点击「编辑」。
+   （改用户变量即可，不需要管理员权限，也不会影响其他用户。）</p>
+</li>
+<li>
+<p>点击「新建」，把第 1 步复制的路径粘贴进去，然后一路点「确定」关闭所有窗口。</p>
+</li>
+<li>
+<p><strong>关闭并重新打开终端</strong>。环境变量的修改只对新开的终端生效，已经开着的窗口读不到。</p>
+</li>
+</ol>
+<h3 id="24">2.4 验证</h3>
+<p>在新开的 PowerShell 里执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">vsim</span> <span class="n">-version</span>
+</code></pre></div>
+<p>看到类似下面的输出就说明配置成功：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Model Technology ModelSim SE-64 vsim 2019.2 Simulator
+</code></pre></div>
+<p>如果提示「无法将"vsim"项识别为 cmdlet、函数、脚本文件或可运行程序的名称」，
+说明 PATH 没生效。按顺序检查：</p>
+<ul>
+<li>终端是不是配置完之后新开的</li>
+<li>粘贴进去的路径是不是 <code>win64</code> 目录本身，而不是它的上级目录</li>
+<li>用 <code>where.exe vsim</code> 看系统到底在哪些目录里找过</li>
+</ul>
+<h3 id="25-path">2.5 不配 PATH 也可以</h3>
+<p>如果暂时配不好，也可以每次都用完整路径调用，效果完全一样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&amp;</span> <span class="n">D</span><span class="p">:\</span><span class="n">modeltech64_2019</span><span class="p">.</span><span class="n">2</span><span class="p">\</span><span class="n">win64</span><span class="p">\</span><span class="n">vsim</span><span class="p">.</span><span class="n">exe</span> <span class="n">-c</span> <span class="n">-do</span> <span class="s2">"do sim/scripts/run_sim.do"</span>
+</code></pre></div>
+<p>本讲义后续的命令示例都写成了完整路径的形式。配好 PATH 之后，把
+<code>&amp; D:\modeltech64_2019.2\win64\vsim.exe</code> 这一段直接换成 <code>vsim</code> 即可。</p>
+<h3 id="26-git-bash">2.6 关于 Git Bash</h3>
+<p>如果你用 Git Bash 而不是 PowerShell，它会继承 Windows 的 PATH，所以按 2.3 配置完同样有效。
+用 <code>which vsim</code> 验证，应当输出类似 <code>/d/modeltech64_2019.2/win64/vsim</code> 的路径。</p>
+<p>注意：PowerShell 里输入的 <code>bash</code> 有可能是 WSL 的 bash，而 WSL 是独立的 Linux 环境，
+看不到 Windows 版 ModelSim。要用 Git Bash，请从开始菜单单独打开它。</p>
+<h2 id="3">3. 实验环境</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仿真器</td>
+<td>ModelSim / Questa（本文以 ModelSim 2019.2 为例，安装见第 2 节）</td>
+</tr>
+<tr>
+<td>板卡</td>
+<td>无</td>
+</tr>
+<tr>
+<td>编辑器</td>
+<td>任意</td>
+</tr>
+<tr>
+<td>AI 助手</td>
+<td>允许使用，注意事项见第 9 节</td>
+</tr>
+<tr>
+<td>发布代码</td>
+<td><code>lab2-ST/SoC_cv32e40p_ST/</code></td>
+</tr>
+<tr>
+<td>RISC-V 工具链</td>
+<td>不需要安装，测试程序的机器码已随发布包提供</td>
+</tr>
+</tbody>
+</table>
+<p>发布目录结构：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>SoC_cv32e40p_ST/
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── cpu_cv32e40p/           CV32E40P RISC-V CPU（完整，不需修改）
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├── soc/rtl/
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>│   ├── my_soc_top.sv       SoC 顶层        &lt;- Task 3
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>│   ├── axi/                AXI xbar / adapter / axi2mem 等
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>│   ├── debug/              RISC-V debug module
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>│   ├── common_cells/       通用单元
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>│   ├── clk_rst/            时钟复位
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>│   ├── include/            地址空间常量 my_soc_pkg.sv
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>│   └── mem/
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>│       ├── bootram.sv      启动存储        &lt;- Task 2
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>│       ├── my_mainmem.sv   主存包装
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>│       └── sram_ff.sv      行为级 SRAM     &lt;- Task 4
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>└── sim/
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    ├── filelists/          &lt;- Task 1：此处应有 my_soc_tb.f
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    ├── scripts/            自动化脚本
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    ├── tb/
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    │   ├── my_soc_tb.sv    顶层 testbench
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    │   ├── main.c          测试程序源码（只读，供理解）
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    │   ├── test_status.c/h PASS/FAIL 上报机制（只读）
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    │   └── mainmem_init.hex 编译好的程序镜像
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    └── README.md           仿真流程说明，建议先读一遍
+</code></pre></div>
+<p>需要修改的只有四处：<code>sim/filelists/</code>（新建文件）、<code>soc/rtl/my_soc_top.sv</code>、
+<code>soc/rtl/mem/sram_ff.sv</code>、<code>soc/rtl/mem/bootram.sv</code>。</p>
+<p><code>sim/tb/</code> 和 <code>sim/scripts/</code> 下的文件不要修改。修改 testbench 使其直接打印 PASS
+没有任何意义，也无法说明系统真的跑通了。</p>
+<h2 id="4">4. 背景知识</h2>
+<p>本节建议用 20 分钟扫读。其中 4.5、4.3、4.4 分别对应 Task 2、Task 3、Task 4，需要读懂。</p>
+<h3 id="41-soc">4.1 SoC 结构</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>   ┌─────────────────────────┐                ┌─────────────────────────┐
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>   │        CV32E40P         │                │      Debug Module       │
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>   │      (RISC-V RV32)      │                │       (JTAG/DMI)        │
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>   ├────────────┬────────────┤                ├─────────────────────────┤
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>   │   instr    │    data    │                │         master          │
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>   └─────┬──────┴──────┬─────┘                └────────────┬────────────┘
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>         │             │                                   │
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>   ┌─────┴─────┐ ┌─────┴─────┐                       ┌─────┴─────┐
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>   │axi_adapter│ │axi_adapter│                       │axi_adapter│
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>   └─────┬─────┘ └─────┬─────┘                       └─────┬─────┘
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>         │             │                                   │
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>     slave[0]      slave[1]                             slave[2]
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>         │             │                                   │
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>         └─────────────┴──────────┬────────────────────────┘
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>                                  │
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>            ┌─────────────────────┴─────────────────────┐
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>            │                 axi_xbar                  │
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>            └─────┬───────────────┬───────────────┬─────┘
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>                  │               │               │
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>              master[0]       master[1]       master[2]
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>                  │               │               │
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>           ┌──────┴──────┐ ┌──────┴──────┐ ┌──────┴──────┐
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>           │   axi2mem   │ │   axi2mem   │ │   axi2mem   │
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>           │ i_axi2boot  │ │ i_axi2sram  │ │i_dm_axi2mem │
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>           └──────┬──────┘ └──────┬──────┘ └──────┬──────┘
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>                  │               │               │
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>           ┌──────┴──────┐ ┌──────┴──────┐ ┌──────┴──────┐
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>           │   bootram   │ │ my_mainmem  │ │   dm_top    │
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>           │ 0x0001_0000 │ │ 0x8000_0000 │ │ 0x0000_0000 │
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>           └─────────────┘ └──────┬──────┘ └─────────────┘
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>                                  │
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>                          ┌───────┴───────┐
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>                          │    sram_ff    │
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>                          │ 2048 x 32-bit │
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>                          └───────────────┘
+</code></pre></div>
+<p>读图要点：</p>
+<ul>
+<li>上半部分是三个 <strong>master</strong>（发起请求的一方）：CPU 的取指口（instr）、CPU 的访存口（data）、
+  以及 debug module。每个 master 经过一个 <code>axi_adapter</code> 转成 AXI 事务，接到 xbar 的
+  <code>slave[0..2]</code> 端口上。</li>
+<li>下半部分是三个 <strong>slave</strong>（响应请求的一方）：bootram、主存、debug module 的从口。
+  它们挂在 xbar 的 <code>master[0..2]</code> 端口上，每一路都经过一个 <code>axi2mem</code> 把 AXI 转成
+  类存储器信号。<strong>Task 3 要修的就是中间那一路 <code>i_axi2sram</code> 与 <code>my_mainmem</code> 之间的连线。</strong></li>
+<li><code>axi_xbar</code> 根据请求地址决定把它路由到哪个 slave。</li>
+<li>debug module 在图上出现了两次：它既是 master（通过 <code>slave[2]</code> 主动访问存储，
+  用于调试时读写内存），也是 slave（通过 <code>master[2]</code> 被 CPU 访问，用于读写调试寄存器）。
+  本实验不涉及调试功能，这一路可以先不管。</li>
+<li>主存的实际存储体是 <code>sram_ff</code>，<code>my_mainmem</code> 只是一层包装，负责把字节地址转成字地址。</li>
+</ul>
+<p>地址空间定义在 <code>soc/rtl/include/my_soc_pkg.sv</code>：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th>目标</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0x0000_0000 – 0x0000_0FFF</code></td>
+<td>debug module</td>
+<td>调试用，本实验不涉及</td>
+</tr>
+<tr>
+<td><code>0x0001_0000 – 0x0001_FFFF</code></td>
+<td>bootram</td>
+<td>CPU 复位后从这里取第一条指令</td>
+</tr>
+<tr>
+<td><code>0x8000_0000 – 0x8FFF_FFFF</code></td>
+<td>主存</td>
+<td>实际只实现 8 KB，测试程序运行在这里</td>
+</tr>
+</tbody>
+</table>
+<p>落在这三段之外的访问会被 xbar 判给 <code>axi_err_slv</code>，返回 AXI 错误响应。</p>
+<h3 id="42-aximasterslave-xbar">4.2 AXI：Master、Slave 与 Xbar</h3>
+<p>AXI（Advanced eXtensible Interface）是一种总线协议。本实验不要求掌握协议细节，
+但需要建立三个概念：</p>
+<ul>
+<li><strong>Master</strong> 发起读写请求，请求中包含操作类型（读或写）、地址、写数据。
+  本 SoC 有 3 个 master：CPU 取指口、CPU 访存口、debug module。</li>
+<li><strong>Slave</strong> 响应请求，把读出的数据返回给对应的 master。
+  本 SoC 有 3 个 slave：bootram、主存、debug module 的从口。</li>
+<li><strong>Xbar（Crossbar）</strong> 是多 master 与多 slave 之间的交换矩阵。每个 slave 被分配一段地址，
+  xbar 根据请求地址路由到正确的 slave。每个请求带一个 ID，用于分辨响应应返回给哪个 master。</li>
+</ul>
+<p>需要注意 <code>my_soc_top.sv</code> 中两组 <code>AXI_BUS</code> 接口数组的命名方向：它们是站在 xbar 自身的角度命名的。
+<code>slave[]</code> 表示"xbar 作为 slave 去连接 CPU 那些 master"，<code>master[]</code> 表示"xbar 作为 master
+去连接存储那些 slave"。因此 <code>slave[0..2]</code> 实际连的是 CPU 和 debug module，
+<code>master[0..2]</code> 连的才是 bootram 和主存。</p>
+<p>另外，CPU 的取指和访存是两个独立端口，但主存只有一块且是单端口的，
+两者的访问在 xbar 内部由 <code>rr_arb_tree</code> 轮询仲裁、在时间上串行化。</p>
+<h3 id="43-axi2mem-axi">4.3 axi2mem：从 AXI 到类存储器端口</h3>
+<p>AXI 的握手信号很多（<code>ar</code>/<code>aw</code>/<code>w</code>/<code>r</code>/<code>b</code> 五个通道，每个通道有 valid/ready/addr/len/size/burst 等），
+让一块 SRAM 直接实现 AXI 从机并不现实。因此中间加了一个桥接模块 <code>axi2mem</code>。</p>
+<p>它左侧接 AXI，右侧输出一组极简的类存储器信号：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>         ┌─────────────────┐
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>         │                 │──&gt; req_o    本拍有访问请求
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a> AXI ───&gt;│    axi2mem      │──&gt; we_o     1 = 写，0 = 读
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>         │                 │──&gt; addr_o   字节地址（32-bit）
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>         │                 │──&gt; be_o     字节使能（4-bit，写时哪几个字节有效）
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>         │                 │──&gt; data_o   要写进存储的数据
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>         │                 │&lt;── data_i   存储读出的数据
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>         └─────────────────┘
+</code></pre></div>
+<p>注意 <code>data_o</code> 与 <code>data_i</code> 的 <code>o</code>/<code>i</code> 后缀是站在 <code>axi2mem</code> 自身角度命名的。
+<code>data_o</code> 是 <code>axi2mem</code> 输出给存储的写数据，<code>data_i</code> 是存储输入给它的读数据。
+连接到存储一侧时，分别对应存储的 <code>wdata_i</code> 和 <code>rdata_o</code>。</p>
+<p><code>my_soc_top.sv</code> 中已有一个连接完整的样板：<code>i_axi2boot</code>（bootram 那一路）。
+Task 3 需要照此把 <code>i_axi2sram</code> 连接起来。</p>
+<h3 id="44-sram">4.4 行为级 SRAM 与读延迟</h3>
+<p>工艺库中的 SRAM 宏是工艺相关的，不便于 RTL 仿真，因此这里用一个 reg 数组建模：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">reg</span><span class="w"> </span><span class="p">[</span><span class="n">DataWidth</span><span class="o">-</span><span class="mi">1</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">memory</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">AddrWidth</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+</code></pre></div>
+<p>它必须满足三条契约，否则与 <code>axi2mem</code> 的时序对不上：</p>
+<ol>
+<li><strong>同步读，下一拍有效。</strong> 请求出现在 cycle T，读数据要到 cycle T+1 才出现在 <code>data_o</code> 上。
+   实现方式是读出后先打一拍寄存器：<code>data_out_reg &lt;= memory[addr_i];</code>。
+   若写成组合读（<code>assign data_o = memory[addr_i];</code>），仿真中看似更快，
+   但与 <code>axi2mem</code> 的握手对不上，会读到错位的数据。</li>
+<li><strong>字节使能写。</strong> <code>wen_i[3:0]</code> 每一位控制一个字节。CPU 执行 <code>sb</code> / <code>sh</code> 指令时
+   只写 1 个或 2 个字节，若忽略 <code>wen_i</code> 而整字写入，会破坏相邻字节。</li>
+<li><strong>单端口。</strong> 读写共用同一个 <code>addr_i</code>，同一拍只有一个地址。</li>
+</ol>
+<p>关于地址位宽：<code>axi2mem</code> 输出的 <code>addr_o</code> 是字节地址，而 <code>memory[]</code> 按字索引。
+<code>my_mainmem.sv</code> 中已完成转换（<code>addr_i[ADDR_W+1:2]</code>，丢弃最低 2 位），不需要重复处理。</p>
+<h3 id="45-cpu">4.5 CPU 的启动流程</h3>
+<p>CV32E40P 复位后从 <code>0x0001_0000</code> 取第一条指令，也就是 bootram 的第 0 个字。
+而测试程序装载在主存 <code>0x8000_0000</code>（由 <code>$readmemh</code> 加载 <code>mainmem_init.hex</code>）。
+因此 bootram 中必须放一段引导代码，把 PC 跳转到主存：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nf">lui</span><span class="w">  </span><span class="no">t0</span><span class="p">,</span><span class="w"> </span><span class="mi">0x80000</span><span class="w">     </span><span class="c1"># t0 = 0x80000000</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nf">addi</span><span class="w"> </span><span class="no">t0</span><span class="p">,</span><span class="w"> </span><span class="no">t0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w">       </span><span class="c1"># 微调低 12 位（此处为 0）</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nf">jr</span><span class="w">   </span><span class="no">t0</span><span class="w">              </span><span class="c1"># PC &lt;- t0，跳入主存</span>
+</code></pre></div>
+<p><code>bootram.sv</code> 用 <code>mem_q[0..15]</code> 这 16 个字模拟该存储，复位时把机器码直接写入。
+Task 2 需要把这三条指令翻译成机器码填入。</p>
+<p><code>mem_q[3..15]</code> 必须保持为 0。CPU 的取指带预取，会顺带读到后面几个字；
+若那里是 <code>X</code>，CPU 会因取到非法指令而卡死或进入异常循环。</p>
+<p>汇编转机器码可使用在线工具：<a href="https://riscvasm.lucasteske.dev">https://riscvasm.lucasteske.dev</a></p>
+<h3 id="46-filelist">4.6 filelist</h3>
+<p>仿真器需要知道编译哪些文件、按什么顺序编译。filelist 就是这个清单，
+<code>vlog -f &lt;filelist&gt;</code> 按行读取。</p>
+<p>两条硬性规则：</p>
+<ol>
+<li><strong>顺序</strong>：被依赖的文件在前。对 SystemVerilog 而言：</li>
+<li><code>package</code>（<code>*_pkg.sv</code>）必须在所有 import 它的文件之前</li>
+<li><code>interface</code>（本工程是 <code>axi_intf.sv</code>）必须在使用它的模块之前</li>
+<li>testbench 放在最后</li>
+<li>普通模块之间 ModelSim 不强制顺序（它会做两遍扫描），但包和接口必须在前</li>
+<li><strong>头文件目录</strong>用 <code>+incdir+&lt;dir&gt;</code> 声明。本工程的 <code>`include</code> 走 <code>soc/rtl/include/</code>，
+   因此 filelist 需要包含 <code>+incdir+soc/rtl/include</code>。</li>
+</ol>
+<p>路径相对于仿真器的工作目录（即 <code>SoC_cv32e40p_ST/</code>），不是相对于 filelist 自身。</p>
+<h3 id="47-pass-fail">4.7 PASS / FAIL 的判定机制</h3>
+<p>本实验与以往实验的一个显著差别：判定结果不是由 testbench 直接计算的，而是由 CPU 运行程序产生的。</p>
+<p><code>sim/tb/main.c</code> 执行一些整数运算和内存读写，最后调用
+<code>publish_test_status()</code>（见 <code>sim/tb/test_status.c</code>），依次写入三个全局变量：</p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>g_test_status_fail_count</code></td>
+<td>失败计数</td>
+</tr>
+<tr>
+<td><code>g_test_status_magic</code></td>
+<td><code>0x600DCAFE</code> = PASS，<code>0xDEADC0DE</code> = FAIL</td>
+</tr>
+<tr>
+<td><code>g_test_status_done_magic</code></td>
+<td><code>0xC0DEDEAD</code> = 程序执行完毕</td>
+</tr>
+</tbody>
+</table>
+<p>这些变量位于 <code>.bss</code>，地址由链接器分配，更换程序重新编译后会变化。因此 <code>my_soc_tb.sv</code>
+不检查固定地址，而是监听主存的写端口：观察到向主存写入这几个 magic 值即判定结果。</p>
+<p>这意味着看到 PASS 就说明 CPU 完整执行了一个真实程序——取指、访存、栈操作、函数调用均正常。
+反过来，TIMEOUT 说明 CPU 没有执行到终点：可能卡在取指，可能卡在访存，也可能根本没有启动。
+Task 2、3、4 的失败现象都是 TIMEOUT，这正是本实验的难点所在。</p>
+<h2 id="5">5. 仿真流程</h2>
+<p>完整说明见 <code>sim/README.md</code>，本节只列常用操作。所有命令都在 <code>SoC_cv32e40p_ST/</code> 目录下执行。</p>
+<h3 id="51">5.1 运行仿真</h3>
+<p>PowerShell / cmd：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">cd </span><span class="p">&lt;</span><span class="n">你的路径</span><span class="p">&gt;\</span><span class="n">lab2-ST</span><span class="p">\</span><span class="n">SoC_cv32e40p_ST</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">&amp;</span> <span class="n">D</span><span class="p">:\</span><span class="n">modeltech64_2019</span><span class="p">.</span><span class="n">2</span><span class="p">\</span><span class="n">win64</span><span class="p">\</span><span class="n">vsim</span><span class="p">.</span><span class="n">exe</span> <span class="n">-c</span> <span class="n">-do</span> <span class="s2">"do sim/scripts/run_sim.do"</span>
+</code></pre></div>
+<p>Git Bash：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>&lt;你的路径&gt;/lab2-ST/SoC_cv32e40p_ST
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>bash<span class="w"> </span>sim/scripts/run_sim.sh
+</code></pre></div>
+<p>脚本会依次完成：建立 <code>work</code> 库、用 <code>vlog</code> 编译整个 filelist、用 <code>vsim</code> 运行到结束、
+打印 <code>RESULT: PASS / FAIL / TIMEOUT</code>。完整日志保存在 <code>sim/out/sim.log</code>。</p>
+<p>运行结束后默认不退出 ModelSim，设计仍然加载着，便于继续 <code>examine</code> 或查看波形。
+输入 <code>quit -f</code> 退出。</p>
+<h3 id="52">5.2 查看波形</h3>
+<p>去掉 <code>-c</code> 即可进入图形界面：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&amp;</span> <span class="n">D</span><span class="p">:\</span><span class="n">modeltech64_2019</span><span class="p">.</span><span class="n">2</span><span class="p">\</span><span class="n">win64</span><span class="p">\</span><span class="n">vsim</span><span class="p">.</span><span class="n">exe</span> <span class="n">-do</span> <span class="s2">"do sim/scripts/run_sim.do"</span>
+</code></pre></div>
+<p>GUI 模式下脚本会在 <code>run -all</code> 之前自动执行 <code>log -r /*</code>，把全部信号记入 WLF。
+这一点很关键：ModelSim 只绘制运行期间被记录过的信号，仿真结束后再 <code>add wave</code>
+添加的信号只会显示 "No Data"。</p>
+<h3 id="53">5.3 清理</h3>
+<p>修改 RTL 后如果编译行为异常，先清理再全量重新编译：</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">.\</span><span class="n">sim</span><span class="p">\</span><span class="n">scripts</span><span class="p">\</span><span class="n">clean</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>./sim/scripts/clean.sh
+</code></pre></div></p>
+<p>会删除 <code>work/</code>、<code>transcript</code>、<code>modelsim.ini</code>、<code>*.wlf</code>、<code>sim/out/</code>，源码不受影响。</p>
+<h3 id="54">5.4 手动分步执行</h3>
+<p>排查编译问题时可以拆开执行，与脚本所做的事情一致：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">vlib</span><span class="w"> </span>work
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nv">vmap</span><span class="w"> </span>work<span class="w"> </span>work
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nv">vlog</span><span class="w"> </span><span class="o">-</span>sv<span class="w"> </span><span class="o">-</span>f<span class="w"> </span>sim<span class="o">/</span>filelists<span class="o">/</span>my_soc_tb.f
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nv">vsim</span><span class="w"> </span><span class="o">-</span>suppress<span class="w"> </span><span class="mi">12110</span><span class="w"> </span><span class="o">-</span>novopt<span class="w"> </span><span class="o">-</span>onfinish<span class="w"> </span>stop<span class="w"> </span>work.my_soc_tb
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nv">run</span><span class="w"> </span><span class="o">-</span>all
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nv">examine</span><span class="w"> </span><span class="o">-</span>radix<span class="w"> </span>decimal<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>exit_code
+</code></pre></div>
+<ul>
+<li><code>-novopt</code> 用于绕开 ModelSim 2019.2 在 <code>lzc.sv</code> 上已知的 vopt 问题，
+  <code>-suppress 12110</code> 屏蔽 <code>-novopt</code> 的弃用警告</li>
+<li><code>-onfinish stop</code> 让 <code>$finish</code> 只是停下而不退出 vsim，这样才能读取 <code>exit_code</code></li>
+</ul>
+<h2 id="6">6. 实验任务</h2>
+<h3 id="task-1-filelist">Task 1 · 重建 filelist</h3>
+<p><strong>现象</strong>：直接运行脚本会看到</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>ERROR: 找不到 filelist 'sim/filelists/my_soc_tb.f'
+</code></pre></div>
+<p><strong>要求</strong>：新建 <code>sim/filelists/my_soc_tb.f</code>，把编译所需的全部文件按正确顺序列入。</p>
+<p><strong>提示</strong>：</p>
+<ol>
+<li>需要包含 <code>+incdir+soc/rtl/include</code></li>
+<li>所需文件分布在四处：<code>cpu_cv32e40p/include/</code>、<code>cpu_cv32e40p/rtl/</code>、
+   <code>soc/rtl/**</code>、<code>sim/tb/my_soc_tb.sv</code></li>
+<li>所有 <code>*_pkg.sv</code> 放在最前。本工程涉及的包有：
+   <code>cv32e40p_pkg</code>、<code>cv32e40p_apu_core_pkg</code>、<code>cv32e40p_fpu_pkg</code>、
+   <code>my_soc_pkg</code>、<code>axi_pkg</code>、<code>cf_math_pkg</code>、<code>dm_pkg</code></li>
+<li><code>axi_intf.sv</code> 定义的是 interface，也要放在使用它的模块之前</li>
+<li><code>sim/tb/my_soc_tb.sv</code> 放在最后一行</li>
+<li><code>cpu_cv32e40p/vendor/</code> 下的内容不需要编译（浮点单元等可选组件，本配置未启用）</li>
+<li><code>soc/rtl/mem/bootrom.sv</code> 也不需要——真正接入 SoC 的是 <code>bootram.sv</code></li>
+</ol>
+<p><strong>自检</strong>：<code>vlog</code> 能够编译通过，没有 <code>Cannot resolve module</code> 一类的错误。
+编译通过不代表能运行，但可以确认 Task 1 完成。</p>
+<p>查找文件可用 <code>find soc cpu_cv32e40p -name "*.sv"</code>（Git Bash）或
+<code>Get-ChildItem -Recurse -Filter *.sv</code>（PowerShell）。不要把找到的文件全部加入，
+加入不该编译的文件会导致重复定义或语法错误。</p>
+<h3 id="task-2-bootram">Task 2 · 编写 bootram 的引导指令</h3>
+<p><strong>位置</strong>：<code>soc/rtl/mem/bootram.sv</code></p>
+<p><strong>现象</strong>：编译通过，仿真 TIMEOUT。</p>
+<p><strong>原理</strong>：CPU 复位后从 <code>0x0001_0000</code> 取指，取到的全是 0。
+<code>0x00000000</code> 不是合法的 RISC-V 指令，CPU 会进入异常处理，无法到达主存。</p>
+<p><strong>要求</strong>：把 4.5 节的三条汇编指令翻译成机器码，填入 <code>mem_q[0]</code>、<code>mem_q[1]</code>、<code>mem_q[2]</code>。</p>
+<p><strong>提示</strong>：</p>
+<ul>
+<li>可用 <a href="https://riscvasm.lucasteske.dev">https://riscvasm.lucasteske.dev</a> 将汇编转为十六进制机器码</li>
+<li>也可按 RISC-V 编码手算：<code>lui</code> 是 U 型（opcode <code>0110111</code>），
+  <code>addi</code> 和 <code>jalr</code> 是 I 型（opcode <code>0010011</code> / <code>1100111</code>）。
+  <code>jr t0</code> 是 <code>jalr x0, 0(t0)</code> 的伪指令写法</li>
+<li><code>mem_q[0]</code> 是 CPU 取的第一条指令</li>
+<li>代码中已有一个把 <code>mem_q[0..15]</code> 全部清零的循环，三条指令写在该循环之后
+  （非阻塞赋值中后写的生效）</li>
+</ul>
+<p><strong>自检</strong>：</p>
+<p>在 GUI 中观察 <code>/my_soc_tb/dut/instr_addr</code>（取指地址）和
+<code>/my_soc_tb/dut/instr_rdata</code>（CPU 取到的指令）。
+正确时取指地址应从 <code>0x00010000</code> 开始，取到所填的三条指令，
+随后跳转到 <code>0x80000000</code> 继续取指。</p>
+<p>这一步的自检不依赖后面两个 Task：跳转本身只取决于 bootram 里的指令，
+即使主存那一路还没通，<code>instr_addr</code> 也会如实显示跳到了 <code>0x80000000</code>
+（只是取回来的指令会是 <code>X</code>）。</p>
+<h3 id="task-3-axi2mem">Task 3 · 连接 axi2mem 到主存</h3>
+<p><strong>位置</strong>：<code>soc/rtl/my_soc_top.sv</code> 中的 <code>i_axi2sram</code> 例化。</p>
+<p><strong>现象</strong>：编译通过（未连接的端口在 SystemVerilog 中是合法的），但仿真 TIMEOUT。</p>
+<p><strong>原理</strong>：<code>i_axi2sram</code> 右侧的 6 个类存储器端口全部未连接，
+因此 <code>sram_req</code> 等信号没有驱动源，在仿真中为 <code>X</code>。
+主存收不到有效请求，CPU 取指拿不到数据，程序无法运行。</p>
+<p><strong>要求</strong>：把 <code>i_axi2sram</code> 的 6 个端口连接到主存信号。
+上方 <code>my_mainmem i_mainmem (...)</code> 已经例化完成，使用的信号名为
+<code>sram_req</code> / <code>sram_we</code> / <code>sram_addr</code> / <code>sram_be</code> / <code>sram_wdata</code> / <code>sram_rdata</code>。</p>
+<p><strong>提示</strong>：</p>
+<ul>
+<li>同一文件中的 <code>i_axi2boot</code>（bootram 那一路）是已连接完整的样板，可参照其结构</li>
+<li>但注意两处差异：bootram 那一路的 <code>.be_o ()</code> 是有意空置的（bootram 不支持字节使能），
+  主存这一路的 <code>be_o</code> 必须连接，否则 <code>sb</code> / <code>sh</code> 指令会写错</li>
+<li>再次确认 4.3 节中 <code>data_o</code> / <code>data_i</code> 的方向</li>
+</ul>
+<p><strong>自检</strong>：在波形中观察 <code>/my_soc_tb/dut/sram_req</code>。
+连接正确时，它应在 CPU 跳进主存之后开始出现高电平脉冲（CPU 正在取指）；
+若仍为 <code>X</code> 或恒为 <code>0</code>，说明未连接或连接错误。</p>
+<p>注意这一步的自检<strong>需要 Task 2 已经完成</strong>。如果 bootram 还没写引导指令，
+CPU 会停在 <code>0x0001_0000</code> 附近的异常循环里，根本不会访问 <code>0x8000_0000</code>，
+<code>sram_req</code> 自然不会有任何脉冲——此时看到没有脉冲，不能说明 Task 3 做错了。</p>
+<h3 id="task-4-sram">Task 4 · 补完行为级 SRAM</h3>
+<p><strong>位置</strong>：<code>soc/rtl/mem/sram_ff.sv</code></p>
+<p><strong>现象</strong>：编译通过，仿真 TIMEOUT。</p>
+<p><strong>原理</strong>：<code>memory</code> 数组和 <code>data_out_reg</code> 都已声明，<code>$readmemh</code> 也已把程序装入，
+但没有任何逻辑把 <code>memory</code> 的内容送到 <code>data_o</code>，也没有写入路径。
+CPU 取指始终读到 <code>X</code>。</p>
+<p><strong>要求</strong>：编写一个 <code>always @(posedge clk_i)</code> 块，实现：</p>
+<ol>
+<li><code>req_i</code> 为高时，把 <code>memory[addr_i]</code> 读出并打一拍送入 <code>data_out_reg</code></li>
+<li>按 <code>wen_i[3:0]</code> 的四位分别写入 <code>memory[addr_i]</code> 的四个字节</li>
+</ol>
+<p><strong>提示</strong>：</p>
+<ul>
+<li>参照 4.4 节的三条契约</li>
+<li>字节使能写的写法：<code>if (wen_i[0]) memory[addr_i][7:0] &lt;= data_i[7:0];</code>，四个字节各一句</li>
+<li>读和写在同一个 <code>if (req_i)</code> 分支内完成，不要写成 if-else——
+  同一拍既可能要返回读数据，也可能要写入</li>
+<li>使用非阻塞赋值 <code>&lt;=</code></li>
+</ul>
+<p><strong>自检</strong>：</p>
+<p>这是最后一块。前三个 Task 都正确时，补完本 Task 就应当直接跑出 <code>RESULT: PASS</code>。</p>
+<p>如果仍然 TIMEOUT，先确认程序确实装进了主存：运行仿真后（或在 GUI 中 <code>run -all</code> 后），
+菜单 <code>View → Memory List</code>，双击 <code>/my_soc_tb/dut/i_mainmem/i_mainmem/memory</code>，
+应能看到与 <code>sim/tb/mainmem_init.hex</code> 一致的内容——
+第 1 行 <code>00002117</code> 对应地址 <code>0x80000000</code>，第 2 行对应 <code>0x80000004</code>，依此类推。</p>
+<p>注意：能看到正确内容只说明 <code>$readmemh</code> 成功（这部分未被破坏），
+不代表读写逻辑正确。接着看 <code>/my_soc_tb/dut/instr_rdata</code>，
+确认 CPU 取回的指令与主存内容一致、且不是 <code>X</code>。</p>
+<h2 id="7">7. 推进顺序与分步自检</h2>
+<p>Task 2、3、4 的失败现象完全相同（都是 TIMEOUT），因此无法通过"跑一次看报错"来判断问题所在。
+第 6 节的四个 Task <strong>已经按推荐顺序编号</strong>，Step N 就是 Task N，照着顺序做即可：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Step 1 (Task 1)  编写 filelist         目标：vlog 编译通过
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>Step 2 (Task 2)  编写 bootram 引导指令  目标：instr_addr 从 0x00010000 跳到 0x80000000
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>Step 3 (Task 3)  连接 axi2mem           目标：sram_req 出现高电平脉冲
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>Step 4 (Task 4)  补完 sram_ff 读写逻辑  目标：RESULT: PASS
+</code></pre></div>
+<p>这个顺序不是随意排的，它沿着信号路径逐段往下推进：
+<strong>CPU 能否启动 → 请求能否传到存储 → 存储能否正确响应</strong>。</p>
+<p>按这个顺序做的好处是<strong>每一步都能单独验证</strong>。反过来，如果打乱顺序，自检就会失效：</p>
+<ul>
+<li>先做 Task 3（连 axi2mem）而 Task 2 没做，<code>sram_req</code> 不会有脉冲——
+  因为 CPU 还没跳进主存，压根没发出请求。此时你无法判断连线是对是错。</li>
+<li>先做 Task 4（补 sram_ff）而 Task 3 没做，<code>req_i</code> 一直是 <code>X</code>，
+  读写逻辑根本不会被触发，同样无法验证。</li>
+</ul>
+<p>因此如果中途卡住，先回头确认前一步的自检是否真的通过了，再往下排查。</p>
+<h3 id="_1">关键观察信号</h3>
+<table>
+<thead>
+<tr>
+<th>想确认什么</th>
+<th>观察信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU 在取哪条指令</td>
+<td><code>/my_soc_tb/dut/instr_addr</code>、<code>/my_soc_tb/dut/instr_rdata</code></td>
+</tr>
+<tr>
+<td>主存是否收到请求</td>
+<td><code>/my_soc_tb/dut/sram_req</code>、<code>sram_we</code>、<code>sram_addr</code></td>
+</tr>
+<tr>
+<td>主存返回了什么</td>
+<td><code>/my_soc_tb/dut/sram_rdata</code></td>
+</tr>
+<tr>
+<td>bootram 那一路</td>
+<td><code>/my_soc_tb/dut/boot_req</code>、<code>boot_addr</code>、<code>boot_rdata</code></td>
+</tr>
+<tr>
+<td>testbench 是否抓到 magic</td>
+<td><code>/my_soc_tb/seen_pass</code>、<code>seen_fail</code>、<code>exit_code</code></td>
+</tr>
+<tr>
+<td>已运行多少周期</td>
+<td><code>/my_soc_tb/cycle_count</code></td>
+</tr>
+</tbody>
+</table>
+<p>添加波形（GUI 模式下脚本已自动执行 <code>log -r /*</code>，因此随时可以添加）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">-</span>r<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>sram_<span class="o">*</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>instr_addr
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>instr_rdata
+</code></pre></div>
+<h2 id="8">8. 完成标志</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>==== vlog: 编译 sim/filelists/my_soc_tb.f ====
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>...
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>[85000] reset released, watching SRAM write port for test_status magics
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>[XXXXXX] TEST_STATUS_PASS written to 0x800001XX
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>[XXXXXX] TEST_STATUS_DONE written to 0x800001XX
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>[XXXXXX] PASS: test program finished cleanly after NNNN cycles
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>==== RESULT: PASS ====
+</code></pre></div>
+<p>看到 <code>RESULT: PASS</code> 即完成本实验。</p>
+<h2 id="9-ai">9. 关于使用 AI</h2>
+<p>本实验允许使用 AI 辅助，但需要了解它在这类任务上的实际表现：</p>
+<ul>
+<li>擅长：解释一段 RTL 的功能、解释 AXI 概念、把汇编转成机器码、
+  编写字节使能这类模板化代码</li>
+<li>不擅长：跨文件的集成问题。"为什么我的仿真 TIMEOUT"这类问题，
+  AI 看不到波形、也不知道你改了哪些文件，通常只会给出一组听起来合理但没有针对性的猜测</li>
+<li>常见错误：把 <code>rst_ni</code>（低有效）当作 <code>rst</code>、位宽写错、把同步读写成组合读、
+  非阻塞赋值与阻塞赋值混用</li>
+</ul>
+<p>有效的做法是把问题收敛到具体信号再提问，例如：</p>
+<blockquote>
+<p>我在 ModelSim 中看到 <code>sram_req</code> 一直是 X。这个信号在 my_soc_top.sv 中声明为
+<code>logic sram_req;</code>，应由 axi2mem 的 req_o 驱动。X 说明什么？应该从哪个方向排查？</p>
+</blockquote>
+<p>而不是：</p>
+<blockquote>
+<p>我的 SoC 仿真 TIMEOUT 了，怎么办？</p>
+</blockquote>
+<p>AI 给出的 RTL 建议需要自己判断是否正确，尤其是时序相关的部分。</p>
+<h2 id="10">10. 思考题</h2>
+<p>以下问题不需要提交，供自行检验对本实验的理解程度。</p>
+<ol>
+<li>
+<p>CPU 的取指口和访存口是两个独立的 AXI master，但主存只有一块单端口 SRAM。
+   它们是如何共享这块存储的？带来什么性能代价？这个 SoC 中有没有缓解措施？</p>
+</li>
+<li>
+<p><code>sram_ff</code> 的读被要求"下一拍有效"。如果写成组合读
+   （<code>assign data_o = memory[addr_i];</code>），会发生什么？
+   这种错误在波形上有什么特征？为什么它比"完全不工作"更难排查？</p>
+</li>
+<li>
+<p>Task 3 中如果把 <code>be_o</code> 空置不接（像 bootram 那一路那样），仿真还能 PASS 吗？
+   为什么？提示：查看 <code>main.c</code> 中有没有小于一个字的写操作。</p>
+</li>
+<li>
+<p><code>bootram.sv</code> 中如果不把 <code>mem_q[3..15]</code> 清零会发生什么？
+   为什么 CPU 会去读第 3 个字之后的内容——它在第 2 个字就已经跳走了？</p>
+</li>
+<li>
+<p>testbench 判定 PASS 的方式是监听主存写端口上的 magic 值，而不是检查某个固定地址的内容。
+   这两种做法各有什么优劣？更换测试程序重新编译后，哪一种不需要修改 testbench？</p>
+</li>
+</ol>
+<h2 id="11">11. 常见问题</h2>
+<h3 id="q1-vlog-cannot-resolve-module-xxx">Q1 <code>vlog</code> 报 <code>Cannot resolve module 'xxx'</code></h3>
+<p>filelist 遗漏了文件。根据报错中的模块名，在 <code>soc/rtl/</code> 和 <code>cpu_cv32e40p/rtl/</code> 下
+找到对应的 <code>.sv</code> 加入。</p>
+<h3 id="q2-vlog-package-xxx_pkg-not-found-unknown-type">Q2 <code>vlog</code> 报 <code>Package 'xxx_pkg' not found</code> 或 <code>Unknown type</code></h3>
+<p>包的顺序不对。所有 <code>*_pkg.sv</code> 和 <code>axi_intf.sv</code> 必须排在使用它们的文件之前。</p>
+<h3 id="q3-vlog-include">Q3 <code>vlog</code> 报某个文件的 <code>`include</code> 找不到头文件</h3>
+<p>filelist 中缺少 <code>+incdir+soc/rtl/include</code>。</p>
+<h3 id="q4-vsim-instantiation-of-my_soc_top-failed">Q4 编译通过，但 <code>vsim</code> 报 <code>Instantiation of 'my_soc_top' failed</code></h3>
+<p>多半是 <code>my_soc_top.sv</code> 中改出了语法问题，或 filelist 遗漏了某个被例化的模块。
+查看 <code>sim/out/sim.log</code> 中 <code>vlog</code> 阶段有没有 warning。</p>
+<h3 id="q5-timeout-task">Q5 一直 TIMEOUT，但四个 Task 都已完成</h3>
+<p>按第 7 节的信号表逐项确认。最常见的三种错误：</p>
+<ul>
+<li><code>axi2mem</code> 的 <code>data_o</code> / <code>data_i</code> 接反（现象：取指拿到的是无意义的数据）</li>
+<li><code>sram_ff</code> 写成了组合读（现象：数据比预期早一拍，CPU 执行紊乱）</li>
+<li>bootram 的机器码算错（现象：<code>instr_addr</code> 跳到了一个异常的地址）</li>
+</ul>
+<h3 id="q6-rtl">Q6 修改了 RTL，但仿真结果没有变化</h3>
+<p><code>work</code> 库中仍是旧的编译结果。先清理再全量重新编译：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">.\</span><span class="n">sim</span><span class="p">\</span><span class="n">scripts</span><span class="p">\</span><span class="n">clean</span><span class="p">.</span><span class="n">ps1</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="p">&amp;</span> <span class="n">D</span><span class="p">:\</span><span class="n">modeltech64_2019</span><span class="p">.</span><span class="n">2</span><span class="p">\</span><span class="n">win64</span><span class="p">\</span><span class="n">vsim</span><span class="p">.</span><span class="n">exe</span> <span class="n">-c</span> <span class="n">-do</span> <span class="s2">"do sim/scripts/run_sim.do"</span>
+</code></pre></div>
+<h3 id="q7-no-data">Q7 波形窗口中信号显示 "No Data"</h3>
+<p>在 <code>run -all</code> 之后才执行了 <code>add wave</code>。ModelSim 只绘制运行期间记录过的信号。
+使用 GUI 模式运行脚本（去掉 <code>-c</code>），脚本会在 run 之前自动执行 <code>log -r /*</code>。</p>
+<h3 id="q8-powershell-bash-simscriptsrun_simsh-vsim">Q8 PowerShell 中 <code>bash sim/scripts/run_sim.sh</code> 提示找不到 vsim</h3>
+<p>PowerShell 中的 <code>bash</code> 可能是 WSL 的 bash，看不到 Windows 版 ModelSim。
+改用 Git Bash，或直接使用 <code>.do</code> 方式（5.1 节）。</p>
+<h2 id="12">12. 延伸阅读</h2>
+<ul>
+<li><code>soc/rtl/axi/</code> —— AXI4 互联的完整实现（<code>axi_xbar</code>、<code>axi_demux</code>、<code>axi_mux</code>、<code>axi_adapter</code>）</li>
+<li><code>cpu_cv32e40p/rtl/</code> —— PULP 开源 RISC-V 核 CV32E40P 的完整源码。
+  注意它没有 cache，<code>cv32e40p_prefetch_buffer.sv</code> 中只有一个深度为 2 的 FIFO</li>
+<li><code>soc/rtl/debug/</code> —— 遵循 RISC-V Debug Spec 0.13.2 的调试模块</li>
+</ul>
 
 
 
@@ -557,7 +2272,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月19日 13:08:36 UTC">2026年9月19日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月19日 13:45:14 UTC">2026年9月19日</span>
   </span>
 
     
