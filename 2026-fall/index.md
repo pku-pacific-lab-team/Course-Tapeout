@@ -14,7 +14,7 @@
 | --- | --- | --- | --- |
 | [Lab 0](lab-0.md) | CLab setup & 先进 AI 工具使用 | 部分发布 | 不交报告 |
 | [Lab 1](lab-1.md) | AI 辅助的简单 NPU 设计 | 已发布 | 不交报告 |
-| [Lab 2](lab-2.md) | CPU 仿真 | 未发布 | 不交报告 |
+| [Lab 2](lab-2.md) | CPU 仿真 | 已发布 | 不交报告 |
 | [Lab 3](lab-3.md) | SoC 的集成与仿真 | 未发布 | 待定 |
 | [Lab 4](lab-4.md) | 逻辑综合 & 物理实现 | 未发布 | 待定 |
 | [Lab 5](lab-5.md) | Signoff & Tapeout | 未发布 | 待定 |
