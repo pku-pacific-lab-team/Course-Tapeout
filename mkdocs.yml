@@ -8,6 +8,7 @@ docs_dir: 2026-fall
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
   logo: assets/brand/pku_logo.png
   favicon: assets/brand/pku_logo_red.png
@@ -53,6 +54,9 @@ plugins:
       lang:
         - zh
         - en
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors
 
 extra_css:
   - assets/extra.css

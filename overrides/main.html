@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  {% if git_page_authors %}
+    <div class="md-source-date">
+      <small>本页作者：{{ git_page_authors }}</small>
+    </div>
+  {% endif %}
+{% endblock %}

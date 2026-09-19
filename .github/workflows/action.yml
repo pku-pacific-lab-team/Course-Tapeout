@@ -15,6 +15,10 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          # git-revision-date-localized 与 git-authors 需要完整提交历史，
+          # 默认的浅克隆会导致日期与作者读取失败。
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
