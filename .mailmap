@@ -1,0 +1,8 @@
+# 统一提交身份的显示名与邮箱。
+# 格式：<正确的名字> <正确的邮箱> <需要被映射的旧邮箱>
+#
+# 站点页脚由 mkdocs-git-authors 生成，会把作者邮箱渲染成公开的 mailto 链接，
+# 因此统一映射到 GitHub 提供的 noreply 地址，避免真实邮箱暴露在公网页面上。
+
+Zhuolin Li <146746781+Shadow-to-Light@users.noreply.github.com> <clement.zhuolin.li@gmail.com>
+Zhuolin Li <146746781+Shadow-to-Light@users.noreply.github.com> Zhuolin LI <146746781+Shadow-to-Light@users.noreply.github.com>
