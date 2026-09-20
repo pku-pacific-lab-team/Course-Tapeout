@@ -1657,6 +1657,8 @@
 <p>本 Lab 的电路非常简单（2 路 MAC + 一个 testbench），cc 几乎一发命中。但 Lab 1-6 的电路会越来越复杂，AI 一次写对的概率会降低。如果你不能充分理解 Verilog 所描述的电路，当 AI 给出的代码有问题时，你既看不出错在哪、也没法用人话告诉它怎么改，只能干瞪眼。本课程的主线仍然是教你“读懂电路”，AI 是放大器，不是替代品。</p>
 <h3 id="deepseek-v4">不喜欢 DeepSeek V4？换就行</h3>
 <p>如果你觉得 DeepSeek V4 不够好用，可以换其他模型。你需要购买对应平台的 API Key，并确认该平台提供 Anthropic 兼容接口。配置方式和 2.2 编辑 <code>settings.json</code> 一样，把 <code>ANTHROPIC_BASE_URL</code> / <code>ANTHROPIC_AUTH_TOKEN</code> / <code>ANTHROPIC_MODEL</code> 改成新平台对应值，同时同步修改示例中的其他模型映射字段和顶层 <code>model</code>，避免仍然指向旧模型。具体选哪家、各家性价比怎么样，本讲义不做推荐，自己探索。</p>
+<p>配置完成后，在 Claude Code 里可以随时用 <code>/model</code> 查看和切换当前使用的模型：</p>
+<p><img alt="使用 /model 切换模型的示例" src="../assets/images/lab-0-model-switch.png" /></p>
 <h3 id="codexchatgpt">也可以试试 Codex（ChatGPT 桌面版）</h3>
 <p>除了 Claude Code，OpenAI 的 Codex 也是同类 Agent 工具，内置在 ChatGPT 桌面客户端中。想体验的同学可以按下面步骤配置。</p>
 <div class="admonition note">
@@ -1711,7 +1713,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月19日 13:08:36 UTC">2026年9月19日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月20日 05:46:28 UTC">2026年9月20日</span>
   </span>
 
     
