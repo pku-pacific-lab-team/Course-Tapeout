@@ -466,6 +466,10 @@ gtkwave mac_array.vcd
 
 如果你觉得 DeepSeek V4 不够好用，可以换其他模型。你需要购买对应平台的 API Key，并确认该平台提供 Anthropic 兼容接口。配置方式和 2.2 编辑 `settings.json` 一样，把 `ANTHROPIC_BASE_URL` / `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_MODEL` 改成新平台对应值，同时同步修改示例中的其他模型映射字段和顶层 `model`，避免仍然指向旧模型。具体选哪家、各家性价比怎么样，本讲义不做推荐，自己探索。
 
+配置完成后，在 Claude Code 里可以随时用 `/model` 查看和切换当前使用的模型：
+
+![使用 /model 切换模型的示例](assets/images/lab-0-model-switch.png)
+
 ### 也可以试试 Codex（ChatGPT 桌面版）
 
 除了 Claude Code，OpenAI 的 Codex 也是同类 Agent 工具，内置在 ChatGPT 桌面客户端中。想体验的同学可以按下面步骤配置。
