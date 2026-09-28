@@ -365,6 +365,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -381,6 +399,412 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 实验目标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 实验环境
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 背景知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 背景知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-npu-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 加上 NPU 之后的 SoC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 MMIO：硬件就是一组地址
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 MMIO 地址表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-axi2mem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 axi2mem 对壳的时序约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-xbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 读懂 xbar 的配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 从广播到脉动阵列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-pass-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 PASS / FAIL 的判定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 仿真流程
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 实验任务
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 实验任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-0-npu-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 0 · 先跑一次，看看"没有 NPU"的 SoC 会怎样
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 · 把核改成脉动阵列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 · 写 MMIO 壳
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-npu-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 · 把 NPU 挂到 SoC 上
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-4-soc-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4 · SoC 级仿真：跑通三个测试，看清一次 MMIO 访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-5-c-npu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 5 · 不用 C，用汇编直接访问 NPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 推进顺序与分步自检
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 完成标志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 思考题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 思考题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-c-hex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 C 代码是怎么变成 hex 的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 硬件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-vlog-cannot-resolve-module-simple_npu_core-simple_npu_pe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 vlog 报 Cannot resolve module 'simple_npu_core' 或 'simple_npu_pe'
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-task-3-timeoutmagic_status-0x12345678" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 Task 3 做完一直 TIMEOUT，magic_status = 0x12345678
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-timeout-magic_status-0xxxxxxxxx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 TIMEOUT 时 magic_status = 0xxxxxxxxx
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-failhw-798" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q4 FAIL，hw 是一个奇怪的大数，比如 798
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q5 仿真特别慢 / 磁盘被占满
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q6 改了 RTL，结果没变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q7-vsim-could-not-find-my_soc_tb-database-error-unable-to-open-database-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q7 vsim 报 Could not find 'my_soc_tb'，前面有 DATABASE ERROR / unable to open database file
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 延伸阅读
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -514,6 +938,401 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 实验目标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 实验环境
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 背景知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 背景知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-npu-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 加上 NPU 之后的 SoC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 MMIO：硬件就是一组地址
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 MMIO 地址表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-axi2mem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 axi2mem 对壳的时序约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-xbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 读懂 xbar 的配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 从广播到脉动阵列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-pass-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 PASS / FAIL 的判定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 仿真流程
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 实验任务
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 实验任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-0-npu-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 0 · 先跑一次，看看"没有 NPU"的 SoC 会怎样
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 · 把核改成脉动阵列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 · 写 MMIO 壳
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-npu-soc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 · 把 NPU 挂到 SoC 上
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-4-soc-mmio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4 · SoC 级仿真：跑通三个测试，看清一次 MMIO 访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-5-c-npu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 5 · 不用 C，用汇编直接访问 NPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 推进顺序与分步自检
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 完成标志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 思考题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 思考题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-c-hex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 C 代码是怎么变成 hex 的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 硬件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-vlog-cannot-resolve-module-simple_npu_core-simple_npu_pe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 vlog 报 Cannot resolve module 'simple_npu_core' 或 'simple_npu_pe'
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-task-3-timeoutmagic_status-0x12345678" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 Task 3 做完一直 TIMEOUT，magic_status = 0x12345678
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-timeout-magic_status-0xxxxxxxxx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 TIMEOUT 时 magic_status = 0xxxxxxxxx
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-failhw-798" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q4 FAIL，hw 是一个奇怪的大数，比如 798
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q5 仿真特别慢 / 磁盘被占满
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q6 改了 RTL，结果没变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q7-vsim-could-not-find-my_soc_tb-database-error-unable-to-open-database-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q7 vsim 报 Could not find 'my_soc_tb'，前面有 DATABASE ERROR / unable to open database file
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 延伸阅读
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -531,10 +1350,1055 @@
 
 
 <h1 id="lab-3soc">Lab 3：SoC 的集成与仿真</h1>
-<div class="admonition note">
-<p class="admonition-title">尚未发布</p>
-<p>本次实验的具体要求尚未确定，确定后本页会更新为完整的实验说明。</p>
+<div class="admonition info">
+<p class="admonition-title">开始之前</p>
+<ul>
+<li><strong>主题</strong>：把自己的 NPU 以 MMIO 方式挂到 SoC 上，并做 SoC 级仿真</li>
+<li><strong>前置</strong>：<a href="../lab-1/">Lab 1</a>（<code>simple_npu_core</code>）、<a href="../lab-2/">Lab 2</a>（SoC 结构与 ModelSim 流程）</li>
+<li><strong>板卡</strong>：无（纯 ModelSim 仿真）</li>
+<li><strong>课时</strong>：2 次实验课</li>
+<li><strong>发布目录</strong>：<code>lab3-ST/SoC_cv32e40p/</code></li>
+<li><strong>完成标准</strong>：<code>lab3_test1/2/3.hex</code> 和 <code>lab3_hand.hex</code> 四个程序全部 PASS。<strong>本实验不需要提交任何材料</strong></li>
+</ul>
 </div>
+<h2 id="1">1. 实验目标</h2>
+<p>Lab 1 写的 <code>simple_npu_core</code> 是一个"核"：矩阵整个从端口进来，<code>start</code> 一拉就算，
+结果整个从端口出去。Lab 1 讲义里提过，真实芯片不会这样用它——加速器挂在总线上，
+CPU 跑程序，通过读写几个<strong>地址</strong>来喂数据、启动计算、取结果。</p>
+<p>Lab 2 你已经见过这条总线：CPU 通过 AXI xbar 访问 bootram 和主存。
+本实验要做的，就是在这条总线上再挂一个 slave——你的 NPU。</p>
+<p>具体来说：</p>
+<ol>
+<li>把 Lab 1 的核改成 <strong>4×4 输出驻留（output-stationary）脉动阵列</strong>，端口不变</li>
+<li>给它写一层 <strong>MMIO 壳</strong>：把 CPU 一个 word 一个 word 的读写，翻译成核的 <code>start / act / wgt / out</code></li>
+<li>修改 SoC 顶层，把 NPU 作为<strong>第 4 个 slave</strong> 接到 xbar 上</li>
+<li>用 C 程序和<strong>手写汇编</strong>两种方式驱动它，在 ModelSim 中完成 SoC 级仿真</li>
+</ol>
+<p>完成本实验后你将理解：</p>
+<ul>
+<li>MMIO（Memory-Mapped I/O）：硬件就是一组"地址"，软件用普通的 load / store 访问它</li>
+<li>怎样读懂、修改 xbar 的配置——master / slave 数量、地址映射</li>
+<li>从一条 C 语句到总线上的一次读写，中间经过了哪些环节</li>
+</ul>
+<h2 id="2">2. 实验环境</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仿真器</td>
+<td>ModelSim（同 <a href="../lab-2/">Lab 2 §2</a>）</td>
+</tr>
+<tr>
+<td>单元仿真</td>
+<td>Icarus Verilog（同 <a href="../lab-0/">Lab 0</a>），也可以用 ModelSim</td>
+</tr>
+<tr>
+<td>RISC-V 工具链</td>
+<td>不需要安装，测试程序已编译好</td>
+</tr>
+<tr>
+<td>发布代码</td>
+<td><code>lab3-ST/SoC_cv32e40p/</code></td>
+</tr>
+</tbody>
+</table>
+<p>发布目录结构：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SoC_cv32e40p/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── cpu_cv32e40p/                   CV32E40P CPU（不需修改）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── simple_npu/
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── rtl/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   │   └── simple_npu_top.sv       MMIO 壳骨架            &lt;- Task 2
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   └── tb/
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│       ├── tb_npu_check.sv         Lab 1 验收 tb（原样）   &lt;- Task 1 自检
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│       └── tb_simple_npu.sv        壳 + 核的单元 tb       &lt;- Task 2 自检
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>└── soc/
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    ├── rtl/
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    │   ├── my_soc_top.sv           SoC 顶层                &lt;- Task 3
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    │   ├── my_npu_subsystem.sv     NPU 子系统包装（已写好）
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    │   ├── include/my_soc_pkg.sv   地址空间常量            &lt;- Task 3
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    │   ├── axi/  mem/  debug/ ...  与 Lab 2 相同
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    └── sim/
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        ├── filelists/my_soc_tb.f   编译清单                &lt;- Task 3
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        ├── tb/
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        │   ├── my_soc_tb.sv        SoC 顶层 testbench
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        │   ├── lab3_test{1,2,3}.c  测试程序源码（只读）
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        │   ├── lab3_test{1,2,3}.hex 编译好的程序镜像
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        │   └── lab3_hand.hex       手写汇编示例            &lt;- Task 5
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        └── sw/                     反汇编、启动代码、链接脚本（思考题用）
+</code></pre></div>
+<p>你要写或改的文件：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>simple_npu/rtl/simple_npu_core.sv</code>、<code>simple_npu_pe.sv</code></td>
+<td>1（从你的 Lab 1 复制过来再改）</td>
+</tr>
+<tr>
+<td><code>simple_npu/rtl/simple_npu_top.sv</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>soc/rtl/my_soc_top.sv</code>、<code>soc/rtl/include/my_soc_pkg.sv</code>、<code>soc/sim/filelists/my_soc_tb.f</code></td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><code>soc/sim/tb/</code> 下的 testbench 和 <code>.c</code> / <code>.hex</code> 不要修改。</p>
+<div class="admonition note">
+<p class="admonition-title">和 Lab 2 包的区别</p>
+<p>本实验的 SoC 就是 Lab 2 修好之后的样子（filelist、bootram、axi2mem、sram_ff 都已完成），
+只是目录组织不同：仿真相关文件在 <code>soc/sim/</code> 下，而不是根目录的 <code>sim/</code>。
+另外本包没有 <code>run_sim</code> 脚本，仿真命令见第 4 节。</p>
+</div>
+<h2 id="3">3. 背景知识</h2>
+<p>Lab 2 §4 讲过的 AXI master / slave / xbar、axi2mem、同步读下一拍有效、启动流程、filelist，
+本节不再重复，需要时回去翻。下面只讲新东西。</p>
+<h3 id="31-npu-soc">3.1 加上 NPU 之后的 SoC</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>   ┌─────────────────────────┐                ┌─────────────────────────┐
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   │        CV32E40P         │                │      Debug Module       │
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   ├────────────┬────────────┤                ├─────────────────────────┤
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>   │   instr    │    data    │                │         master          │
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>   └─────┬──────┴──────┬─────┘                └────────────┬────────────┘
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>         │             │                                   │
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>     slave[0]      slave[1]                             slave[2]
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>         └─────────────┴──────────┬────────────────────────┘
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>                                  │
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>      ┌───────────────────────────┴──────────────────────────────┐
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>      │                         axi_xbar                         │
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>      └──────┬──────────────┬──────────────┬──────────────┬──────┘
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>         master[0]      master[1]      master[2]      master[3]   &lt;- 新增
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>             │              │              │              │
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>      ┌──────┴─────┐ ┌──────┴─────┐ ┌──────┴─────┐ ┌──────┴─────┐
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>      │  axi2mem   │ │  axi2mem   │ │  axi2mem   │ │  axi2mem   │
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>      │ i_axi2boot │ │ i_axi2sram │ │i_dm_axi2mem│ │ i_axi2npu  │
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>      └──────┬─────┘ └──────┬─────┘ └──────┬─────┘ └──────┬─────┘
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>             │              │              │              │
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>      ┌──────┴─────┐ ┌──────┴─────┐ ┌──────┴─────┐ ┌──────┴──────────┐
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>      │  bootram   │ │ my_mainmem │ │   dm_top   │ │my_npu_subsystem │
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>      │0x0001_0000 │ │0x8000_0000 │ │0x0000_0000 │ │   0x7000_0000   │
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>      └────────────┘ └────────────┘ └────────────┘ └──────┬──────────┘
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>                                                          │
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>                                                 ┌────────┴────────┐
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>                                                 │ simple_npu_top  │  壳（Task 2）
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>                                                 │ ┌─────────────┐ │
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>                                                 │ │simple_npu_  │ │  核（Task 1）
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>                                                 │ │   core      │ │
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>                                                 │ └─────────────┘ │
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>                                                 └─────────────────┘
+</code></pre></div>
+<p>和 Lab 2 的图相比只多了最右边一列：xbar 多一个 <code>master[3]</code> 端口，
+经过 <code>i_axi2npu</code> 转成类存储器信号，接到 <code>my_npu_subsystem</code>。
+<strong>在总线看来，NPU 就是一块"特殊的存储器"</strong>——它和主存用的是同一种 <code>axi2mem</code>，
+区别只在于往某些地址写数据会触发计算，从某些地址读出来的是计算结果。</p>
+<p><code>my_npu_subsystem.sv</code> 已经写好，它只做一件事：把 <code>axi2mem</code> 那一侧的
+<code>req / we / addr / wdata / rdata</code> 改名接到壳的 <code>ena / wea / addra / dina / douta</code> 上，
+其中 <code>addra = addr_i[13:2]</code>（字节地址转成 word 地址，只保留 12 位）。</p>
+<h3 id="32-mmio">3.2 MMIO：硬件就是一组地址</h3>
+<p>C 程序里访问 NPU 是这样写的（摘自 <code>soc/sim/tb/lab3_test1.c</code>）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#define NPU_BASE     0x70000000u</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#define NPU_CONTROL  (*(volatile uint32_t *)(NPU_BASE + 0x0000))</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#define NPU_STATUS   (*(volatile uint32_t *)(NPU_BASE + 0x0004))</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cp">#define NPU_ACT(i)   (*(volatile uint32_t *)(NPU_BASE + 0x0040 + 4*(i)))</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">NPU_ACT</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">                                </span><span class="c1">// 写</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">NPU_CONTROL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">                               </span><span class="c1">// 写 1 启动</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="n">NPU_STATUS</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">              </span><span class="c1">// 轮询直到 DONE</span>
+</code></pre></div>
+<p><code>NPU_ACT(5) = 7</code> 这一句，一路走下来是这样的：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>C 语句      NPU_ACT(5) = 7
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  │  编译
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  ▼
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>机器指令    sw  a2, 0(a5)            a5 = 0x7000_0054, a2 = 7
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  │  CPU 执行，数据口发出写请求
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  ▼
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>CPU 数据口  data_req=1  data_we=1  data_addr=0x7000_0054  data_wdata=7
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  │  axi_adapter 转成 AXI 写事务
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  ▼
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>xbar        查 addr_map：0x7000_0054 落在 NPU 区间 -&gt; 路由到 master[3]
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>  │
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  ▼
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>i_axi2npu   npu_req=1  npu_we=1  npu_addr=0x7000_0054  npu_wdata=7   （只持续 1 拍）
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  │  my_npu_subsystem：addra = addr[13:2]
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  ▼
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>壳          ena=1  wea=1  addra=21 (=16+5)  dina=7   -&gt;  act_reg[5] &lt;= 7
+</code></pre></div>
+<p>读也一样，只是方向反过来：壳在下一拍把数据放到 <code>douta</code> 上，沿原路返回 CPU。</p>
+<p><strong>关于 <code>volatile</code></strong>：对编译器来说，<code>*(uint32_t *)0x70000004</code> 只是一个普通内存地址。
+如果不加 <code>volatile</code>，编译器看到 <code>while ((NPU_STATUS &amp; 1) == 0)</code> 里反复读同一个地址、
+中间没有任何写，就有权只读一次、然后死循环；看到连续两次写同一个地址，
+也有权只保留最后一次。<code>volatile</code> 告诉编译器"这个地址的内容会在你不知道的时候变，
+每次读写都必须真的发出去"。MMIO 寄存器必须用 <code>volatile</code> 访问。</p>
+<h3 id="33-mmio">3.3 MMIO 地址表</h3>
+<p><strong>这张表是冻结的</strong>：测试程序已经按它编译成 hex，壳必须严格遵守。</p>
+<table>
+<thead>
+<tr>
+<th>寄存器</th>
+<th>字节地址</th>
+<th>壳看到的 <code>addra</code></th>
+<th>读 / 写</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CONTROL</code></td>
+<td><code>0x7000_0000</code></td>
+<td><code>0</code></td>
+<td>写</td>
+<td>写入 bit[0] = 1 时启动一次计算；读返回 0</td>
+</tr>
+<tr>
+<td><code>STATUS</code></td>
+<td><code>0x7000_0004</code></td>
+<td><code>1</code></td>
+<td>读</td>
+<td>bit[0] = DONE</td>
+</tr>
+<tr>
+<td><code>ACT[k]</code></td>
+<td><code>0x7000_0040 + 4k</code></td>
+<td><code>16 + k</code></td>
+<td>读写</td>
+<td>矩阵 A，<code>ACT[j*4+i] = A[i][j]</code>，低 4 位有效</td>
+</tr>
+<tr>
+<td><code>WGT[k]</code></td>
+<td><code>0x7000_1000 + 4k</code></td>
+<td><code>1024 + k</code></td>
+<td>读写</td>
+<td>矩阵 B，<code>WGT[j*4+i] = B[i][j]</code>，低 4 位有效</td>
+</tr>
+<tr>
+<td><code>OUT[k]</code></td>
+<td><code>0x7000_2000 + 4k</code></td>
+<td><code>2048 + k</code></td>
+<td>读</td>
+<td>矩阵 C，<code>OUT[j*4+i] = C[i][j]</code>，低 10 位有效</td>
+</tr>
+</tbody>
+</table>
+<p>k ∈ [0, 15]。打包规则和 Lab 1 完全一样（列优先），所以 <code>ACT[k]</code> 就对应核的 <code>act[k]</code>，
+<code>OUT[k]</code> 就对应核的 <code>out[k]</code>，壳里不需要做任何下标变换。</p>
+<p>没列在表里的地址：读返回 0，写忽略。</p>
+<h3 id="34-axi2mem">3.4 axi2mem 对壳的时序约束</h3>
+<p>壳的端口就是 Lab 2 §4.3 那组类存储器信号（只是改了名字），所以它必须遵守和
+<code>sram_ff</code> 一样的契约，外加两条 MMIO 特有的：</p>
+<table>
+<thead>
+<tr>
+<th>端口</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clka</code> / <code>rst_ni</code></td>
+<td>时钟 / 异步低有效复位</td>
+</tr>
+<tr>
+<td><code>ena</code></td>
+<td>本拍有访问（= axi2mem 的 <code>req_o</code>）</td>
+</tr>
+<tr>
+<td><code>wea</code></td>
+<td>1 = 写，0 = 读</td>
+</tr>
+<tr>
+<td><code>addra[11:0]</code></td>
+<td>word 地址</td>
+</tr>
+<tr>
+<td><code>dina[31:0]</code></td>
+<td>写数据</td>
+</tr>
+<tr>
+<td><code>douta[31:0]</code></td>
+<td>读数据，<strong>请求后下一拍有效</strong></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>读数据下一拍有效</strong>。和 Lab 2 的 <code>sram_ff</code> 完全一样：请求在 cycle T，
+   <code>douta</code> 在 T+1 给出。做法是先组合选出要读的数，再打一拍寄存器。</li>
+<li><strong>写只看 <code>ena &amp;&amp; wea</code> 的那一拍</strong>。<code>ena = 0</code> 时 <code>dina</code> 上可能是任意值，
+   所以所有写操作都要用 <code>ena &amp;&amp; wea</code> 门控。</li>
+<li><strong>一次写就是一拍</strong>。CPU 写一次 <code>CONTROL</code>，壳只会看到一拍 <code>ena &amp;&amp; wea</code>，
+   所以 <code>ena &amp;&amp; wea &amp;&amp; (addra == 0) &amp;&amp; dina[0]</code> 天然就是一个单拍脉冲，
+   可以直接接到核的 <code>start</code> 上。</li>
+<li><strong>读不要有副作用</strong>。<code>axi2mem</code> 在 READ 状态下只要总线侧还没接收数据（<code>r_ready = 0</code>），
+   就会保持 <code>req_o = 1</code>、地址不变（见 <code>soc/rtl/axi/axi2mem.sv</code> 第 175~187 行），
+   也就是说<strong>同一次读，壳可能看到不止一拍请求</strong>。如果"读 STATUS"会改变壳的状态
+   （例如读一次就把 DONE 清掉），那么一次读就可能被当成两次。
+   在本实验的 SoC 里 CPU 总是立刻接收读数据，实测不会出现重复的读请求；
+   但壳不应该依赖"上游恰好很快"这种前提。
+   Lab 1 的核 <code>done</code> 是 sticky 的（保持到下次 <code>start</code>），STATUS 直接接它就没有这个问题。</li>
+</ol>
+<h3 id="35-xbar">3.5 读懂 xbar 的配置</h3>
+<p><code>my_soc_top.sv</code> 开头这一段决定了"总线上有几个 master、几个 slave、每个 slave 占哪段地址"。
+Task 3 要改的就是这里，先逐项看懂：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">AXI_BUS</span><span class="w"> </span><span class="p">#(.</span><span class="n">AXI_ADDR_WIDTH</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">AXI_DATA_WIDTH</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">          </span><span class="p">.</span><span class="n">AXI_ID_WIDTH</span><span class="w">  </span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w">  </span><span class="p">.</span><span class="n">AXI_USER_WIDTH</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="n">slave</span><span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="mi">0</span><span class="p">]();</span><span class="w">   </span><span class="c1">// (1)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">AXI_BUS</span><span class="w"> </span><span class="p">#(.</span><span class="n">AXI_ADDR_WIDTH</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">AXI_DATA_WIDTH</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">          </span><span class="p">.</span><span class="n">AXI_ID_WIDTH</span><span class="w">  </span><span class="p">(</span><span class="mi">4</span><span class="p">),</span><span class="w">  </span><span class="p">.</span><span class="n">AXI_USER_WIDTH</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="n">master</span><span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="mi">0</span><span class="p">]();</span><span class="w">  </span><span class="c1">// (2)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">localparam</span><span class="w"> </span><span class="n">axi_pkg</span><span class="o">::</span><span class="n">xbar_cfg_t</span><span class="w"> </span><span class="n">AXI_XBAR_CFG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">'{</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="nl">NoSlvPorts:</span><span class="w">         </span><span class="mi">3</span><span class="p">,</span><span class="w">      </span><span class="c1">// (3)</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="nl">NoMstPorts:</span><span class="w">         </span><span class="mi">3</span><span class="p">,</span><span class="w">      </span><span class="c1">// (4)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="p">...</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="nl">AxiIdWidthSlvPorts:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">      </span><span class="c1">// (5)</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="p">...</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="nl">NoAddrRules:</span><span class="w">        </span><span class="mi">3</span><span class="w">       </span><span class="c1">// (6)</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="p">};</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">axi_pkg</span><span class="o">::</span><span class="n">xbar_rule_32_t</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">addr_map</span><span class="p">;</span><span class="w">                             </span><span class="c1">// (7)</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="k">localparam</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">IDX_BOOT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="k">localparam</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">IDX_SRAM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="k">localparam</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">IDX_DM</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="k">assign</span><span class="w"> </span><span class="n">addr_map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">'{</span><span class="w">                                                </span><span class="c1">// (8)</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">    </span><span class="p">'{</span><span class="w"> </span><span class="nl">idx:</span><span class="w"> </span><span class="n">IDX_BOOT</span><span class="p">,</span><span class="w"> </span><span class="nl">start_addr:</span><span class="w"> </span><span class="n">BOOT_BASE</span><span class="p">,</span><span class="w"> </span><span class="nl">end_addr:</span><span class="w"> </span><span class="n">BOOT_BASE</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">BOOT_LENGTH</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">    </span><span class="p">'{</span><span class="w"> </span><span class="nl">idx:</span><span class="w"> </span><span class="n">IDX_SRAM</span><span class="p">,</span><span class="w"> </span><span class="nl">start_addr:</span><span class="w"> </span><span class="n">SRAM_BASE</span><span class="p">,</span><span class="w"> </span><span class="nl">end_addr:</span><span class="w"> </span><span class="n">SRAM_BASE</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">SRAM_LENGTH</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">    </span><span class="p">'{</span><span class="w"> </span><span class="nl">idx:</span><span class="w"> </span><span class="n">IDX_DM</span><span class="p">,</span><span class="w">   </span><span class="nl">start_addr:</span><span class="w"> </span><span class="n">DM_BASE</span><span class="p">,</span><span class="w">   </span><span class="nl">end_addr:</span><span class="w"> </span><span class="n">DM_BASE</span><span class="w">   </span><span class="o">+</span><span class="w"> </span><span class="n">DM_LENGTH</span><span class="w">   </span><span class="p">}</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="p">};</span>
+</code></pre></div>
+<ul>
+<li><strong>(1)(2)(3)(4)</strong> 命名方向在 Lab 2 §4.2 讲过：名字是站在 xbar 自己的角度起的。
+  <code>slave[]</code> 是 xbar 的"从端口"，接的是真正的 master（CPU 取指、CPU 访存、debug），
+  所以 <code>NoSlvPorts</code> = <strong>master 的个数</strong> = 3；
+  <code>master[]</code> 是 xbar 的"主端口"，接的是真正的 slave（bootram、主存、debug），
+  所以 <code>NoMstPorts</code> = <strong>slave 的个数</strong>。<code>master[]</code> 数组的大小必须和 <code>NoMstPorts</code> 一致。</li>
+<li><strong>(5) 为什么 <code>slave[]</code> 的 ID 是 2 位，<code>master[]</code> 的 ID 是 4 位？</strong>
+  3 个 master 各自发出的请求带 2 位 ID。经过 xbar 之后，同一个 slave 可能同时收到来自
+  不同 master 的请求，slave 回响应时 xbar 必须知道"这个响应该还给谁"。
+  所以 xbar 在 ID 前面拼上了来源端口号：3 个端口需要 <code>$clog2(3) = 2</code> 位，
+  2 + 2 = 4（见 <code>soc/rtl/axi/axi_xbar.sv</code> 第 257 行
+  <code>AxiIdWidthMstPorts = AxiIdWidthSlvPorts + $clog2(NoSlvPorts)</code>）。
+  <strong>加 slave 不影响 ID 位宽</strong>，加 master 才会。</li>
+<li><strong>(6)(7)(8)</strong> 地址映射规则。每条规则写明"哪个编号的 slave、起始地址、结束地址"。
+  <code>NoAddrRules</code> 是规则条数，<code>addr_map</code> 数组大小要和它一致。
+  注意 <strong><code>end_addr</code> 不包含在范围内</strong>（<code>soc/rtl/axi/addr_decode.sv</code> 第 92 行：
+  <code>addr &gt;= start_addr &amp;&amp; addr &lt; end_addr</code>），所以写成 <code>BASE + LENGTH</code> 正好。</li>
+<li>地址常量 <code>BOOT_BASE</code> 等定义在 <code>soc/rtl/include/my_soc_pkg.sv</code>。</li>
+<li><strong>落在所有规则之外的访问</strong>会被 xbar 交给内部的 <code>axi_err_slv</code>，
+  它对读请求返回固定的数据 <code>0xBADCAB1E</code>（"bad cable"）。
+  在波形或寄存器里看到这个数，基本可以断定"这个地址没有映射到任何 slave"。</li>
+</ul>
+<h3 id="36">3.6 从广播到脉动阵列</h3>
+<p>Lab 1 的核在第 k 拍把 A 的第 k 列<strong>广播</strong>给 4 行 PE、把 B 的第 k 行广播给 4 列 PE：
+一根 <code>A[i][k]</code> 的线要同时拉到同一行的 4 个 PE。4×4 的时候没问题，
+阵列一大，这些长线和大扇出就会成为时序瓶颈。</p>
+<p><strong>脉动阵列（systolic array）</strong> 的思路是：每个 PE 只和<strong>相邻</strong>的 PE 交换数据。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>            b 从上往下流（每经过一个 PE 延迟 1 拍）
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>               ↓          ↓          ↓          ↓
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a> a 从左   → [PE00] → [PE01] → [PE02] → [PE03]
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a> 往右流   → [PE10] → [PE11] → [PE12] → [PE13]
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>          → [PE20] → [PE21] → [PE22] → [PE23]
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>          → [PE30] → [PE31] → [PE32] → [PE33]
+</code></pre></div>
+<ul>
+<li>每个 PE 仍然锁定一个 <code>C[i][j]</code>，仍然是 <code>acc &lt;= acc + a*b</code>（<strong>输出驻留</strong>不变）</li>
+<li>多出来的是两个<strong>传递寄存器</strong>：把这一拍收到的 <code>a</code> 打一拍交给右边，把 <code>b</code> 打一拍交给下边</li>
+<li>A 的第 i 行只从最左边送进第 i 行；B 的第 j 列只从最上边送进第 j 列</li>
+</ul>
+<p>问题来了：<code>A[i][k]</code> 从左边进来，要走 j 拍才到 <code>PE[i][j]</code>；<code>B[k][j]</code> 从上边进来，
+要走 i 拍才到。为了让同一个 k 的一对数据<strong>同时</strong>到达 <code>PE[i][j]</code>，
+边沿输入要做<strong>斜排（skew）</strong>：第 i 行比第 0 行晚 i 拍开始送，第 j 列比第 0 列晚 j 拍开始送。</p>
+<p>按这个规则，RUN 的第 t 拍（从 0 数）：</p>
+<table>
+<thead>
+<tr>
+<th>边沿</th>
+<th>第 t 拍送入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第 i 行左边</td>
+<td><code>A[i][t-i]</code>，当 <code>0 ≤ t-i ≤ 3</code>；否则送 0</td>
+</tr>
+<tr>
+<td>第 j 列上边</td>
+<td><code>B[t-j][j]</code>，当 <code>0 ≤ t-j ≤ 3</code>；否则送 0</td>
+</tr>
+</tbody>
+</table>
+<p>于是 <code>PE[i][j]</code> 在第 <strong>t = i + j + k</strong> 拍同时拿到 <code>A[i][k]</code> 和 <code>B[k][j]</code>。例如：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>k=0</th>
+<th>k=1</th>
+<th>k=2</th>
+<th>k=3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PE[0][0]</code> 在第几拍累加</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>PE[1][2]</code> 在第几拍累加</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>PE[3][3]</code> 在第几拍累加</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<p>最后一个 PE 在第 9 拍才做完最后一次累加，所以 <strong>RUN 要持续 3N-2 = 10 拍</strong>，而不是 4 拍。
+在波形上，16 个 PE 的 <code>acc</code> 会像一道"对角线波前"一样从左上角推到右下角。</p>
+<p>除了 RUN 变长，其他规格<strong>全部照搬 Lab 1</strong>：<code>done</code> sticky、结果驻留在 PE 里、
+连续多次运行不复位、<code>start</code> 进来时清掉累加器。端口签名一个字都不改，
+所以 Lab 1 的 <code>tb_npu_check.sv</code> 可以原样拿来验收。</p>
+<div class="admonition tip">
+<p class="admonition-title">送 0 为什么就行</p>
+<p>斜排窗口外送的是 0，0 乘任何数都是 0，加进 <code>acc</code> 不影响结果。
+所以你不需要让每个 PE 知道"现在该不该累加"——整个 RUN 期间 16 个 PE 都开着 <code>en</code>，
+该算的时候拿到的是真数据，不该算的时候拿到的是 0。</p>
+</div>
+<h3 id="37-pass-fail">3.7 PASS / FAIL 的判定</h3>
+<p>Lab 2 的 tb 是<strong>监听主存写端口</strong>，看到 magic 值被写进主存就判定结果，
+因为 magic 变量的地址由链接器分配，每次编译都可能变。</p>
+<p>本实验的测试程序换了一种做法：把结果写到<strong>固定地址</strong> <code>0x8000_1FE0</code> 开始的一小块区域
+（主存的最顶端，链接脚本 <code>soc/sim/sw/linker.ld</code> 把栈顶放在它下面，保证不会被栈踩到）：</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0x8000_1FE0</code></td>
+<td><code>magic_status</code>：<code>0x12345678</code> 运行中，<code>0xC0DEC0DE</code> PASS，<code>0xDEADBEEF</code> FAIL</td>
+</tr>
+<tr>
+<td><code>0x8000_1FE4</code></td>
+<td>出错时的行号 i</td>
+</tr>
+<tr>
+<td><code>0x8000_1FE8</code></td>
+<td>出错时的列号 j</td>
+</tr>
+<tr>
+<td><code>0x8000_1FEC</code></td>
+<td>NPU 读出的值</td>
+</tr>
+<tr>
+<td><code>0x8000_1FF0</code></td>
+<td>软件算出的参考值</td>
+</tr>
+<tr>
+<td><code>0x8000_1FF4</code></td>
+<td>第几组测试出的错（test2 / test3）</td>
+</tr>
+</tbody>
+</table>
+<p><code>soc/sim/tb/my_soc_tb.sv</code> 每拍直接读主存数组的这几个位置，看到 PASS / FAIL 就结束仿真，
+跑满 100 万拍还没结果就报 TIMEOUT。两种做法的优劣见思考题。</p>
+<h2 id="4">4. 仿真流程</h2>
+<p>和 <a href="../lab-2/">Lab 2 §5.4 手动分步执行</a> 相同，只是路径换成 <code>soc/sim/...</code>。
+在 <code>SoC_cv32e40p/</code> 目录下打开 ModelSim（GUI 或 <code>vsim -c</code> 都可以），在 Transcript 里输入：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">vlib</span><span class="w"> </span>work
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">vmap</span><span class="w"> </span>work<span class="w"> </span>work
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">file</span><span class="w"> </span>mkdir<span class="w"> </span>soc<span class="o">/</span>sim<span class="o">/</span>out
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nv">vlog</span><span class="w"> </span><span class="o">-</span>sv<span class="w"> </span><span class="o">-</span>f<span class="w"> </span>soc<span class="o">/</span>sim<span class="o">/</span>filelists<span class="o">/</span>my_soc_tb.f
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nv">vsim</span><span class="w"> </span><span class="o">-</span>suppress<span class="w"> </span><span class="mi">12110</span><span class="w"> </span><span class="o">-</span>novopt<span class="w"> </span>work.my_soc_tb
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nv">run</span><span class="w"> </span><span class="o">-</span>all
+</code></pre></div>
+<p><strong>切换测试程序</strong>：主存加载哪个 hex 由 <code>soc/rtl/mem/my_mainmem.sv</code> 的 <code>INIT_FILE</code> 参数决定，
+默认是 <code>soc/sim/tb/lab3_test1.hex</code>。不用改文件，在 <code>vsim</code> 时用 <code>-G</code> 覆盖即可：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">quit</span><span class="w"> </span><span class="o">-</span>sim
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">vsim</span><span class="w"> </span><span class="o">-</span>suppress<span class="w"> </span><span class="mi">12110</span><span class="w"> </span><span class="o">-</span>novopt<span class="w"> </span><span class="o">-</span>GINIT_FILE<span class="err">=</span>soc<span class="o">/</span>sim<span class="o">/</span>tb<span class="o">/</span>lab3_test2.hex<span class="w"> </span>work.my_soc_tb
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">run</span><span class="w"> </span><span class="o">-</span>all
+</code></pre></div>
+<p>只改了某个 RTL 文件时，<code>quit -sim</code> 后单独 <code>vlog -sv &lt;那个文件&gt;</code> 再 <code>vsim</code> 即可，不用全部重编。</p>
+<div class="admonition warning">
+<p class="admonition-title">关于波形文件</p>
+<p><code>my_soc_tb.sv</code> 每次都会把全部信号写进 <code>soc/sim/out/my_soc_tb.vcd</code>。实测一次 test1（约 7 千拍）
+就有 150 MB 左右，每 2 万拍约 360 MB。<strong>TIMEOUT 要跑满 100 万拍，VCD 会有十几 GB</strong>，
+又慢又占磁盘。所以：</p>
+<ul>
+<li>预期会 TIMEOUT、或者正在调试的时候，<strong>不要用 <code>run -all</code></strong>，用 <code>run 200us</code>（约 2 万拍）
+  就足够看清发生了什么</li>
+<li>如果你觉得太慢，尝试学习 Lab 2 的 <code>sim/tb/my_soc_tb.sv</code> 是怎么把 VCD 导出变成可选的
+  （提示：<code>$test$plusargs</code>），然后自己改 tb 里那两行 <code>$dumpfile / $dumpvars</code>。
+  这两行之外的判定逻辑不要动</li>
+<li>ModelSim GUI 看波形用的是它自己的 WLF，不依赖这个 VCD</li>
+</ul>
+</div>
+<p><strong>层次路径</strong>：本实验常用的几个观察点。</p>
+<table>
+<thead>
+<tr>
+<th>想看什么</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU 数据口</td>
+<td><code>/my_soc_tb/dut/data_req</code>、<code>data_we</code>、<code>data_addr</code>、<code>data_wdata</code>、<code>data_rdata</code></td>
+</tr>
+<tr>
+<td>CPU 取指</td>
+<td><code>/my_soc_tb/dut/instr_addr</code>、<code>instr_rdata</code></td>
+</tr>
+<tr>
+<td>xbar 通往 NPU 的 AXI</td>
+<td><code>/my_soc_tb/dut/master[3]/aw_addr</code>、<code>aw_valid</code>、<code>ar_addr</code>、<code>ar_valid</code>、<code>r_data</code>…</td>
+</tr>
+<tr>
+<td>axi2mem 之后</td>
+<td><code>/my_soc_tb/dut/npu_req</code>、<code>npu_we</code>、<code>npu_addr</code>、<code>npu_wdata</code>、<code>npu_rdata</code>（Task 3 你自己声明的名字）</td>
+</tr>
+<tr>
+<td>壳内部</td>
+<td><code>/my_soc_tb/dut/i_npu_subsystem/i_npu_core/...</code></td>
+</tr>
+<tr>
+<td>CPU 寄存器堆</td>
+<td><code>/my_soc_tb/dut/i_cpu/core_i/id_stage_i/register_file_i/mem</code>（<code>mem[5]</code> 是 t0，<code>mem[28]</code> 是 t3……）</td>
+</tr>
+<tr>
+<td>magic 区域</td>
+<td><code>/my_soc_tb/magic_status</code>、<code>magic_fail_i</code>、<code>magic_fail_j</code>、<code>magic_hw</code>、<code>magic_ref</code></td>
+</tr>
+</tbody>
+</table>
+<p>查看主存内容（看 hex 有没有加载进去）的方法和 Lab 2 Task 4 自检里一样：
+<code>View → Memory List</code>，双击 <code>/my_soc_tb/dut/i_mainmem/i_mainmem/memory</code>。</p>
+<p><img alt="打开 Memory List" src="../assets/images/lab-3-viewmemory.png" /></p>
+<p><img alt="选择 memory" src="../assets/images/lab-3-choosememory.png" /></p>
+<p><img alt="对照 hex 文件" src="../assets/images/lab-3-comparememorywithhex.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">关于这三张图</p>
+<p>截图来自旧版实验，文件名写的是 <code>lab4_test</code>，本实验已改名为 <code>lab3_test</code>，
+其余层次路径和操作完全一致。图里 Memory List 中 NPU 内部数组的名字取决于你自己的实现。</p>
+</div>
+<h2 id="5">5. 实验任务</h2>
+<h3 id="task-0-npu-soc">Task 0 · 先跑一次，看看"没有 NPU"的 SoC 会怎样</h3>
+<p><strong>要求</strong>：不改任何文件，按第 4 节编译运行 test1，但用 <code>run 200us</code> 代替 <code>run -all</code>。</p>
+<p><strong>你会看到</strong>：只打印了一行 <code>reset released</code>，之后没有 PASS 也没有 FAIL，程序没跑完。</p>
+<p><strong>去波形里找原因</strong>：加上 CPU 数据口的信号</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_req<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_we<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_addr<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_wdata<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_rdata
+</code></pre></div>
+<p>（GUI 模式下需要在 <code>run</code> 之前先 <code>log -r /*</code>，否则事后加的信号是 "No Data"，同 Lab 2 §5.2。）</p>
+<p>你应该能看到：</p>
+<ol>
+<li>CPU 先对 <code>0x7000_0040</code>、<code>0x7000_1000</code>…… 发了一串写（在装载 ACT / WGT），
+   又对 <code>0x7000_0000</code> 写了 1（START）</li>
+<li>然后反复读 <code>0x7000_0004</code>（轮询 STATUS），每次读回来的都是 <strong><code>0xBADCAB1E</code></strong></li>
+<li><code>0xBADCAB1E</code> 的 bit[0] 是 0，程序认为"还没算完"，永远轮询下去</li>
+</ol>
+<p>这正是 §3.5 最后一条：<code>0x7000_xxxx</code> 不在 xbar 的任何一条地址规则里，
+所有访问都被 <code>axi_err_slv</code> 接走了——写被默默丢掉，读返回 <code>0xBADCAB1E</code>。
+接下来的三个 Task 就是让这些访问真正落到你的 NPU 上。</p>
+<h3 id="task-1">Task 1 · 把核改成脉动阵列</h3>
+<p><strong>位置</strong>：<code>simple_npu/rtl/simple_npu_core.sv</code>、<code>simple_npu/rtl/simple_npu_pe.sv</code>
+（先把你 Lab 1 做好的这两个文件复制进来）</p>
+<p><strong>要求</strong>：按 §3.6 改成 4×4 输出驻留脉动阵列。</p>
+<ul>
+<li><code>simple_npu_core</code> 的模块名和 7 个端口<strong>一个字都不改</strong></li>
+<li>PE 的端口随你改（增加 <code>a_o / b_o</code> 之类的传递输出）</li>
+<li>RUN 持续 10 拍；<code>done</code> sticky；<code>start</code> 时清累加器；RUN 期间的 <code>start</code> 忽略</li>
+</ul>
+<p><strong>自检</strong>：用 Lab 1 的验收 tb 原样跑（在 <code>SoC_cv32e40p/</code> 目录下）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>iverilog<span class="w"> </span>-g2012<span class="w"> </span>-s<span class="w"> </span>tb_npu_check<span class="w"> </span>-o<span class="w"> </span>check.vvp<span class="w"> </span>simple_npu/rtl/simple_npu_pe.sv<span class="w"> </span>simple_npu/rtl/simple_npu_core.sv<span class="w"> </span>simple_npu/tb/tb_npu_check.sv
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>vvp<span class="w"> </span>check.vvp
+</code></pre></div>
+<p>全部通过时的参考输出：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>[CHECK] TEST1 PASS  (20 cycles)
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>[CHECK] TEST2 PASS  (40 cycles)
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>[CHECK] TEST3 PASS  (60 cycles)
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>[CHECK] ALL PASS  (total 126 cycles)
+</code></pre></div>
+<p>对照 Lab 1 的 14 / 28 / 42：每次 GEMM 多了 6 拍，正好是 RUN 从 4 拍变成 10 拍。
+<strong>如果你的数字还是 14 / 28 / 42，说明你交上来的还是广播版。</strong>
+每次 GEMM 差 1~2 拍是正常的（例如 <code>start</code> 先寄存一拍再用）。</p>
+<p><strong>打开 <code>npu_check.vcd</code> 看一眼对角波前</strong>：把 <code>PE[0][0]</code>、<code>PE[1][2]</code>、<code>PE[3][3]</code> 的 <code>acc</code>
+加进波形，设成无符号十进制，对照 §3.6 的表，看它们分别在 RUN 的第几拍开始变、第几拍停。</p>
+<p><strong>常见错误</strong>（下表每一行都是在参考实现上人工注入 bug 实测出来的）：</p>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>最可能的原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14 / 28 / 42 拍，ALL PASS</td>
+<td>还是广播版，没改成脉动</td>
+</tr>
+<tr>
+<td>TEST1 就 MISMATCH，只有 <code>C[0][0]</code> 一定对，其余大多不对</td>
+<td><strong>没有斜排</strong>：所有行 / 列在同一拍开始送。只有 <code>PE[0][0]</code> 两个方向都不需要走路，所以只有它对</td>
+</tr>
+<tr>
+<td>TEST1 MISMATCH，越靠右下角越错，<code>C[3][x]</code>、<code>C[x][3]</code> 读出 0 或偏小</td>
+<td><strong>RUN 太短</strong>（例如还是 4 拍），数据还没流到右下角就停了</td>
+</tr>
+<tr>
+<td><strong>只有 <code>C[3][3]</code> 不对</strong>，而且偏小</td>
+<td><strong>RUN 少了 1 拍</strong>（9 拍），最后一次累加没做</td>
+</tr>
+<tr>
+<td><code>C[i][j]</code> 读出来是 <code>C[j][i]</code> 的值</td>
+<td><code>acc</code> 接到 <code>out</code> 时 i / j 反了，应为 <code>out[j*4+i]</code>（同 Lab 1）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="task-2-mmio">Task 2 · 写 MMIO 壳</h3>
+<p><strong>位置</strong>：<code>simple_npu/rtl/simple_npu_top.sv</code>（骨架已给出端口和地址常量）</p>
+<p><strong>要求</strong>：在 <code>// NEED TO BE DONE</code> 处实现，端口签名不改。壳里至少要有：</p>
+<ol>
+<li><strong>地址译码</strong>：根据 <code>addra</code> 判断这次访问落在 §3.3 表里的哪个寄存器</li>
+<li><strong>ACT / WGT 寄存器组</strong>：<code>ena &amp;&amp; wea</code> 且命中 ACT 区时，把 <code>dina[3:0]</code> 写进对应槽位，WGT 同理。
+   建议直接声明成 packed 数组 <code>logic [15:0][3:0] act_reg;</code>，可以原样接到核的 <code>act</code> 端口</li>
+<li><strong>START</strong>：<code>ena &amp;&amp; wea</code> 且写 CONTROL、<code>dina[0] == 1</code> 时，产生一拍 <code>start</code> 给核</li>
+<li><strong>例化 <code>simple_npu_core</code></strong></li>
+<li><strong>读路径</strong>：<code>ena &amp;&amp; !wea</code> 时，按地址选出 STATUS（<code>{31'b0, done}</code>）、ACT、WGT、OUT
+   （<code>{22'b0, out[k]}</code>）之一；其余地址返回 0。<strong>选出来之后打一拍再送到 <code>douta</code></strong>（§3.4 第 1 条）</li>
+</ol>
+<p><strong>自检</strong>：助教提供的单元 tb 按 <code>axi2mem</code> 的时序驱动壳的端口，跑 3 组数据：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>iverilog<span class="w"> </span>-g2012<span class="w"> </span>-s<span class="w"> </span>tb_simple_npu<span class="w"> </span>-o<span class="w"> </span>npu.vvp<span class="w"> </span>simple_npu/rtl/simple_npu_pe.sv<span class="w"> </span>simple_npu/rtl/simple_npu_core.sv<span class="w"> </span>simple_npu/rtl/simple_npu_top.sv<span class="w"> </span>simple_npu/tb/tb_simple_npu.sv
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>vvp<span class="w"> </span>npu.vvp
+</code></pre></div>
+<p>看到 <code>[TB] ALL PASS</code> 即完成。文件名以你自己的为准。</p>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>最可能的原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CASE0 FAIL: timeout waiting DONE</code>，所有 OUT 读出 0</td>
+<td>读路径没打拍（写成了组合的 <code>assign douta = ...</code>）。tb 在下一拍才采样，那时 <code>ena</code> 已经是 0，组合逻辑选出来的是 0</td>
+</tr>
+<tr>
+<td>DONE 能等到，但 OUT 全是 0</td>
+<td>ACT / WGT 没写进去：检查写使能是不是用了 <code>ena &amp;&amp; wea</code>、地址区间对不对</td>
+</tr>
+<tr>
+<td>第一组对，后面的组不对</td>
+<td>核的累加器没在 <code>start</code> 时清零（回 Task 1），或者 <code>start</code> 不是单拍</td>
+</tr>
+</tbody>
+</table>
+<h3 id="task-3-npu-soc">Task 3 · 把 NPU 挂到 SoC 上</h3>
+<p><strong>位置</strong>：<code>soc/rtl/my_soc_top.sv</code>、<code>soc/rtl/include/my_soc_pkg.sv</code>、<code>soc/sim/filelists/my_soc_tb.f</code></p>
+<p><strong>要求</strong>：让 xbar 多一个 slave，地址 <code>0x7000_0000 ~ 0x7FFF_FFFF</code>，经过一个新的 <code>axi2mem</code>
+接到 <code>my_npu_subsystem</code>。<code>my_soc_top.sv</code> 末尾留了一段 <code>TODO (Lab3 Task 3)</code> 注释标出位置，
+但<strong>要改的地方不止那一处</strong>。按 §3.5 逐项检查，一共 7 处：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>文件</th>
+<th>改什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>my_soc_pkg.sv</code></td>
+<td>新增 <code>NPU_BASE = 32'h7000_0000</code>、<code>NPU_LENGTH = 32'h1000_0000</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>my_soc_top.sv</code></td>
+<td><code>master[2:0]</code> → <code>master[3:0]</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>my_soc_top.sv</code></td>
+<td><code>NoMstPorts: 3</code> → <code>4</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>my_soc_top.sv</code></td>
+<td><code>NoAddrRules: 3</code> → <code>4</code>，<code>addr_map</code> 数组 <code>[2:0]</code> → <code>[3:0]</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>my_soc_top.sv</code></td>
+<td>新增 <code>IDX_NPU = 3</code>，<code>addr_map</code> 里加第 4 条规则</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>my_soc_top.sv</code></td>
+<td>声明 <code>npu_req / npu_we / npu_addr / npu_wdata / npu_rdata</code>，例化 <code>axi2mem i_axi2npu</code> 和 <code>my_npu_subsystem i_npu_subsystem</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>my_soc_tb.f</code></td>
+<td>加入 <code>simple_npu/rtl/</code> 下你的文件和 <code>soc/rtl/my_npu_subsystem.sv</code>，放在 <code>soc/rtl/my_soc_top.sv</code> 之前</td>
+</tr>
+</tbody>
+</table>
+<p>第 6 步直接照抄主存那一路（<code>i_axi2sram</code> + <code>i_mainmem</code>）的写法，注意三处不同：</p>
+<ul>
+<li><code>.slave (master[IDX_NPU])</code></li>
+<li>复位用 <code>ndmreset_n</code>，和主存那一路一样</li>
+<li><code>be_o</code> 可以空着不接（<code>.be_o ()</code>），原因见思考题</li>
+</ul>
+<p><code>my_npu_subsystem</code> 的端口打开 <code>soc/rtl/my_npu_subsystem.sv</code> 看，只有 7 个。</p>
+<p><strong>自检</strong>：按第 4 节跑 test1，看到</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a># [75000] reset released, polling magic_status @ 0x80001FE0
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a># [74395000] PASS: matrix-multiply self-check OK after 7432 cycles
+</code></pre></div>
+<p><img alt="test1 PASS" src="../assets/images/lab-3-test1pass.png" /></p>
+<p><strong>漏改某一处会怎样</strong>（每一行都是实测）：</p>
+<table>
+<thead>
+<tr>
+<th>漏了哪一步</th>
+<th>现象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 没加 <code>NPU_BASE</code></td>
+<td><code>vlog</code> 报 <code>(vlog-2730) Undefined variable: 'NPU_BASE'</code></td>
+</tr>
+<tr>
+<td>2 <code>master</code> 还是 <code>[2:0]</code></td>
+<td><code>vsim</code> 报 <code>(vsim-3042) Index 3 is out of range for the instance array 'master'</code></td>
+</tr>
+<tr>
+<td>3 <code>NoMstPorts</code> 还是 3</td>
+<td><code>vsim</code> 报 <code>** Fatal: (vsim-3698) ... The interface array port 'mst_ports' of size 3 must be passed an identical array</code></td>
+</tr>
+<tr>
+<td>4 <code>NoAddrRules</code> 还是 3</td>
+<td><strong>能编译能跑</strong>，只有一个 warning <code>(vsim-3015) Port size (288) does not match connection size (384) for port 'addr_map_i'</code>。xbar 只收到 3 条规则，<strong>bootram 那条被挤掉了</strong>：CPU 复位后取指就拿到 <code>0xBADCAB1E</code>，程序根本没开始，TIMEOUT 时 <code>magic_status</code> 是 <code>x</code></td>
+</tr>
+<tr>
+<td>5 <code>addr_map</code> 扩成 4 条但没写第 4 条</td>
+<td><code>** Fatal: This rule has a higher start than end address!!!</code>（没写的那条是全 0）</td>
+</tr>
+<tr>
+<td>6 忘了例化 <code>i_axi2npu</code></td>
+<td>能编译能跑，TIMEOUT，<code>magic_status = 0x12345678</code>：CPU 第一次访问 NPU 就再也没有返回，<code>master[3]</code> 上的请求没人应答</td>
+</tr>
+<tr>
+<td>6 <code>data_o</code> / <code>data_i</code> 接反</td>
+<td><code>vsim</code> 报 <code>(vsim-3839) Variable '/my_soc_tb/dut/npu_rdata', driven via a port connection, is multiply driven</code></td>
+</tr>
+<tr>
+<td>7 filelist 没加 <code>my_npu_subsystem.sv</code></td>
+<td><code>vsim</code> 报 <code>(vsim-3033) Instantiation of 'my_npu_subsystem' failed. The design unit was not found</code></td>
+</tr>
+<tr>
+<td><code>NPU_LENGTH</code> 写小了（比如 <code>32'h2000</code>）</td>
+<td>ACT / WGT / STATUS 都正常，读 OUT（<code>0x7000_2000</code>）时落到了区间外：<code>FAIL ... hw=798 ref=250</code>。798 = <code>0x31E</code> = <code>0xBADCAB1E</code> 的低 10 位</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">为什么第 4 条最阴险</p>
+<p>编译器只给了一个 warning，仿真也能跑，现象却出现在一个完全不相关的地方（取指失败）。
+SoC 集成里大多数难查的问题都是这种：错误发生的位置和表现出来的位置隔得很远。
+养成习惯：<strong>改完顶层先看一遍 <code>vsim</code> 的 warning</strong>，特别是 <code>Port size does not match</code>。</p>
+</div>
+<h3 id="task-4-soc-mmio">Task 4 · SoC 级仿真：跑通三个测试，看清一次 MMIO 访问</h3>
+<p><strong>4.1 跑 test2、test3</strong>（切换方法见第 4 节）：</p>
+<table>
+<thead>
+<tr>
+<th>测试</th>
+<th>内容</th>
+<th>参考 cycle 数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lab3_test1.hex</code></td>
+<td>单次 GEMM</td>
+<td>7432</td>
+</tr>
+<tr>
+<td><code>lab3_test2.hex</code></td>
+<td>连续 2 次（单位阵 × dense，dense × dense）</td>
+<td>14754</td>
+</tr>
+<tr>
+<td><code>lab3_test3.hex</code></td>
+<td>连续 3 次（最后一次全 15 × 全 15，结果 900）</td>
+<td>20804</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="test2 PASS" src="../assets/images/lab-3-test2pass.png" /></p>
+<p><img alt="test3 PASS" src="../assets/images/lab-3-test3pass.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">关于 cycle 数</p>
+<p>上面三张截图来自旧版实验（广播式的核，RUN 只有 4 拍），但参考 cycle 数和脉动阵列版<strong>完全一样</strong>。
+原因是 CPU 发出 START 之后，第一次读 STATUS 要十几拍才走完总线来回，
+10 拍的 RUN 早就结束了——RUN 多出来的 6 拍被总线延迟"吸收"了。
+你的数字和参考值差几十拍以内都正常。</p>
+</div>
+<p>test1 过了但 test2 / test3 FAIL，看 FAIL 那一行的 <code>case=</code>：
+<code>case=1</code> 或 <code>case=2</code> 出错而 <code>case=0</code> 没错，多半是连续运行时累加器没清零或 <code>done</code> 没随 <code>start</code> 清掉；
+只有 test3 的 <code>case=2</code> 错，是 900 装不下（累加器位宽不够）。这些 Task 1 的 tb 本该抓到，回去对照。</p>
+<p><strong>4.2 跟踪一次 MMIO 写和一次 MMIO 读</strong></p>
+<p>跑 test1（GUI，<code>run</code> 之前 <code>log -r /*</code>），把下面四层信号加进波形：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">-</span>group<span class="w"> </span>cpu<span class="w">  </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_req<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_gnt<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_we<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_addr<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_wdata<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_rvalid<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>data_rdata
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">-</span>group<span class="w"> </span>axi<span class="w">  </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>master<span class="k">[</span><span class="nv">3</span><span class="k">]</span><span class="o">/</span>aw_valid<span class="k">}</span><span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>master<span class="k">[</span><span class="nv">3</span><span class="k">]</span><span class="o">/</span>aw_addr<span class="k">}</span><span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>master<span class="k">[</span><span class="nv">3</span><span class="k">]</span><span class="o">/</span>w_data<span class="k">}</span><span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>master<span class="k">[</span><span class="nv">3</span><span class="k">]</span><span class="o">/</span>ar_valid<span class="k">}</span><span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>master<span class="k">[</span><span class="nv">3</span><span class="k">]</span><span class="o">/</span>ar_addr<span class="k">}</span><span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>master<span class="k">[</span><span class="nv">3</span><span class="k">]</span><span class="o">/</span>r_valid<span class="k">}</span><span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>master<span class="k">[</span><span class="nv">3</span><span class="k">]</span><span class="o">/</span>r_data<span class="k">}</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">-</span>group<span class="w"> </span>mem<span class="w">  </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>npu_req<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>npu_we<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>npu_addr<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>npu_wdata<span class="w"> </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>npu_rdata
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">add</span><span class="w"> </span>wave<span class="w"> </span><span class="o">-</span>group<span class="w"> </span>npu<span class="w">  </span><span class="o">/</span>my_soc_tb<span class="o">/</span>dut<span class="o">/</span>i_npu_subsystem<span class="o">/</span>i_npu_core<span class="o">/*</span>
+</code></pre></div>
+<p>然后：</p>
+<ol>
+<li>在波形里找到 CPU <strong>第一次</strong>写 NPU（<code>data_addr = 0x70000040</code>），沿四层往下看，
+   写数据什么时候出现在 AXI 上、什么时候 <code>npu_req</code> 拉高、壳里哪个寄存器在哪一拍变了</li>
+<li>找到 CPU 第一次读到 <code>STATUS = 1</code> 的那次读，看 <code>npu_rdata</code> 比 <code>npu_req</code> 晚几拍、
+   <code>data_rdata</code> 又比它晚几拍</li>
+<li>数一数：CPU 发起一次 NPU 访问到拿到结果，一共花了几拍？（参考：写和读都在 6 拍左右）</li>
+</ol>
+<p><strong>4.3 在反汇编里找到这条指令</strong></p>
+<p>打开 <code>soc/sim/sw/lab3_test1.dump</code>，找到 <code>NPU_ACT(j * N + i) = A[i][j];</code> 这一行 C 代码
+下面对应的 <code>sw</code> 指令，记下它的地址。回到波形，看 <code>/my_soc_tb/dut/instr_addr</code>：
+CPU 取这条指令的时刻，和 4.2 里第一次写 NPU 的时刻差了多少？为什么不是同一拍？</p>
+<p><strong>4.4 在 SoC 里看对角波前</strong></p>
+<p>在 <code>i_npu_core</code> 下找到你的核，把 <code>PE[0][0]</code> 和 <code>PE[3][3]</code> 的 <code>acc</code> 加进波形，
+找到 START 之后的那十几拍，确认它们的累加时刻和 §3.6 的表一致。</p>
+<h3 id="task-5-c-npu">Task 5 · 不用 C，用汇编直接访问 NPU</h3>
+<p>前面的测试程序都是 C 编译出来的，一条 C 语句会变成好几条指令，中间还夹着循环和栈操作，
+在波形里不好一一对应。这个 Task 用<strong>手写汇编</strong>把 MMIO 访问剥到最干净。</p>
+<p><code>soc/sim/tb/lab3_hand.hex</code> 是助教写好的示例，源码在 <code>soc/sim/sw/lab3_hand.S</code>。它只做一件事：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="w">    </span><span class="nf">lui</span><span class="w">  </span><span class="no">t0</span><span class="p">,</span><span class="w"> </span><span class="mi">0x70000</span><span class="w">        </span><span class="c1"># t0 = 0x7000_0000 (NPU_BASE)</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="nf">addi</span><span class="w"> </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="no">zero</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="nf">sw</span><span class="w">   </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="mi">0x40</span><span class="p">(</span><span class="no">t0</span><span class="p">)</span><span class="w">       </span><span class="c1"># ACT[0] = A[0][0] = 3</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="nf">lui</span><span class="w">  </span><span class="no">t2</span><span class="p">,</span><span class="w"> </span><span class="mi">0x70001</span><span class="w">        </span><span class="c1"># t2 = 0x7000_1000 (WGT_BASE)</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="nf">addi</span><span class="w"> </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="no">zero</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="nf">sw</span><span class="w">   </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">(</span><span class="no">t2</span><span class="p">)</span><span class="w">          </span><span class="c1"># WGT[0] = B[0][0] = 5</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">    </span><span class="nf">lw</span><span class="w">   </span><span class="no">t3</span><span class="p">,</span><span class="w"> </span><span class="mi">0x40</span><span class="p">(</span><span class="no">t0</span><span class="p">)</span><span class="w">       </span><span class="c1"># 读回 ACT[0]，t3 应为 3</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">    </span><span class="nf">addi</span><span class="w"> </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="no">zero</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">    </span><span class="nf">sw</span><span class="w">   </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">(</span><span class="no">t0</span><span class="p">)</span><span class="w">          </span><span class="c1"># CONTROL = 1 (START)</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="nl">poll:</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">    </span><span class="nf">lw</span><span class="w">   </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">(</span><span class="no">t0</span><span class="p">)</span><span class="w">          </span><span class="c1"># 读 STATUS</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">    </span><span class="nf">andi</span><span class="w"> </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">    </span><span class="nf">beq</span><span class="w">  </span><span class="no">t1</span><span class="p">,</span><span class="w"> </span><span class="no">zero</span><span class="p">,</span><span class="w"> </span><span class="no">poll</span><span class="w">     </span><span class="c1"># DONE 还没到就回去再读</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">    </span><span class="nf">lui</span><span class="w">  </span><span class="no">t2</span><span class="p">,</span><span class="w"> </span><span class="mi">0x70002</span><span class="w">        </span><span class="c1"># t2 = 0x7000_2000 (OUT_BASE)</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="w">    </span><span class="nf">lw</span><span class="w">   </span><span class="no">t4</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">(</span><span class="no">t2</span><span class="p">)</span><span class="w">          </span><span class="c1"># t4 = OUT[0] = C[0][0]，应为 15</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="w">    </span><span class="na">...</span><span class="w">                     </span><span class="c1"># 比较 t4 和 15，对就往 0x8000_1FE0 写 0xC0DEC0DE</span>
+</code></pre></div>
+<p>没有 <code>startup.S</code>、没有栈，bootram 跳到 <code>0x8000_0000</code> 之后直接执行第一条。</p>
+<p><strong>5.1 跑通示例</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">vsim</span><span class="w"> </span><span class="o">-</span>suppress<span class="w"> </span><span class="mi">12110</span><span class="w"> </span><span class="o">-</span>novopt<span class="w"> </span><span class="o">-</span>GINIT_FILE<span class="err">=</span>soc<span class="o">/</span>sim<span class="o">/</span>tb<span class="o">/</span>lab3_hand.hex<span class="w"> </span>work.my_soc_tb
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nv">run</span><span class="w"> </span><span class="o">-</span>all
+</code></pre></div>
+<p>应当在 200 多拍内 PASS。然后看寄存器堆：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">examine</span><span class="w"> </span><span class="o">-</span>radix<span class="w"> </span>hex<span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>i_cpu<span class="o">/</span>core_i<span class="o">/</span>id_stage_i<span class="o">/</span>register_file_i<span class="o">/</span>mem<span class="k">[</span><span class="nv">28</span><span class="k">]}</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nv">examine</span><span class="w"> </span><span class="o">-</span>radix<span class="w"> </span>hex<span class="w"> </span><span class="k">{</span><span class="o">/</span><span class="nv">my_soc_tb</span><span class="o">/</span>dut<span class="o">/</span>i_cpu<span class="o">/</span>core_i<span class="o">/</span>id_stage_i<span class="o">/</span>register_file_i<span class="o">/</span>mem<span class="k">[</span><span class="nv">29</span><span class="k">]}</span>
+</code></pre></div>
+<p><code>mem[28]</code>（t3）应为 <code>3</code>，是从 ACT[0] 读回来的；<code>mem[29]</code>（t4）应为 <code>0xf</code>，是 NPU 算出来的 <code>C[0][0]</code>。</p>
+<p><strong>5.2 自己改一版</strong>：<code>lab3_hand.hex</code> 是纯文本，一行一条指令，右边 <code>//</code> 后面是注释
+（<code>$readmemh</code> 会忽略）。复制一份，改成你自己的程序，例如：</p>
+<ul>
+<li>把 A 的第 0 行、B 的第 0 列都填上数，让 <code>C[0][0]</code> 变成 4 项之和</li>
+<li>读一个 <code>OUT[k]</code> 以外的结果，比如 <code>C[1][2]</code> 在哪个地址？</li>
+<li>连续 START 两次，第二次换一组 WGT，看结果对不对</li>
+</ul>
+<p>汇编转机器码用 Lab 2 用过的在线工具 <a href="https://riscvasm.lucasteske.dev">https://riscvasm.lucasteske.dev</a>。
+改完用 <code>-GINIT_FILE=</code> 指向你的文件运行。PASS 条件由你自己的程序决定：
+只要往 <code>0x8000_1FE0</code> 写入 <code>0xC0DEC0DE</code>，tb 就判 PASS。</p>
+<div class="admonition tip">
+<p class="admonition-title">两个在线工具不会告诉你的细节</p>
+<ul>
+<li>32 位立即数要拆成 <code>lui</code>（高 20 位）+ <code>addi</code>（低 12 位）。<code>addi</code> 的立即数是<strong>有符号</strong>的，
+  低 12 位 ≥ <code>0x800</code> 时会被当成负数，<code>lui</code> 那一半要加 1。
+  示例里的 <code>0xDEADBEEF</code> 就是这样拆的：<code>lui t1, 0xDEADC</code> + <code>addi t1, t1, -0x111</code></li>
+<li>跳转和分支的偏移是相对于<strong>当前指令地址</strong>的，在线工具默认程序从 0 开始，
+  这不影响结果（偏移是相对的），但工具显示的绝对地址要加上 <code>0x8000_0000</code> 才是实际地址</li>
+</ul>
+</div>
+<p><strong>5.3 选做：探索未映射的地址</strong></p>
+<p>写一小段汇编，分别读下面三个地址，把结果放进 <code>a0 / a1 / a2</code>，再用 <code>examine</code> 看：</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>预期</th>
+<th>为什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0x7000_0080</code></td>
+<td>?</td>
+<td>在 NPU 区间内，但不在 §3.3 表里</td>
+</tr>
+<tr>
+<td><code>0x7000_4040</code></td>
+<td>?</td>
+<td>提示：壳只看 <code>addr[13:2]</code></td>
+</tr>
+<tr>
+<td><code>0x6000_0000</code></td>
+<td>?</td>
+<td>不在任何地址规则里</td>
+</tr>
+</tbody>
+</table>
+<p>先自己推理，再用仿真验证。</p>
+<p><strong>5.4 选做：自己写一个总线监视器</strong></p>
+<p>在 <code>my_soc_tb.sv</code> 之外新建一个模块（例如 <code>npu_mon.sv</code>），用层次路径观察 <code>dut.npu_req / npu_we /
+npu_addr / npu_wdata / npu_rdata</code>，每次 NPU 访问打印一行：时间、读还是写、哪个寄存器、数据是多少。
+编译时把它加在 filelist 后面，<code>vsim</code> 时写 <code>vsim ... work.my_soc_tb work.npu_mon</code> 同时加载两个顶层。
+有了它，调试时不用翻波形，transcript 里就能看到 CPU 对 NPU 做的每一件事。
+提示：读数据要等下一拍才出现在 <code>npu_rdata</code> 上。</p>
+<h2 id="6">6. 推进顺序与分步自检</h2>
+<p>和 Lab 2 一样，Task 的编号就是推荐顺序，每一步都能单独验证：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Task 0  原样跑                目标：看到 CPU 读 NPU 得到 0xBADCAB1E
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>Task 1  脉动阵列核            目标：tb_npu_check ALL PASS，20 / 40 / 60 拍
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>Task 2  MMIO 壳               目标：tb_simple_npu ALL PASS
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>Task 3  挂到 SoC 上           目标：lab3_test1 PASS
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>Task 4  SoC 级仿真            目标：lab3_test2 / test3 PASS，能在波形里跟踪一次访问
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>Task 5  手写汇编              目标：lab3_hand PASS，t3 = 3、t4 = 15
+</code></pre></div>
+<p>顺序是<strong>从里往外</strong>：先确认核算得对，再确认壳和总线的约定对，最后才接到 SoC 上。
+Task 3 如果出问题，你可以确定核和壳是好的，只需要查顶层那 7 处改动。
+反过来，如果跳过 Task 1、2 直接接 SoC，一个 FAIL 可能来自核、壳、顶层任何一层，
+而 SoC 仿真一次要跑几十秒，比单元 tb 慢上百倍。</p>
+<h2 id="7">7. 完成标志</h2>
+<p>四个程序全部 PASS：</p>
+<table>
+<thead>
+<tr>
+<th>程序</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lab3_test1.hex</code></td>
+<td>PASS，约 7432 cycles</td>
+</tr>
+<tr>
+<td><code>lab3_test2.hex</code></td>
+<td>PASS，约 14754 cycles</td>
+</tr>
+<tr>
+<td><code>lab3_test3.hex</code></td>
+<td>PASS，约 20804 cycles</td>
+</tr>
+<tr>
+<td><code>lab3_hand.hex</code></td>
+<td>PASS，约 208 cycles，<code>t3 = 3</code>、<code>t4 = 0xf</code></td>
+</tr>
+</tbody>
+</table>
+<p>本实验不需要提交任何材料。<strong>把 <code>simple_npu/rtl/</code> 和改好的 <code>soc/</code> 留好</strong>，后续 Lab 会用到。</p>
+<h2 id="8">8. 思考题</h2>
+<p>以下问题不需要提交，供自行检验理解程度。</p>
+<h3 id="81-c-hex">8.1 C 代码是怎么变成 hex 的</h3>
+<p>本实验不要求你安装 RISC-V 工具链，但 <code>soc/sim/sw/</code> 里留下了编译过程的中间产物
+（见该目录的 <code>README.md</code>）。只看这些文件，回答：</p>
+<ol>
+<li><code>lab3_test1.hex</code> 的第 1 行是 <code>00002117</code>，它是哪个文件里的哪条指令？做什么用？</li>
+<li>谁决定了程序从 <code>0x8000_0000</code> 开始放？如果把它改成 <code>0x8000_1000</code>，bootram 需要跟着改吗？</li>
+<li>在 <code>lab3_test1.dump</code> 里找到 <code>main</code> 的起始地址。CPU 从 <code>0x8000_0000</code> 到进入 <code>main</code>
+   之间执行了哪些事情？为什么需要这些事情？</li>
+<li><code>linker.ld</code> 里 <code>__stack_top = 0x80001FE0</code> 为什么正好等于 magic 区域的起始地址？
+   栈是往哪个方向长的？如果把栈顶设成 <code>0x80002000</code> 会发生什么？</li>
+<li><code>NPU_ACT(j * N + i) = A[i][j];</code> 被编译成了哪几条指令？哪一条真正访问了 NPU？
+   <code>A[i][j]</code> 是 <code>uint8_t</code>，为什么对 NPU 的访问还是 <code>sw</code>（整字写）而不是 <code>sb</code>？</li>
+<li><code>.dump</code> 里有的机器码是 8 个十六进制位，有的只有 4 个，为什么？
+   这对 hex 文件"一行一个 32 位字"的格式有什么影响？</li>
+<li>如果把宏定义里的 <code>volatile</code> 去掉，<code>while ((NPU_STATUS &amp; NPU_STATUS_DONE) == 0u) { }</code>
+   可能被编译成什么样？</li>
+</ol>
+<h3 id="82">8.2 硬件</h3>
+<ol>
+<li><strong>广播 vs 脉动</strong>：Lab 1 的核里，<code>A[i][k]</code> 这根线要同时驱动几个 PE？脉动阵列里呢？
+   阵列从 4×4 扩到 128×128 时，这个差别对时钟频率有什么影响？（后续综合实验会看到时序报告）</li>
+<li><strong>cycle 数去哪了</strong>：一次 GEMM 真正的计算只要 10 拍，test1 却跑了 7432 拍。
+   时间都花在了哪里？（提示：数一数程序对 NPU 做了多少次读写，每次多少拍；
+   再看看 CPU 在两次 NPU 访问之间做了什么）如果要让 NPU 真正"跑起来"，你会怎么改这个系统？</li>
+<li><strong>地址别名</strong>：壳只看 <code>addr[13:2]</code>，NPU 在 xbar 上却占了 256 MB。
+   <code>0x7000_4000</code> 访问的是哪个寄存器？<code>0x7FFF_C000</code> 呢？这算 bug 吗？</li>
+<li><strong>读有副作用</strong>：如果把 STATUS 设计成"读一次就把 DONE 清零"，结合 §3.4 第 4 条，
+   在什么情况下 CPU 会永远等不到 DONE？</li>
+<li><strong>RUN 期间改数据</strong>：如果 CPU 在 NPU 还在 RUN 的时候就写了新的 ACT，会发生什么？
+   你的设计需要保护吗？应该由硬件保护还是由软件保证？</li>
+<li><strong><code>be_o</code> 为什么可以不接</strong>：主存那一路的 <code>be_o</code> 必须接（Lab 2 Task 3），NPU 这一路为什么可以空着？
+   如果 C 程序用 <code>*(volatile uint8_t *)0x70000041 = 5;</code> 写 NPU，会发生什么？</li>
+<li><strong>两种判定机制</strong>：Lab 2 的 tb 监听主存写端口，本实验的 tb 轮询固定地址。
+   各有什么优劣？哪一种换测试程序时不用改 tb？哪一种能拿到更多出错信息？</li>
+</ol>
+<h3 id="83">8.3 工具</h3>
+<p>后续实验会从 ModelSim 换到 VCS + Verdi。提前想一想（可以查资料）：</p>
+<ol>
+<li><code>vlib / vlog / vsim</code> 在 VCS 里分别对应什么？VCS 为什么常说是"两步"而不是"三步"？</li>
+<li>本实验的 filelist（<code>-f</code>、<code>+incdir+</code>）能不能直接给 VCS 用？</li>
+<li><code>vsim -novopt</code> 关掉的"优化"是什么？为什么打开优化后有些信号在波形里看不到了？</li>
+<li>VCD 和 Verdi 用的 FSDB 有什么区别？为什么大设计几乎都用 FSDB？</li>
+</ol>
+<h2 id="9">9. 常见问题</h2>
+<h3 id="q1-vlog-cannot-resolve-module-simple_npu_core-simple_npu_pe">Q1 <code>vlog</code> 报 <code>Cannot resolve module 'simple_npu_core'</code> 或 <code>'simple_npu_pe'</code></h3>
+<p>filelist 里没加你的文件，或者文件名和模块名对不上。加在 <code>soc/rtl/my_soc_top.sv</code> 之前。</p>
+<h3 id="q2-task-3-timeoutmagic_status-0x12345678">Q2 Task 3 做完一直 TIMEOUT，<code>magic_status = 0x12345678</code></h3>
+<p>程序跑起来了（写了 RUNNING），但没跑完。按顺序查：</p>
+<ol>
+<li>先确认 Task 1、Task 2 的单元 tb 都 PASS</li>
+<li>波形看 CPU 读 STATUS（<code>data_addr = 0x70000004</code>）读回来的是什么：</li>
+<li><code>0xBADCAB1E</code>：地址没映射到 NPU，查顶层第 1~5 步</li>
+<li>恒为 0：请求到了壳，但 DONE 没起来。看壳里的 <code>start</code> 有没有脉冲、核有没有进 RUN；
+     也可能是读路径没打拍（组合读），数据比 <code>axi2mem</code> 期望的早了一拍，实测表现就是 STATUS 恒为 0</li>
+<li>CPU 发出请求后再也没有返回：查 <code>i_axi2npu</code> 是否例化、<code>.slave</code> 是否接的 <code>master[IDX_NPU]</code></li>
+</ol>
+<h3 id="q3-timeout-magic_status-0xxxxxxxxx">Q3 TIMEOUT 时 <code>magic_status = 0xxxxxxxxx</code></h3>
+<p>程序根本没开始执行（连 RUNNING 都没写）。多半是 <code>NoAddrRules</code> 和 <code>addr_map</code> 大小不一致，
+bootram 那条规则丢了，见 Task 3 表格第 4 行。看 <code>vsim</code> 有没有 <code>vsim-3015</code> warning。</p>
+<h3 id="q4-failhw-798">Q4 FAIL，<code>hw</code> 是一个奇怪的大数，比如 798</h3>
+<p>798 = <code>0x31E</code>，是 <code>0xBADCAB1E &amp; 0x3FF</code>。说明读 OUT 时地址落到了区间外，检查 <code>NPU_LENGTH</code>。</p>
+<h3 id="q5">Q5 仿真特别慢 / 磁盘被占满</h3>
+<p>见第 4 节关于 VCD 的提示。TIMEOUT 要跑 100 万拍，调试时用 <code>run 200us</code>。</p>
+<h3 id="q6-rtl">Q6 改了 RTL，结果没变化</h3>
+<p><code>work</code> 库里还是旧的编译结果。<code>quit -sim</code> 之后重新 <code>vlog</code> 改过的文件；
+还不行就删掉 <code>work/</code> 目录全部重编。</p>
+<h3 id="q7-vsim-could-not-find-my_soc_tb-database-error-unable-to-open-database-file">Q7 <code>vsim</code> 报 <code>Could not find 'my_soc_tb'</code>，前面有 <code>DATABASE ERROR</code> / <code>unable to open database file</code></h3>
+<p>工作目录路径里有中文。ModelSim 对中文路径支持不好，把整个 <code>SoC_cv32e40p/</code> 放到纯英文、
+无空格的路径下（例如 <code>D:\Projects\lab3\</code>）再跑。</p>
+<h2 id="10">10. 延伸阅读</h2>
+<ul>
+<li><code>soc/rtl/axi/axi_xbar.sv</code>、<code>addr_decode.sv</code>：xbar 如何按地址路由、如何给 ID 加前缀</li>
+<li><code>soc/rtl/axi/axi2mem.sv</code>：AXI 五个通道如何被压成一组类存储器信号</li>
+<li><code>soc/rtl/axi/axi_err_slv.sv</code>：<code>0xBADCAB1E</code> 是从哪来的</li>
+<li>Google TPU v1 论文（Jouppi et al., ISCA 2017）：真实的脉动阵列是怎么组织的——
+  它用的是<strong>权重驻留</strong>，和本实验的输出驻留有什么不同？</li>
+</ul>
 
 
 
@@ -557,7 +2421,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月19日 13:08:36 UTC">2026年9月19日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月28日 17:22:17 UTC">2026年9月28日</span>
   </span>
 
     
