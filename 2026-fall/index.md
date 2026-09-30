@@ -19,7 +19,7 @@
 | [Lab 4](lab-4.md) | 逻辑综合 & 物理实现 | 未发布 | 待定 |
 | [Lab 5](lab-5.md) | Signoff & Tapeout | 未发布 | 待定 |
 | [Lab 6](lab-6.md) | FPGA 原型验证 | 未发布 | 待定 |
-| [Final Project](final-project.md) | 自主设计：AI 辅助的加速器设计 | 未发布 | 待定 |
+| [Final Project](final-project.md) | 自主设计：AI 辅助的加速器设计 | 部分发布 | 待定 |
 
 报告提交截止日期以本表为准，各次实验的详细提交要求在对应实验页面中给出。
 
