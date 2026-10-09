@@ -406,8 +406,8 @@ run -all
 ![对照 hex 文件](assets/images/lab-3-comparememorywithhex.png)
 
 !!! note "关于这三张图"
-    截图来自旧版实验，文件名写的是 `lab4_test`，本实验已改名为 `lab3_test`，
-    其余层次路径和操作完全一致。图里 Memory List 中 NPU 内部数组的名字取决于你自己的实现。
+    截图仅作示例，图中的文件名 `lab4_test` 可能过期，本实验中为 `lab3_test`，
+    其余层次路径和操作一致。图里 Memory List 中 NPU 内部数组的名字取决于你自己的实现。
 
 ## 5. 实验任务
 
@@ -578,7 +578,7 @@ vvp npu.vvp
 ![test3 PASS](assets/images/lab-3-test3pass.png)
 
 !!! note "关于 cycle 数"
-    上面三张截图来自旧版实验（广播式的核，RUN 只有 4 拍），但参考 cycle 数和脉动阵列版**完全一样**。
+    上面三张截图仅作示例，截图所用的核是 RUN 只有 4 拍的广播式实现，但参考 cycle 数和脉动阵列版**完全一样**。
     原因是 CPU 发出 START 之后，第一次读 STATUS 要十几拍才走完总线来回，
     10 拍的 RUN 早就结束了——RUN 多出来的 6 拍被总线延迟"吸收"了。
     你的数字和参考值差几十拍以内都正常。
