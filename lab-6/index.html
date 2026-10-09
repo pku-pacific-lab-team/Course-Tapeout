@@ -446,6 +446,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -462,6 +480,585 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 实验目标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 准备
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-lab-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 从 Lab 3 出发
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 把程序镜像的路径改成绝对路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 整体结构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-vivado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 创建 Vivado 工程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 创建 Vivado 工程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 新建工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 添加设计源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 先不加约束，选择器件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 头文件路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fpga" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. FPGA 顶层
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. FPGA 顶层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-clocking-wizard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 生成 Clocking Wizard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-fpga_topsv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 fpga_top.sv
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 加几个 LED 指示上板状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-vivado-modelsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 在 Vivado 中调用 ModelSim 仿真
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 在 Vivado 中调用 ModelSim 仿真">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 编译仿真库
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 仿真设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 运行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 约束、综合、实现、生成比特流
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 约束、综合、实现、生成比特流">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 管脚约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 时序约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 综合、实现、生成比特流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 看报告：确认这块比特流"真的对"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 烧写与接线
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 烧写与接线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 烧写比特流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-jtag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 JTAG 接线
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-openocd-gdb-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 用 OpenOCD + GDB 调试 CPU
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 用 OpenOCD + GDB 调试 CPU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-risc-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 RISC-V 调试体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-wsl-openocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 在 WSL 中安装 OpenOCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-usb-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 把 USB 下载器映射进 WSL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-openocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 配置文件与启动 OpenOCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-risc-v-gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 安装 RISC-V 工具链（GDB）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-gdb-openocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 用 GDB 连接 OpenOCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 上板体验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 上板体验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 常用 GDB 命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 确认测试程序在板子上跑完了
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-npu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 在板子上直接访问你的 NPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 烧写后 LED 完全没反应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-openocd-unable-to-open-ftdi-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 OpenOCD 报 unable to open ftdi device
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-openocd-jtag-scan-chain-interrogation-failed-all-ones-all-zeroes-unsupported-dtm-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 OpenOCD 报 JTAG scan chain interrogation failed: all ones / all zeroes 或 Unsupported DTM version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-0x80001fe0-0xc0dec0de" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q4 读 0x80001FE0 得到的不是 0xc0dec0de
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5-vivado-could-not-open-readmem-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q5 Vivado 综合报 could not open $readmem data file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-wns-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q6 时序不满足（WNS &lt; 0）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q7-vivado-modelsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q7 Vivado 或 ModelSim 报一些莫名其妙的文件错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -514,6 +1111,574 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 实验目标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 准备
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-lab-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 从 Lab 3 出发
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 把程序镜像的路径改成绝对路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 整体结构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-vivado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 创建 Vivado 工程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 创建 Vivado 工程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 新建工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 添加设计源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 先不加约束，选择器件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 头文件路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fpga" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. FPGA 顶层
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. FPGA 顶层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-clocking-wizard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 生成 Clocking Wizard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-fpga_topsv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 fpga_top.sv
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 加几个 LED 指示上板状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-vivado-modelsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 在 Vivado 中调用 ModelSim 仿真
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 在 Vivado 中调用 ModelSim 仿真">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 编译仿真库
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 仿真设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 运行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 约束、综合、实现、生成比特流
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 约束、综合、实现、生成比特流">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 管脚约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 时序约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 综合、实现、生成比特流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 看报告：确认这块比特流"真的对"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 烧写与接线
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 烧写与接线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 烧写比特流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-jtag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 JTAG 接线
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-openocd-gdb-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 用 OpenOCD + GDB 调试 CPU
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 用 OpenOCD + GDB 调试 CPU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-risc-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 RISC-V 调试体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-wsl-openocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 在 WSL 中安装 OpenOCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-usb-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 把 USB 下载器映射进 WSL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-openocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 配置文件与启动 OpenOCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-risc-v-gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 安装 RISC-V 工具链（GDB）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-gdb-openocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 用 GDB 连接 OpenOCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 上板体验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 上板体验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 常用 GDB 命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 确认测试程序在板子上跑完了
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-npu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 在板子上直接访问你的 NPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 烧写后 LED 完全没反应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-openocd-unable-to-open-ftdi-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 OpenOCD 报 unable to open ftdi device
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-openocd-jtag-scan-chain-interrogation-failed-all-ones-all-zeroes-unsupported-dtm-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 OpenOCD 报 JTAG scan chain interrogation failed: all ones / all zeroes 或 Unsupported DTM version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-0x80001fe0-0xc0dec0de" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q4 读 0x80001FE0 得到的不是 0xc0dec0de
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5-vivado-could-not-open-readmem-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q5 Vivado 综合报 could not open $readmem data file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-wns-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q6 时序不满足（WNS &lt; 0）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q7-vivado-modelsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q7 Vivado 或 ModelSim 报一些莫名其妙的文件错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -531,10 +1696,1061 @@
 
 
 <h1 id="lab-6fpga">Lab 6：FPGA 原型验证</h1>
-<div class="admonition note">
-<p class="admonition-title">尚未发布</p>
-<p>本次实验的具体要求尚未确定，确定后本页会更新为完整的实验说明。</p>
+<div class="admonition info">
+<p class="admonition-title">开始之前</p>
+<ul>
+<li><strong>主题</strong>：把 Lab 3 的 SoC 部署到 FPGA 上，通过 JTAG + OpenOCD + GDB 调试运行</li>
+<li><strong>前置</strong>：<a href="../lab-3/">Lab 3</a>——你自己的 SoC（含脉动阵列 NPU）在 ModelSim 中三个测试全部 PASS</li>
+<li><strong>板卡</strong>：EGo1（Xilinx Artix-7 <code>xc7a35tcsg324-1</code>）+ USB-JTAG 下载器</li>
+<li><strong>课时</strong>：2 次实验课</li>
+<li><strong>完成标准</strong>：本实验<strong>不需要提交任何材料</strong>，也不设验收。目标是把"综合 → 实现 → 烧写 → 上板调试"的完整流程走一遍</li>
+</ul>
 </div>
+<div class="admonition note">
+<p class="admonition-title">关于工具版本与截图</p>
+<ul>
+<li>助教实验基于 <strong>Vivado 2023.1</strong>。版本不同，界面和菜单位置会略有差异，差异部分请自行解决</li>
+<li>讲义中的截图<strong>仅作示例</strong>，其中的工程目录、模块名可能过期，
+  具体填写的内容以讲义正文和表格为准</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">管脚与接线仅供参考</p>
+<p>本讲义给出的管脚分配和接线表来自 EGo1 用户手册，<strong>请自行对照
+<a href="https://e-elements.readthedocs.io/zh/ego1_v2.2/EGo1.html">EGo1 用户手册</a> 核对</strong>。</p>
+</div>
+<h2 id="1">1. 实验目标</h2>
+<p>前面的实验里，SoC 只存在于仿真器中。本实验把它变成真正的硬件：</p>
+<ol>
+<li>在 Vivado 中为 Lab 3 的 SoC 加一层 FPGA 顶层（时钟、复位），综合、布局布线、生成比特流</li>
+<li>把比特流烧到 EGo1 上，让 CPU 真的跑起 Lab 3 的测试程序</li>
+<li>通过 JTAG 下载器 + OpenOCD + GDB 连上这颗 CPU：停下它、看寄存器、读写内存，
+   <strong>直接在板子上访问你写的 NPU</strong></li>
+</ol>
+<p>完成后你将熟悉 FPGA 原型验证的完整流程，以及 RISC-V CPU 的标准调试方式。</p>
+<h2 id="2">2. 准备</h2>
+<h3 id="21">2.1 工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>用途</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vivado（建议 2023.1）</td>
+<td>综合、实现、烧写</td>
+<td>安装时至少勾选 Artix-7 器件支持</td>
+</tr>
+<tr>
+<td>ModelSim</td>
+<td>仿真（可选）</td>
+<td>同 <a href="../lab-2/">Lab 2 §2</a></td>
+</tr>
+<tr>
+<td>WSL（Ubuntu）</td>
+<td>运行 OpenOCD 和 GDB</td>
+<td>本讲义只介绍 WSL 的做法</td>
+</tr>
+<tr>
+<td>usbipd-win（4.0.0 及以上）</td>
+<td>把 USB 下载器映射进 WSL</td>
+<td>见 §9.3</td>
+</tr>
+<tr>
+<td>EGo1 开发板 + USB-JTAG 下载器 + 杜邦线</td>
+<td>硬件</td>
+<td>实验课发放</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">关于 Windows PowerShell</p>
+<p>OpenOCD 和 GDB 也可以直接在 Windows 下运行，但驱动安装、配置文件和连接方式都略有差异，
+需自行处理。<strong>建议使用 WSL</strong>。</p>
+</div>
+<h3 id="22-lab-3">2.2 从 Lab 3 出发</h3>
+<p>本实验<strong>没有新的实验包</strong>，直接在你自己完成的 Lab 3 目录上继续：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SoC_cv32e40p/                 你的 Lab 3 目录
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── cpu_cv32e40p/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── simple_npu/rtl/           你的脉动阵列核 + MMIO 壳
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── soc/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── rtl/                  你改好的 SoC 顶层（NPU 已挂上）
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   └── sim/tb/               my_soc_tb.sv、lab3_test*.hex ...
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>└── fpga/                     &lt;- 本实验新建，放 FPGA 顶层和约束
+</code></pre></div>
+<p>开始之前确认两件事：</p>
+<ol>
+<li>Lab 3 的 <code>lab3_test1/2/3.hex</code> 在 ModelSim 中全部 PASS。<strong>仿真都不过的设计，上板一定不会对</strong></li>
+<li>整个目录放在<strong>纯英文、无空格</strong>的路径下（例如 <code>D:\Projects\lab6\SoC_cv32e40p</code>）。
+   Vivado 和 ModelSim 对中文路径的支持都不好</li>
+</ol>
+<h3 id="23">2.3 把程序镜像的路径改成绝对路径</h3>
+<p>主存初始内容由 <code>soc/rtl/mem/my_mainmem.sv</code> 的 <code>INIT_FILE</code> 指定，Lab 3 里写的是相对路径：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">parameter</span><span class="w"> </span><span class="n">INIT_FILE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"soc/sim/tb/lab3_test1.hex"</span>
+</code></pre></div>
+<p>ModelSim 在 <code>SoC_cv32e40p/</code> 下运行，相对路径没问题。但 Vivado 工程综合时的工作目录在
+<code>&lt;工程&gt;/&lt;工程名&gt;.runs/synth_1/</code> 下，<strong>按相对路径找不到这个文件</strong>。
+请把它改成你机器上的<strong>绝对路径</strong>，路径分隔符用正斜杠 <code>/</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">parameter</span><span class="w"> </span><span class="n">INIT_FILE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"D:/Projects/lab6/SoC_cv32e40p/soc/sim/tb/lab3_test1.hex"</span>
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">这一步不改，上板后什么都不会发生</p>
+<p>找不到 hex 文件时，Vivado <strong>不会报错</strong>，只在综合日志里留一条
+<code>CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file ...</code>，
+然后把主存当成全 0 继续综合。比特流照样能生成、能烧写，但 CPU 跳进主存后执行的全是 0，
+程序根本不会运行。§7.4 会教你怎么确认它读到了。</p>
+</div>
+<p>改完之后回 ModelSim 再跑一次 test1，确认仍然 PASS（绝对路径对 ModelSim 同样有效）。</p>
+<h2 id="3">3. 整体结构</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>                           EGo1 开发板
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  ┌──────────────────────────────────────────────────────────────┐
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  │                                                              │
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  │   P17 ──100 MHz──&gt; ┌────────────┐                            │
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  │                    │ clk_wiz_0  │──50 MHz──┐                 │
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  │                    │ (MMCM)     │──locked──┤                 │
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  │                    └────────────┘          ▼                 │
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  │   P15 ──复位按键──────────────────&gt; 复位同步（等 locked）    │
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  │                                            │                 │
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  │                    ┌───────────────────────┴───────────┐     │
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>  │                    │ fpga_top                          │     │
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  │                    │   ┌─────────────────────────────┐ │     │
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  │                    │   │ my_soc_top（你的 Lab 3）    │ │     │
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  │                    │   │  CPU + xbar + 主存 + NPU    │ │     │
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  │                    │   │  + Debug Module (JTAG)      │ │     │
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>  │                    │   └──────────────┬──────────────┘ │     │
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>  │                    └──────────────────┼────────────────┘     │
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>  │                                       │ tck/tms/tdi/tdo      │
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  │   J5 扩展口 ◄─────────────────────────┘                      │
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>  └──────┬───────────────────────────────────────────────────────┘
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>         │ 杜邦线
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  ┌──────┴──────┐   USB    ┌──────────────────────────────────────┐
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>  │ USB-JTAG    │◄────────►│ 电脑：WSL 中的 OpenOCD ◄──► GDB      │
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>  │ 下载器      │          └──────────────────────────────────────┘
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>  └─────────────┘
+</code></pre></div>
+<p>和仿真相比，多了三样东西：</p>
+<ul>
+<li><strong>时钟</strong>：板载晶振是 100 MHz，而本 SoC 在 Artix-7 上大约只能跑到 55 MHz 左右（§7.4），
+  所以用 Vivado 的 Clocking Wizard 生成 50 MHz 给 SoC 用</li>
+<li><strong>复位</strong>：要等时钟稳定（<code>locked = 1</code>）之后才释放复位，否则 CPU 可能在时钟还在抖的时候就开始跑</li>
+<li><strong>调试通路</strong>：仿真时 testbench 直接看主存里的 magic 值判断 PASS；
+  上板后只能通过 Lab 2 里"本实验不涉及"的那个 <strong>Debug Module</strong>，经 JTAG 从外面看 CPU 内部</li>
+</ul>
+<h2 id="4-vivado">4. 创建 Vivado 工程</h2>
+<h3 id="41">4.1 新建工程</h3>
+<p>打开 Vivado，<code>Create Project</code> → 选择 <strong>RTL Project</strong> → <code>Next</code>。
+工程目录建议放在 <code>SoC_cv32e40p/</code> 之外的英文路径下（例如 <code>D:\Projects\lab6\vivado\</code>），
+避免 Vivado 生成的大量文件和源码混在一起。</p>
+<p><img alt="新建工程" src="../assets/images/lab-6-new-project.png" /></p>
+<h3 id="42">4.2 添加设计源</h3>
+<p>在 <code>Add Sources</code> 页面点 <code>Add Directories</code>，加入下面三个目录。
+勾选 <strong>Scan and add RTL include files into project</strong> 和 <strong>Add sources from subdirectories</strong>，
+<strong>不要</strong>勾选 Copy sources into project（否则改源码时要改两份）。</p>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SoC_cv32e40p/cpu_cv32e40p</code></td>
+<td>CV32E40P CPU（包括 <code>include/</code> 里的包）</td>
+</tr>
+<tr>
+<td><code>SoC_cv32e40p/soc/rtl</code></td>
+<td>AXI、debug、存储、SoC 顶层</td>
+</tr>
+<tr>
+<td><code>SoC_cv32e40p/simple_npu/rtl</code></td>
+<td>你的 NPU</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="添加设计源（仅示例：图中目录可能过期）" src="../assets/images/lab-6-add-design-sources.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">关于 <code>cpu_cv32e40p/vendor/</code></p>
+<p>Lab 2 里说过 <code>vendor/</code>（浮点单元等）不需要编译。整个目录加进来也没关系：
+Vivado 会从顶层往下找真正被例化的模块，没用到的文件不会进入综合。</p>
+</div>
+<p><strong>仿真源</strong>（只在做 §6 仿真时需要）：在同一个向导里切到 <code>Add or Create Simulation Sources</code>，
+加入 <code>soc/sim/tb/my_soc_tb.sv</code>。勾选 <strong>Include all design sources for simulation</strong>。</p>
+<p><img alt="添加仿真源（仅示例）" src="../assets/images/lab-6-add-sim-sources.png" /></p>
+<h3 id="43">4.3 先不加约束，选择器件</h3>
+<p><code>Add Constraints</code> 这一页先跳过，直接 <code>Next</code>。器件选择 <strong><code>xc7a35tcsg324-1</code></strong>（EGo1 上的 FPGA）。</p>
+<p><img alt="选择器件" src="../assets/images/lab-6-select-part.png" /></p>
+<h3 id="44">4.4 头文件路径</h3>
+<p>AXI 相关的文件里有 <code>`include "axi/typedef.svh"</code>，需要告诉 Vivado 去哪里找头文件。
+<code>Settings</code> → <code>General</code> → <code>Verilog options</code> → <code>Verilog Include Files Search Paths</code>，加入：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&lt;你的路径&gt;/SoC_cv32e40p/soc/rtl/include
+</code></pre></div>
+<p>如果第 4.2 步勾选了 Scan and add RTL include files，Vivado 一般已经能找到，但显式加上更稳妥。</p>
+<h2 id="5-fpga">5. FPGA 顶层</h2>
+<h3 id="51-clocking-wizard">5.1 生成 Clocking Wizard</h3>
+<p><code>PROJECT MANAGER</code> → <code>IP Catalog</code>，搜索 <code>clocking</code>，双击 <strong>Clocking Wizard</strong>。只需要改下面几项，
+其余保持默认：</p>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>设置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Component Name</td>
+<td><code>clk_wiz_0</code>（默认值，和下面的代码对应）</td>
+</tr>
+<tr>
+<td>Clocking Options → Input Clock Information</td>
+<td>Primary 输入频率 <strong>100 MHz</strong></td>
+</tr>
+<tr>
+<td>Output Clocks → clk_out1</td>
+<td>Requested <strong>50 MHz</strong></td>
+</tr>
+<tr>
+<td>Output Clocks → 底部 Enable Optional Inputs / Outputs</td>
+<td><strong>取消 <code>reset</code></strong>，<strong>保留 <code>locked</code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>点 <code>OK</code> → <code>Generate</code>。生成后它就是一个可以直接例化的模块 <code>clk_wiz_0</code>，
+端口为 <code>clk_in1</code>、<code>clk_out1</code>、<code>locked</code>。</p>
+<div class="admonition tip">
+<p class="admonition-title">为什么不用计数器二分频</p>
+<p>用一个触发器翻转也能得到 50 MHz，但那样产生的时钟走的是普通布线，延迟和抖动都不可控。
+Clocking Wizard 用的是 FPGA 内部专门的时钟管理单元（MMCM），输出直接上全局时钟网络，
+Vivado 也能自动推导出它的时序约束（§7.2）。</p>
+</div>
+<h3 id="52-fpga_topsv">5.2 <code>fpga_top.sv</code></h3>
+<p>在 <code>SoC_cv32e40p/</code> 下新建 <code>fpga/fpga_top.sv</code>，内容如下，然后把它加入工程
+（<code>Add Sources</code> → <code>Add or create design sources</code> → <code>Add Files</code>）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="no">`timescale</span><span class="w"> </span><span class="mi">1</span><span class="n">ns</span><span class="o">/</span><span class="mi">1</span><span class="n">ps</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1">// Lab 6 · FPGA 顶层</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">//   板载 100 MHz 时钟 --Clocking Wizard--&gt; 50 MHz 系统时钟</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1">//   时钟稳定（locked）之后才释放复位：异步置位、同步释放</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="k">module</span><span class="w"> </span><span class="n">fpga_top</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="k">input</span><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">fpga_clk_i</span><span class="p">,</span><span class="w">   </span><span class="c1">// 板载 100 MHz 时钟</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="k">input</span><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">rst_ni</span><span class="p">,</span><span class="w">       </span><span class="c1">// 复位按键，低有效</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="k">input</span><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">tck_i</span><span class="p">,</span><span class="w">        </span><span class="c1">// JTAG</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="k">input</span><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">tms_i</span><span class="p">,</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="k">input</span><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">td_i</span><span class="p">,</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">logic</span><span class="w"> </span><span class="n">td_o</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="c1">// TODO：在这里加上你的 LED 输出端口</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="p">);</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">  </span><span class="c1">// ---------------- 时钟：100 MHz -&gt; 50 MHz ----------------</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">clk_sys</span><span class="p">;</span><span class="w">      </span><span class="c1">// 50 MHz，给整个 SoC 用</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">clk_locked</span><span class="p">;</span><span class="w">   </span><span class="c1">// 1 = 时钟已稳定</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">  </span><span class="n">clk_wiz_0</span><span class="w"> </span><span class="n">u_clk_wiz</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">      </span><span class="p">.</span><span class="n">clk_in1</span><span class="w">  </span><span class="p">(</span><span class="n">fpga_clk_i</span><span class="p">),</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">      </span><span class="p">.</span><span class="n">clk_out1</span><span class="w"> </span><span class="p">(</span><span class="n">clk_sys</span><span class="p">),</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">      </span><span class="p">.</span><span class="n">locked</span><span class="w">   </span><span class="p">(</span><span class="n">clk_locked</span><span class="p">)</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">  </span><span class="p">);</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">  </span><span class="c1">// ---------------- 复位：等时钟稳定后再释放 ----------------</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">  </span><span class="c1">// 按下复位键或时钟还没稳定，都立刻复位</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">  </span><span class="kt">wire</span><span class="w"> </span><span class="n">async_rst_n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rst_ni</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">clk_locked</span><span class="p">;</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">  </span><span class="c1">// 两级寄存器：复位来时立刻生效，撤销时跟着 clk_sys 打两拍再放开</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">rst_sync_q</span><span class="p">;</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">  </span><span class="k">always_ff</span><span class="w"> </span><span class="p">@(</span><span class="k">posedge</span><span class="w"> </span><span class="n">clk_sys</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="k">negedge</span><span class="w"> </span><span class="n">async_rst_n</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">async_rst_n</span><span class="p">)</span><span class="w"> </span><span class="n">rst_sync_q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mb">2'b00</span><span class="p">;</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">    </span><span class="k">else</span><span class="w">              </span><span class="n">rst_sync_q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">{</span><span class="n">rst_sync_q</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="mb">1'b1</span><span class="p">};</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="w">  </span><span class="k">end</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="w">  </span><span class="kt">logic</span><span class="w"> </span><span class="n">rst_sys_n</span><span class="p">;</span>
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a><span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">rst_sys_n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rst_sync_q</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a>
+<a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a><span class="w">  </span><span class="c1">// ---------------- 你在 Lab 3 完成的 SoC ----------------</span>
+<a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a><span class="w">  </span><span class="n">my_soc_top</span><span class="w"> </span><span class="n">u_soc</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a><span class="w">      </span><span class="p">.</span><span class="n">clk_i</span><span class="w">  </span><span class="p">(</span><span class="n">clk_sys</span><span class="p">),</span>
+<a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a><span class="w">      </span><span class="p">.</span><span class="n">rst_ni</span><span class="w"> </span><span class="p">(</span><span class="n">rst_sys_n</span><span class="p">),</span>
+<a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a><span class="w">      </span><span class="p">.</span><span class="n">tck_i</span><span class="w">  </span><span class="p">(</span><span class="n">tck_i</span><span class="p">),</span>
+<a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a><span class="w">      </span><span class="p">.</span><span class="n">tms_i</span><span class="w">  </span><span class="p">(</span><span class="n">tms_i</span><span class="p">),</span>
+<a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a><span class="w">      </span><span class="p">.</span><span class="n">td_i</span><span class="w">   </span><span class="p">(</span><span class="n">td_i</span><span class="p">),</span>
+<a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a><span class="w">      </span><span class="p">.</span><span class="n">td_o</span><span class="w">   </span><span class="p">(</span><span class="n">td_o</span><span class="p">)</span>
+<a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a><span class="w">  </span><span class="p">);</span>
+<a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a>
+<a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a><span class="w">  </span><span class="c1">// TODO：在这里加上 LED 指示逻辑</span>
+<a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a>
+<a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a><span class="k">endmodule</span>
+</code></pre></div>
+<p>然后把它设为<strong>综合顶层</strong>：<code>Settings</code> → <code>General</code> → <code>Top module name</code> 填 <code>fpga_top</code>
+（或者在 Sources 窗口里右键 <code>fpga_top</code> → <code>Set as Top</code>）。</p>
+<div class="admonition note">
+<p class="admonition-title">为什么要「同步释放」</p>
+<p>复位信号撤销的那一刻如果正好落在时钟沿附近，不同的触发器可能一个看到复位、一个没看到，
+整个系统从一个不一致的状态开始运行。两级寄存器让复位的"撤销"对齐到 <code>clk_sys</code> 的时钟沿上，
+这是 FPGA 和芯片设计里的标准做法。</p>
+</div>
+<h3 id="53-led">5.3 加几个 LED 指示上板状态</h3>
+<p>上板之后看不到波形，最直接的判断手段就是 LED。建议你在 <code>fpga_top</code> 里自己加上几个，
+这对后面排查问题非常有帮助（下面只给思路，代码自己写）：</p>
+<table>
+<thead>
+<tr>
+<th>LED</th>
+<th>含义</th>
+<th>实现思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>locked 灯</td>
+<td>Clocking Wizard 是否锁定</td>
+<td>直接 <code>assign</code> 成 <code>clk_locked</code>。<strong>不亮说明时钟没起来，后面全都不用看</strong></td>
+</tr>
+<tr>
+<td>心跳灯</td>
+<td>系统时钟和复位是否正常</td>
+<td>在 <code>clk_sys</code> 下用计数器分频到 1 Hz 左右翻转。用 <code>rst_sys_n</code> 复位，按住复位键时应停止闪烁</td>
+</tr>
+<tr>
+<td>tck 灯</td>
+<td>JTAG 时钟是否进来了</td>
+<td>在 <code>tck_i</code> 下计数，计到一定值就翻转。OpenOCD 连接时会有一阵 tck，灯应该会变化</td>
+</tr>
+</tbody>
+</table>
+<p>LED 的管脚见 §7.1。EGo1 的 LED 是高电平点亮。</p>
+<h2 id="6-vivado-modelsim">6. 在 Vivado 中调用 ModelSim 仿真</h2>
+<div class="admonition note">
+<p class="admonition-title">可选</p>
+<p><strong>如果你已经在 Lab 3 完成仿真，本节为可选部分；如果没有，那么本节必做。</strong>
+这里仿真的仍然是 Lab 3 的 <code>my_soc_tb</code>（SoC 本身），只是换成从 Vivado 里启动 ModelSim。
+Vivado 自带的仿真器 XSIM 跑这个 SoC 非常慢，所以改用 ModelSim。</p>
+</div>
+<h3 id="61">6.1 编译仿真库</h3>
+<p>ModelSim 要仿真 Vivado 的 IP，需要先把 Vivado 的仿真库编译成 ModelSim 能用的格式。
+<code>Tools</code> → <code>Compile Simulation Libraries</code>：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>设置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simulator</td>
+<td>ModelSim Simulator</td>
+</tr>
+<tr>
+<td>Family</td>
+<td><strong>Artix-7</strong>（只编译这一个系列，否则所有系列都编会非常慢）</td>
+</tr>
+<tr>
+<td>Compiled library location</td>
+<td>建议在 ModelSim 的<strong>安装目录下新建一个文件夹</strong>，例如 <code>D:/modeltech64_2019.2/vivado_artix7_lib</code></td>
+</tr>
+<tr>
+<td>Simulator executable path</td>
+<td>ModelSim 的 <code>win64</code> 目录，例如 <code>D:/modeltech64_2019.2/win64</code></td>
+</tr>
+</tbody>
+</table>
+<p>点 <code>Compile</code>，大约需要 20 分钟，期间可以先往下做 §7。</p>
+<p><img alt="编译仿真库（仅示例）" src="../assets/images/lab-6-compile-simlib.png" /></p>
+<h3 id="62">6.2 仿真设置</h3>
+<p><code>Settings</code> → <code>Simulation</code>：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>设置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Target simulator</td>
+<td>ModelSim Simulator</td>
+</tr>
+<tr>
+<td>Simulation top module name</td>
+<td><strong><code>my_soc_tb</code></strong>（Lab 3 的 testbench）</td>
+</tr>
+<tr>
+<td>Compiled library location</td>
+<td>§6.1 里填的那个文件夹</td>
+</tr>
+<tr>
+<td><code>Simulation</code> 页签 → <code>modelsim.simulate.log_all_signals</code></td>
+<td><strong>勾上</strong>。这样仿真时会记录所有信号的波形，跑完再加信号也有数据（同 Lab 2 §5.2 的 <code>log -r /*</code>）</td>
+</tr>
+<tr>
+<td><code>Simulation</code> 页签 → <code>modelsim.simulate.vsim.more_options</code></td>
+<td><code>-suppress 12110 -novopt</code>（同 Lab 2 §5.4）</td>
+</tr>
+<tr>
+<td><code>Compilation</code> 页签</td>
+<td>和 §4.4 一样，也要加上头文件路径 <code>soc/rtl/include</code></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="仿真设置（仅示例：图中顶层名可能过期）" src="../assets/images/lab-6-sim-settings.png" /></p>
+<p><img alt="vsim 附加选项" src="../assets/images/lab-6-sim-vsim-options.png" /></p>
+<h3 id="63">6.3 运行</h3>
+<p><code>SIMULATION</code> → <code>Run Simulation</code> → <code>Run Behavioral Simulation</code>，Vivado 会自动拉起 ModelSim。
+在 ModelSim 的 Transcript 里 <code>run -all</code>，应当看到和 Lab 3 一样的 <code>PASS</code>。</p>
+<h2 id="7">7. 约束、综合、实现、生成比特流</h2>
+<h3 id="71">7.1 管脚约束</h3>
+<p><code>RTL ANALYSIS</code> → <code>Open Elaborated Design</code>，打开后菜单 <code>Window</code> → <code>I/O Ports</code>。
+左侧列出了 <code>fpga_top</code> 的所有端口，在 <code>Package Pin</code> 一栏填管脚，<code>I/O Std</code> 一栏全部选 <strong>LVCMOS33</strong>
+（EGo1 上这些 IO 都是 3.3 V 供电）。</p>
+<div class="admonition warning">
+<p class="admonition-title">以下管脚为参考，请自行核对 <a href="https://e-elements.readthedocs.io/zh/ego1_v2.2/EGo1.html">EGo1 用户手册</a></p>
+</div>
+<table>
+<thead>
+<tr>
+<th>端口</th>
+<th>管脚</th>
+<th>板上位置</th>
+<th>手册章节</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fpga_clk_i</code></td>
+<td>P17</td>
+<td>板载 100 MHz 时钟</td>
+<td>3 系统时钟</td>
+</tr>
+<tr>
+<td><code>rst_ni</code></td>
+<td>P15</td>
+<td>RST 按键（S6）</td>
+<td>5.1 按键</td>
+</tr>
+<tr>
+<td><code>tck_i</code></td>
+<td>E15</td>
+<td>J5 扩展口 17 脚</td>
+<td>14 通用扩展 I/O</td>
+</tr>
+<tr>
+<td><code>td_i</code></td>
+<td>E16</td>
+<td>J5 扩展口 18 脚</td>
+<td>14 通用扩展 I/O</td>
+</tr>
+<tr>
+<td><code>td_o</code></td>
+<td>D15</td>
+<td>J5 扩展口 19 脚</td>
+<td>14 通用扩展 I/O</td>
+</tr>
+<tr>
+<td><code>tms_i</code></td>
+<td>C15</td>
+<td>J5 扩展口 20 脚</td>
+<td>14 通用扩展 I/O</td>
+</tr>
+<tr>
+<td>LED（自选，§5.3）</td>
+<td>例如 K3、M1、K1</td>
+<td>板上 LED</td>
+<td>5.3 LED 灯</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="I/O Ports 窗口（仅示例：图中端口名可能过期）" src="../assets/images/lab-6-io-ports.png" /></p>
+<p>填完后 <code>Ctrl+S</code>，Vivado 会提示把约束保存成一个新的 <code>.xdc</code> 文件，起个名字（例如 <code>fpga_top.xdc</code>）即可。</p>
+<div class="admonition note">
+<p class="admonition-title">复位按键的电平</p>
+<p><code>rst_ni</code> 是低有效。有时候工程直接把 P15（专用 RST 按键）当作低有效复位使用。
+但手册只写了五个<strong>通用</strong>按键"默认为低电平，按下时输出高电平"，没有写 RST 按键的电平。如果烧写后心跳灯不闪、按住复位键反而开始闪，
+说明电平是反的，在 <code>fpga_top</code> 里把 <code>rst_ni</code> 取反后再用。这一点请上板时自己确认。</p>
+</div>
+<h3 id="72">7.2 时序约束</h3>
+<p>管脚约束保存后，先 <code>Run Synthesis</code> 一次（约 5 分钟），然后
+<code>SYNTHESIS</code> → <code>Open Synthesized Design</code> → <code>Constraints Wizard</code>。</p>
+<p><strong>Primary Clocks</strong>：Vivado 会识别出两个从管脚输入的时钟，填上频率：</p>
+<table>
+<thead>
+<tr>
+<th>时钟</th>
+<th>频率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fpga_clk_i</code></td>
+<td>100 MHz</td>
+<td>板载时钟</td>
+</tr>
+<tr>
+<td><code>tck_i</code></td>
+<td>1 MHz 即可</td>
+<td>JTAG 时钟，由下载器给出，不需要高频</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Primary Clocks（仅示例）" src="../assets/images/lab-6-primary-clocks.png" /></p>
+<p><strong>Generated Clocks</strong>：用了 Clocking Wizard 之后，50 MHz 时钟由 Vivado 根据 IP 自动推导，
+<strong>这一页不需要填</strong>（如果项目使用计数器二分频，那么才需要在这里指定 Divide by 2）。</p>
+<p><strong>Asynchronous Clock Groups</strong>：<code>tck_i</code> 和 50 MHz 系统时钟互不相关，跨越两者的信号已经在
+Debug Module 里用专门的跨时钟域电路处理过（<code>soc/rtl/debug/dmi_cdc.sv</code>）。
+在这一页把它们设为<strong>异步</strong>，Vivado 就不会再按同步时钟去检查它们之间的路径。</p>
+<p>点 <code>Finish</code>，约束会写进你的 <code>.xdc</code>。最终 <code>.xdc</code> 里的时序部分大致是这样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">create_clock</span><span class="w"> </span><span class="o">-</span>period<span class="w"> </span><span class="mf">10.000</span><span class="w"> </span><span class="o">-</span>name<span class="w"> </span>fpga_clk_i<span class="w"> </span><span class="o">-</span>waveform<span class="w"> </span><span class="k">{</span><span class="nv">0.000</span><span class="w"> </span><span class="mf">5.000</span><span class="k">}</span><span class="w"> </span><span class="k">[</span><span class="nv">get_ports</span><span class="w"> </span>fpga_clk_i<span class="k">]</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">create_clock</span><span class="w"> </span><span class="o">-</span>period<span class="w"> </span><span class="mf">1000.000</span><span class="w"> </span><span class="o">-</span>name<span class="w"> </span>tck_i<span class="w"> </span><span class="o">-</span>waveform<span class="w"> </span><span class="k">{</span><span class="nv">0.000</span><span class="w"> </span><span class="mf">500.000</span><span class="k">}</span><span class="w"> </span><span class="k">[</span><span class="nv">get_ports</span><span class="w"> </span>tck_i<span class="k">]</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nv">set_clock_groups</span><span class="w"> </span><span class="o">-</span>asynchronous<span class="w"> </span><span class="o">-</span>group<span class="w"> </span><span class="k">[</span><span class="nv">get_clocks</span><span class="w"> </span>tck_i<span class="k">]</span><span class="w"> </span><span class="o">-</span>group<span class="w"> </span><span class="k">[</span><span class="nv">get_clocks</span><span class="w"> </span><span class="o">-</span>include_generated_clocks<span class="w"> </span>fpga_clk_i<span class="k">]</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">不想点向导，也可以直接写</p>
+<p>上面三行直接粘贴进 <code>.xdc</code> 效果一样。最后一行如果漏了，综合后的 methodology 报告会多出
+<code>TIMING-6 / TIMING-7</code> 两条 Critical Warning（时钟之间没有公共源却被一起检查）和一串
+<code>Large hold violation</code> 警告。</p>
+</div>
+<h3 id="73">7.3 综合、实现、生成比特流</h3>
+<p>依次点：</p>
+<ol>
+<li><code>Run Synthesis</code>（加完时序约束后<strong>再综合一次</strong>）</li>
+<li>综合完成对话框里选 <code>Run Implementation</code></li>
+<li>实现完成对话框里选 <code>Generate Bitstream</code></li>
+</ol>
+<p><img alt="综合完成" src="../assets/images/lab-6-synth-done.png" /></p>
+<p><img alt="实现完成" src="../assets/images/lab-6-impl-done.png" /></p>
+<p>整个流程大约 10~15 分钟（视电脑性能而定）。</p>
+<h3 id="74">7.4 看报告：确认这块比特流"真的对"</h3>
+<p>生成比特流不代表设计是对的。在烧写之前，检查下面三项：</p>
+<p><strong>(1) 程序有没有装进主存</strong>：打开综合日志（<code>Reports</code> → <code>Synthesis</code> → <code>Vivado Synthesis Report</code>，
+或 <code>&lt;工程&gt;.runs/synth_1/runme.log</code>），搜索 <code>readmem</code>：</p>
+<table>
+<thead>
+<tr>
+<th>看到</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INFO: [Synth 8-3876] $readmem data file '...lab3_test1.hex' is read successfully</code></td>
+<td>正确</td>
+</tr>
+<tr>
+<td><code>CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file ...</code></td>
+<td><strong>没读到</strong>，主存是空的，回 §2.3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(2) 主存是不是变成了 BRAM</strong>：<code>Report Utilization</code>，看 <code>Memory</code> 一节的 <code>Block RAM Tile</code>。
+Lab 3 的主存是 2048 × 32 bit = 8 KB，应当用掉 <strong>2 个 RAMB36</strong>。</p>
+<div class="admonition tip">
+<p class="admonition-title">关于 BRAM</p>
+<p><code>sram_ff.sv</code> 是按"同步读、字节使能写、单端口"的标准写法写的（Lab 2 Task 4），
+这种写法 Vivado 能<strong>自动识别并综合成 BRAM</strong>，同时把 <code>$readmemh</code> 读到的内容作为 BRAM 的初始值
+写进比特流，所以不需要手动生成 Block Memory Generator IP。
+如果你看到的不是 BRAM，而是用掉了大量 LUT 或者寄存器，说明你的 <code>sram_ff</code> 写法不规范
+（例如写成了组合读、或者读写分在了两个 always 块里），回去对照 Lab 2 §4.4 的三条契约。</p>
+</div>
+<p><strong>(3) 时序是否满足</strong>：<code>Report Timing Summary</code>，看 <strong>WNS（Worst Negative Slack）</strong>。
+WNS ≥ 0 才表示所有路径都能在 50 MHz 下按时完成。</p>
+<p>下面是一组参考数据（Lab 3 脉动阵列 SoC + 本讲义的 <code>fpga_top</code>，Vivado 2023.1）：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LUT</td>
+<td>约 8.7 k / 20.8 k（42%）</td>
+</tr>
+<tr>
+<td>寄存器</td>
+<td>约 6.0 k / 41.6 k（14%）</td>
+</tr>
+<tr>
+<td>Block RAM Tile</td>
+<td>2 / 50</td>
+</tr>
+<tr>
+<td>DSP</td>
+<td>5 / 90</td>
+</tr>
+<tr>
+<td>MMCM</td>
+<td>1 / 5（Clocking Wizard）</td>
+</tr>
+<tr>
+<td>WNS @ 50 MHz</td>
+<td>约 +1.4 ~ +2.1 ns（每次运行略有不同）</td>
+</tr>
+</tbody>
+</table>
+<p>你的数字和这里有出入是正常的（NPU 实现不同），只要 WNS ≥ 0 就可以继续。
+如果 WNS 是负的，先确认 Clocking Wizard 输出的确实是 50 MHz，而不是 100 MHz。</p>
+<h2 id="8">8. 烧写与接线</h2>
+<h3 id="81">8.1 烧写比特流</h3>
+<p>用 Type-C 线把 EGo1 接到电脑（这根线同时负责供电和烧写），打开电源开关。
+<code>PROGRAM AND DEBUG</code> → <code>Open Hardware Manager</code> → <code>Open Target</code> → <code>Auto Connect</code>，
+识别到 <code>xc7a35t</code> 后右键 → <code>Program Device</code>，选择 <code>&lt;工程&gt;.runs/impl_1/fpga_top.bit</code>。</p>
+<p>烧写成功后先看 LED（§5.3）：</p>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>locked 灯亮、心跳灯闪烁</td>
+<td>时钟和复位都正常，CPU 已经开始运行</td>
+</tr>
+<tr>
+<td>locked 灯不亮</td>
+<td>Clocking Wizard 没锁定，检查 <code>fpga_clk_i</code> 的管脚</td>
+</tr>
+<tr>
+<td>locked 灯亮、心跳灯不闪</td>
+<td>一直处于复位状态，检查复位按键的管脚和电平（§7.1）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Type-C 线和 JTAG 下载器是两回事</p>
+<p>EGo1 板载的 Type-C 口内部也是一个 JTAG，接的是 <strong>FPGA 本身</strong>，Vivado 用它来烧写比特流。
+下一步要接的 USB-JTAG 下载器连的是<strong>你的 SoC 里的 Debug Module</strong>，用来调试 CPU。
+两条 JTAG 链互不相干，两根线要同时插着。</p>
+</div>
+<h3 id="82-jtag">8.2 JTAG 接线</h3>
+<p>我们用的 USB-JTAG 下载器（核心芯片是 FTDI FT232H）：</p>
+<p><img alt="USB-JTAG 下载器" src="../assets/images/lab-6-jtag-cable.png" /></p>
+<p>下载器一端的 2×5 插座定义如下：</p>
+<p><img alt="下载器引脚定义" src="../assets/images/lab-6-jtag-pinout.png" /></p>
+<p>EGo1 的 J5 扩展口（2×18 针）原理图：</p>
+<p><img alt="EGo1 J5 扩展口" src="../assets/images/lab-6-ego1-j5.png" /></p>
+<p>用杜邦线<strong>按下表把 6 根线全部接上</strong>：</p>
+<div class="admonition warning">
+<p class="admonition-title">以下接线为参考，请自行核对 <a href="https://e-elements.readthedocs.io/zh/ego1_v2.2/EGo1.html">EGo1 用户手册</a> 第 14 节和 §7.1 的管脚约束</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>下载器引脚</th>
+<th>接到 J5 的脚号</th>
+<th>FPGA 管脚</th>
+<th>SoC 端口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TCK</td>
+<td>17</td>
+<td>E15</td>
+<td><code>tck_i</code></td>
+</tr>
+<tr>
+<td>TDI</td>
+<td>18</td>
+<td>E16</td>
+<td><code>td_i</code></td>
+</tr>
+<tr>
+<td>TDO</td>
+<td>19</td>
+<td>D15</td>
+<td><code>td_o</code></td>
+</tr>
+<tr>
+<td>TMS</td>
+<td>20</td>
+<td>C15</td>
+<td><code>tms_i</code></td>
+</tr>
+<tr>
+<td>VREF</td>
+<td>35 或 36（+3.3V）</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>33 或 34（GND）</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">VREF 和 GND 为什么也要接</p>
+<ul>
+<li><strong>GND</strong>：两块板子的"0 电平"必须是同一个参考，否则信号电平没有意义。必须接</li>
+<li><strong>VREF</strong>：下载器用它来判断目标板的 IO 电压，并据此决定输出信号的电平。
+  我们的 JTAG 管脚都约束成了 LVCMOS33，所以 VREF 接 J5 上的 3.3V。
+  VREF 只是一个参考输入，不会给板子供电</li>
+<li>下载器上有两个 GND 脚，接一个就够，两个都接更稳</li>
+</ul>
+</div>
+<p>注意 TDI / TDO 的方向：下载器的 <strong>TDI</strong> 是它<strong>发出</strong>的数据，接到 SoC 的输入 <code>td_i</code>；
+SoC 的输出 <code>td_o</code> 接回下载器的 <strong>TDO</strong>。</p>
+<p>接好后，所有硬件连接就完成了。</p>
+<h2 id="9-openocd-gdb-cpu">9. 用 OpenOCD + GDB 调试 CPU</h2>
+<h3 id="91-risc-v">9.1 RISC-V 调试体系</h3>
+<p>为了便于调试，RISC-V 规定了 Debug Module 的设计规范，以便调试器与 CPU 之间通信，
+详见 <a href="https://riscv.org/wp-content/uploads/2024/12/riscv-debug-release.pdf">RISC-V Debug Specification</a>。</p>
+<p><img alt="RISC-V 调试体系" src="../assets/images/lab-6-riscv-debug.png" /></p>
+<p>从上往下：</p>
+<ul>
+<li>与我们直接交互的<strong>软件</strong>是<strong>调试器（Debugger）</strong>，本实验用 RISC-V GDB，运行在电脑上</li>
+<li>调试器与<strong>调试转换器（Debug Translator）</strong>通信，本实验用 OpenOCD</li>
+<li>调试转换器驱动<strong>调试传输硬件（Debug Transport Hardware）</strong>，也就是 USB-JTAG 下载器</li>
+<li>下载器通过 JTAG 信号连到 SoC 里的<strong>调试传输模块（DTM）</strong>，对应 Lab 3 SoC 里的 <code>dmi_jtag</code></li>
+<li>DTM 通过 <strong>DMI</strong> 访问<strong>调试模块（DM）</strong>，对应 <code>dm_top</code>。DM 能让 CPU 停下（halt）、
+  读写寄存器，还能作为一个 AXI master 直接读写总线上的任何地址——
+  这正是 Lab 2 图里 debug module 既是 master 又是 slave 的原因</li>
+</ul>
+<h3 id="92-wsl-openocd">9.2 在 WSL 中安装 OpenOCD</h3>
+<p>WSL 可能自带一个 OpenOCD，版本太旧不支持 RISC-V，先卸载：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>remove<span class="w"> </span>openocd
+</code></pre></div>
+<p>下载 RISC-V 版 OpenOCD 源码并编译安装：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/riscv/riscv-openocd
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">cd</span><span class="w"> </span>riscv-openocd
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>libftdi-dev<span class="w"> </span>libusb-1.0-0<span class="w"> </span>libusb-1.0-0-dev<span class="w"> </span>autoconf<span class="w"> </span>automake<span class="w"> </span>texinfo<span class="w"> </span>pkg-config<span class="w"> </span>libjim-dev
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>./bootstrap
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>./configure<span class="w"> </span>--enable-ftdi
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>sudo<span class="w"> </span>make<span class="w"> </span>install
+</code></pre></div>
+<p>验证：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>which<span class="w"> </span>openocd
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>openocd<span class="w"> </span>-v
+</code></pre></div>
+<p>应当输出 <code>/usr/local/bin/openocd</code> 和类似 <code>Open On-Chip Debugger 0.12.0+dev-...</code> 的版本信息。</p>
+<h3 id="93-usb-wsl">9.3 把 USB 下载器映射进 WSL</h3>
+<p>WSL 自带 FTDI 驱动，不需要额外安装。但 WSL 默认看不到 Windows 上的 USB 设备，
+需要用 <a href="https://github.com/dorssel/usbipd-win/releases">usbipd-win</a> 把它"借"给 WSL。
+<strong>请安装 4.0.0 及以上版本</strong>。</p>
+<p>在<strong>管理员权限</strong>的 PowerShell 中，先找到下载器：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">usbipd</span> <span class="n">list</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Connected:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>BUSID  VID:PID    DEVICE                        STATE
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>1-4    048d:c101  USB 输入设备                   Not shared
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>2-4    0bda:4852  Realtek Bluetooth Adapter     Not shared
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>4-3    0403:6014  USB Serial Converter          Not shared
+</code></pre></div>
+<p><img alt="如何识别 JTAG Adapter" src="../assets/images/lab-6-tip-jtag-adapter.png" /></p>
+<p>找到 <code>VID:PID</code> 为 <code>0403:6014</code> 的那一行，记下它的 <code>BUSID</code>（上例是 <code>4-3</code>，你的可能不同），然后：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">usbipd</span> <span class="n">bind</span> <span class="p">-</span><span class="n">-busid</span> <span class="n">4</span><span class="p">-</span><span class="n">3</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">usbipd</span> <span class="n">attach</span> <span class="p">-</span><span class="n">-wsl</span> <span class="p">-</span><span class="n">-busid</span> <span class="n">4</span><span class="p">-</span><span class="n">3</span>
+</code></pre></div>
+<p><code>bind</code> 只需要做一次；<code>attach</code> 在每次重新插拔下载器、或重启电脑后都要再做一次。
+回到 WSL 中确认：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>lsusb
+</code></pre></div>
+<p>能看到 <code>ID 0403:6014 Future Technology Devices International, Ltd FT232H ...</code> 即映射成功。</p>
+<h3 id="94-openocd">9.4 配置文件与启动 OpenOCD</h3>
+<p>OpenOCD 通过配置文件（<code>.cfg</code>）知道"用的是什么下载器、目标是什么 CPU"。
+在 WSL 中新建 <code>cv32e40p.cfg</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">adapter</span><span class="w"> </span>speed<span class="w">     </span><span class="mi">10</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nv">adapter</span><span class="w"> </span>driver<span class="w"> </span>ftdi
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nv">transport</span><span class="w"> </span>select<span class="w"> </span>jtag
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nv">ftdi</span><span class="w"> </span>vid_pid<span class="w"> </span><span class="mh">0x0403</span><span class="w"> </span><span class="mh">0x6014</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="c"># Channel 1 is taken by Xilinx JTAG</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="nv">ftdi</span><span class="w"> </span>channel<span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="nv">ftdi</span><span class="w"> </span>layout_init<span class="w"> </span><span class="mh">0x0018</span><span class="w"> </span><span class="mh">0x001b</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="nv">ftdi</span><span class="w"> </span>layout_signal<span class="w"> </span>nTRST<span class="w"> </span><span class="o">-</span>ndata<span class="w"> </span><span class="mh">0x0010</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="k">set</span><span class="w"> </span>_CHIPNAME<span class="w"> </span>riscv
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="nv">jtag</span><span class="w"> </span>newtap<span class="w"> </span><span class="nv">$_CHIPNAME</span><span class="w"> </span>cpu<span class="w"> </span><span class="o">-</span>irlen<span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="k">set</span><span class="w"> </span>_TARGETNAME<span class="w"> </span><span class="nv">$_CHIPNAME.cpu</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="nv">target</span><span class="w"> </span>create<span class="w"> </span><span class="nv">$_TARGETNAME</span><span class="w"> </span>riscv<span class="w"> </span><span class="o">-</span>chain-position<span class="w"> </span><span class="nv">$_TARGETNAME</span><span class="w"> </span><span class="o">-</span>coreid<span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="nv">gdb</span><span class="w"> </span>report_data_abort<span class="w"> </span>enable
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="nv">gdb</span><span class="w"> </span>report_register_access_error<span class="w"> </span>enable
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="nv">riscv</span><span class="w"> </span>set_command_timeout_sec<span class="w"> </span><span class="mi">120</span>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="nv">riscv</span><span class="w"> </span>set_mem_access<span class="w"> </span>progbuf<span class="w"> </span>sysbus<span class="w"> </span>abstract
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="nv">init</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="nv">halt</span>
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="nv">echo</span><span class="w"> </span><span class="s2">"Ready for Remote Connections"</span>
+</code></pre></div>
+<p>几个关键行：</p>
+<table>
+<thead>
+<tr>
+<th>配置</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>adapter speed 10</code></td>
+<td>JTAG 时钟 10 kHz。杜邦线连接质量一般，速度低一点更稳</td>
+</tr>
+<tr>
+<td><code>ftdi vid_pid 0x0403 0x6014</code></td>
+<td>下载器的 VID:PID，和 §9.3 里看到的一致</td>
+</tr>
+<tr>
+<td><code>jtag newtap ... -irlen 5</code></td>
+<td>SoC 里 <code>dmi_jtag_tap</code> 的指令寄存器长度是 5 位</td>
+</tr>
+<tr>
+<td><code>riscv set_mem_access progbuf sysbus abstract</code></td>
+<td>访问内存的方式优先级：先让 CPU 执行指令去读写，不行再让 DM 直接走总线</td>
+</tr>
+<tr>
+<td><code>init</code> / <code>halt</code></td>
+<td>连上之后立刻让 CPU 停下</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">网上找到的旧配置文件</p>
+<p>网上的一些教程里会写 <code>gdb_report_data_abort enable</code> 和 <code>riscv set_reset_timeout_sec 120</code>。
+在新版 OpenOCD 中，前者已改为 <code>gdb report_data_abort enable</code>（中间是空格），
+后者已被删除，写了会直接报错退出。以上面这份为准。</p>
+</div>
+<p>启动：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>openocd<span class="w"> </span>-f<span class="w"> </span>cv32e40p.cfg
+</code></pre></div>
+<p>连接成功时输出类似下面这样（<strong>仅为示例</strong>：版本号、<code>XLEN</code>、<code>misa</code> 等以实际输出为准；
+我们的 cv32e40p 是 32 位的，<code>XLEN</code> 应为 32）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Open On-Chip Debugger 0.12.0+dev-03598-g78a719fad (2024-01-20-05:43)
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>Info : clock speed 10 kHz
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>Info : JTAG tap: riscv.cpu tap/device found: 0x00000001 (mfg: 0x000 (&lt;invalid&gt;), part: 0x0000, ver: 0x0)
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>Info : [riscv.cpu] datacount=2 progbufsize=8
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>Info : [riscv.cpu] Examined RISC-V core
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>Info : [riscv.cpu] XLEN=64, misa=0x800000000014112d
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>[riscv.cpu] Target successfully examined.
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>Info : starting gdb server for riscv.cpu on 3333
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>Info : Listening on port 3333 for gdb connections
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>Ready for Remote Connections
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>Info : Listening on port 6666 for tcl connections
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>Info : Listening on port 4444 for telnet connections
+</code></pre></div>
+<p>最关键的是 <code>JTAG tap: riscv.cpu tap/device found</code> 和 <code>Listening on port 3333</code>。
+<strong>保持这个终端开着</strong>，OpenOCD 要一直运行。</p>
+<h3 id="95-risc-v-gdb">9.5 安装 RISC-V 工具链（GDB）</h3>
+<p>在 WSL 中下载 <a href="https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/download/v13.2.0-2/xpack-riscv-none-elf-gcc-13.2.0-2-linux-x64.tar.gz">riscv-none-elf-gcc 工具链</a>
+并解压，例如解压到 <code>/opt/riscv</code>。然后把它的 <code>bin</code> 目录加入 <code>PATH</code>，
+在 <code>~/.bashrc</code> 末尾加上两行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># RISC-V toolchain</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RISCV</span><span class="o">=</span>/opt/riscv
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$RISCV</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+</code></pre></div>
+<p><img alt="~/.bashrc 示例" src="../assets/images/lab-6-bashrc.png" /></p>
+<p>执行 <code>source ~/.bashrc</code> 或者重新打开终端，然后验证：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>riscv-none-elf-gdb<span class="w"> </span>--version
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">解压后的目录结构</p>
+<p>xpack 的压缩包解压出来是 <code>xpack-riscv-none-elf-gcc-13.2.0-2/</code>，里面才是 <code>bin/</code>。
+<code>RISCV</code> 要指向含有 <code>bin/</code> 的那一层。</p>
+</div>
+<h3 id="96-gdb-openocd">9.6 用 GDB 连接 OpenOCD</h3>
+<p><strong>另开一个</strong> WSL 终端：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>riscv-none-elf-gdb
+</code></pre></div>
+<p>进入 <code>(gdb)</code> 提示符后：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>(gdb) target remote :3333
+</code></pre></div>
+<p>连接成功后 GDB 会显示 CPU 当前停在哪个地址。</p>
+<h2 id="10">10. 上板体验</h2>
+<p>到这里，你已经能通过 GDB 控制板子上的 CPU 了。本节不设验收，下面几件事建议都试一试。</p>
+<h3 id="101-gdb">10.1 常用 GDB 命令</h3>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>info registers</code></td>
+<td>列出所有通用寄存器和 PC</td>
+</tr>
+<tr>
+<td><code>p $t0</code> / <code>p/x $t0</code></td>
+<td>查看某个寄存器（<code>/x</code> 以十六进制显示）</td>
+</tr>
+<tr>
+<td><code>x/10xw 0x80000000</code></td>
+<td>以字（4 字节）为单位，十六进制显示从该地址开始的 10 个字</td>
+</tr>
+<tr>
+<td><code>x/10xb</code>、<code>x/10xh</code></td>
+<td>同上，以字节 / 半字为单位</td>
+</tr>
+<tr>
+<td><code>x/5i $pc</code></td>
+<td>把内存内容当成<strong>指令</strong>反汇编，显示 PC 处开始的 5 条</td>
+</tr>
+<tr>
+<td><code>set {int}0x80001000 = 0x1234</code></td>
+<td>向该地址写入 4 字节</td>
+</tr>
+<tr>
+<td><code>set $t0 = 5</code>、<code>set $pc = 0x80000000</code></td>
+<td>写寄存器 / 改 PC</td>
+</tr>
+<tr>
+<td><code>break *0x80000024</code></td>
+<td>在该地址设断点</td>
+</tr>
+<tr>
+<td><code>info break</code>、<code>disable 1</code></td>
+<td>查看断点 / 禁用 1 号断点</td>
+</tr>
+<tr>
+<td><code>stepi</code></td>
+<td>单步执行一条指令</td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td>继续运行，直到断点或手动按 <code>Ctrl+C</code> 停下</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="断点与单步（示例）" src="../assets/images/lab-6-gdb-commands.png" /></p>
+<h3 id="102">10.2 确认测试程序在板子上跑完了</h3>
+<p>比特流里的主存初始内容就是 <code>lab3_test1.hex</code>（§7.4），所以烧写、复位释放之后 CPU 已经把
+Lab 3 的 test1 跑完了。程序把结果写在主存顶端的 magic 区域（Lab 3 §3.7），用 GDB 读出来：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>(gdb) x/6xw 0x80001FE0
+</code></pre></div>
+<p>第一个字应当是 <strong><code>0xc0dec0de</code></strong>（PASS）。在 ModelSim 里是 testbench 替你看这个地址，
+在板子上就是你通过 JTAG 亲自去看。</p>
+<p>再看看 CPU 现在停在哪里：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>(gdb) x/3i $pc
+</code></pre></div>
+<p>test1 的 <code>main</code> 返回后会进入 <code>startup.S</code> 里的 <code>loop: j loop</code> 死循环，
+PC 应停在 <code>0x8000002e</code>（在 Lab 3 的 <code>soc/sim/sw/lab3_test1.dump</code> 里搜 <code>&lt;loop&gt;</code> 可以对上）。</p>
+<h3 id="103-npu">10.3 在板子上直接访问你的 NPU</h3>
+<p>GDB 读写内存走的也是总线，所以它可以像 CPU 一样访问 <code>0x7000_0000</code> 开始的 MMIO 地址。
+这相当于把 Lab 3 Task 5 的手写汇编，换成在 GDB 里一条一条手动执行。</p>
+<p>test1 跑完后 ACT / WGT 里还留着它的数据。为了让结果好算，先把 A 的第 0 行、B 的第 0 列清零
+（列优先打包：<code>A[0][k]</code> 在 <code>ACT[k*4]</code>，<code>B[k][0]</code> 在 <code>WGT[k]</code>），再写入 <code>A[0][0] = 3</code>、<code>B[0][0] = 5</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>set {int}0x70000050 = 0
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>set {int}0x70000060 = 0
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>set {int}0x70000070 = 0
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>set {int}0x70001004 = 0
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>set {int}0x70001008 = 0
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>set {int}0x7000100c = 0
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>set {int}0x70000040 = 3
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>set {int}0x70001000 = 5
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>x/1xw 0x70000040
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>set {int}0x70000000 = 1
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>x/1xw 0x70000004
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>x/1dw 0x70002000
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+<th>预期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前 6 条</td>
+<td><code>A[0][1..3] = 0</code>、<code>B[1..3][0] = 0</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>set {int}0x70000040 = 3</code></td>
+<td><code>ACT[0] = A[0][0] = 3</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>set {int}0x70001000 = 5</code></td>
+<td><code>WGT[0] = B[0][0] = 5</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x/1xw 0x70000040</code></td>
+<td>读回 <code>ACT[0]</code></td>
+<td><code>0x00000003</code></td>
+</tr>
+<tr>
+<td><code>set {int}0x70000000 = 1</code></td>
+<td>写 <code>CONTROL</code>，启动计算</td>
+<td></td>
+</tr>
+<tr>
+<td><code>x/1xw 0x70000004</code></td>
+<td>读 <code>STATUS</code></td>
+<td><code>0x00000001</code>（DONE）</td>
+</tr>
+<tr>
+<td><code>x/1dw 0x70002000</code></td>
+<td>读 <code>OUT[0] = C[0][0]</code></td>
+<td><code>15</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">GDB 命令行里不能写注释</p>
+<p>GDB 会把 <code>#</code> 当成表达式的一部分并报 <code>Invalid character '#'</code>，所以上面的命令没有行尾注释。</p>
+</div>
+<p>可以继续试试：</p>
+<ul>
+<li>读 <code>0x70002000</code> ~ <code>0x7000203C</code> 把 16 个结果全部读出来，和你手算的对一对</li>
+<li>读一个没有映射的地址，例如 <code>x/1xw 0x60000000</code>，看看是不是 Lab 3 里见过的那个值</li>
+<li>在 <code>main</code> 里写 NPU 的那条 <code>sw</code> 指令处打断点（地址从 <code>.dump</code> 里找），
+  再用 <code>set $pc = 0x80000000</code> 让程序从头开始、<code>c</code> 继续运行，停下后用 <code>p $a2</code>、<code>p/x $a5</code>
+  看它要往哪个地址写什么。（不要用板上的复位键：它同时会复位 Debug Module 和 JTAG 接口，OpenOCD 的连接会出错，需要重启 OpenOCD）</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">写入 ROM 区域</p>
+<p><img alt="ROM 写入提示" src="../assets/images/lab-6-tip-rom-write.png" /></p>
+<p>本 SoC 里 <code>0x0001_0000</code> 开始的是 bootram，看名字像 ROM，但它其实可以写（打开
+<code>soc/rtl/mem/bootram.sv</code> 看看 <code>wen_i</code> 那一段）。真正的芯片里这类启动存储往往是只读的。
+这段内容是复位后执行的第一段代码，<strong>不要随手改</strong>。好在本 SoC 的 bootram 每次复位都会重新装入
+引导指令（Lab 2 Task 2），改坏了按一下复位键就能恢复。</p>
+</div>
+<h2 id="11">11. 常见问题</h2>
+<h3 id="q1-led">Q1 烧写后 LED 完全没反应</h3>
+<p>先确认 locked 灯（§5.3）。不亮：Clocking Wizard 没锁定，查 <code>fpga_clk_i</code> 是不是约束到 P17。
+亮但心跳灯不闪：一直在复位，查复位按键的管脚和电平（§7.1）。</p>
+<h3 id="q2-openocd-unable-to-open-ftdi-device">Q2 OpenOCD 报 <code>unable to open ftdi device</code></h3>
+<p>WSL 里看不到下载器。用 <code>lsusb</code> 确认有没有 <code>0403:6014</code>；没有就回 §9.3 重新 <code>usbipd attach</code>
+（每次重新插拔下载器都要重做）。也可能是没有加 <code>sudo</code>。</p>
+<h3 id="q3-openocd-jtag-scan-chain-interrogation-failed-all-ones-all-zeroes-unsupported-dtm-version">Q3 OpenOCD 报 <code>JTAG scan chain interrogation failed: all ones / all zeroes</code> 或 <code>Unsupported DTM version</code></h3>
+<p>下载器找到了，但 JTAG 链不通。按顺序查：</p>
+<ol>
+<li>板子上电了吗？比特流烧进去了吗？（重新上电后比特流会丢失，要重新烧）</li>
+<li>6 根线是否都接好，尤其是 <strong>GND</strong> 和 <strong>VREF</strong></li>
+<li>TDI / TDO 是否接反（§8.2 末尾）</li>
+<li>管脚约束是否和实际接的 J5 脚号一致</li>
+<li>试着把配置文件里的 <code>adapter speed</code> 再调低</li>
+</ol>
+<h3 id="q4-0x80001fe0-0xc0dec0de">Q4 读 <code>0x80001FE0</code> 得到的不是 <code>0xc0dec0de</code></h3>
+<ul>
+<li>全是 0：主存可能是空的，查综合日志里的 <code>readmem</code>（§7.4）</li>
+<li><code>0x12345678</code>：程序开始了但没跑完。先确认这个 SoC 在 ModelSim 里是 PASS 的；
+  再确认 WNS ≥ 0（§7.4）</li>
+<li>其他值：用 <code>x/5i $pc</code> 看 CPU 停在哪里</li>
+</ul>
+<h3 id="q5-vivado-could-not-open-readmem-data-file">Q5 Vivado 综合报 <code>could not open $readmem data file</code></h3>
+<p>见 §2.3，<code>INIT_FILE</code> 要改成绝对路径，分隔符用 <code>/</code>。</p>
+<h3 id="q6-wns-0">Q6 时序不满足（WNS &lt; 0）</h3>
+<p>确认 Clocking Wizard 的输出是 50 MHz、<code>fpga_top</code> 里 SoC 用的是 <code>clk_sys</code> 而不是 <code>fpga_clk_i</code>。</p>
+<h3 id="q7-vivado-modelsim">Q7 Vivado 或 ModelSim 报一些莫名其妙的文件错误</h3>
+<p>检查工程路径和源码路径里有没有中文或空格。</p>
 
 
 
@@ -557,7 +2773,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月19日 13:08:36 UTC">2026年9月19日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月9日 06:51:25 UTC">2026年10月9日</span>
   </span>
 
     
