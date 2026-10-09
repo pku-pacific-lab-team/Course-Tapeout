@@ -1,7 +1,8 @@
-# Lab 0：CLab setup & 先进 AI 工具使用
+# Lab 0：XLab setup & 先进 AI 工具使用
 
-!!! note "CLab setup 部分尚未发布"
-    本页目前只包含「先进 AI 工具使用」部分。CLab setup 的内容待补充，确定后本页会更新。
+!!! note "XLab setup 部分尚未发布"
+    本页目前只包含「先进 AI 工具使用」部分。XLab setup 的内容待补充，确定后本页会更新。
+    参考：[XLab 使用文档 · 快速上手](https://xlab.pku.edu.cn/docs/getting-started)
 
 ## 实验目的
 
