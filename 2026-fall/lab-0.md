@@ -3,7 +3,181 @@
 !!! note "XLab setup"
     XLab 部分不单独出讲义，环境配置请直接参考官方文档：
     [XLab 使用文档 · 快速上手](https://xlab.pku.edu.cn/docs/getting-started)。
-    本页其余内容为「先进 AI 工具使用」。
+    本页其余内容为「服务器代理与远程桌面配置」和「先进 AI 工具使用」。
+
+## 服务器代理与远程桌面配置
+
+在课程服务器（Linux）上需要访问外网时（例如下载工具、访问 GitHub），可以把 Windows 本机的代理通过 SSH 反向隧道共享给服务器使用，服务器端不需要安装任何代理程序。本节同时给出服务器上 Firefox 的代理设置和 Shadowdesk 远程桌面的使用说明。
+
+!!! note "验证情况"
+    命令行代理已在服务器上实际验证可用，Firefox 经代理可正常访问外网。
+    第 6 小节远程桌面分辨率的调整方案已定位原因、但尚未实际验证，供参考。
+
+### 1. 使用条件与连接方式
+
+- Windows 已安装 SSH 客户端，能够通过 SSH 登录 Linux 服务器。
+- Windows 已连接 VPN，并提供可用的 HTTP、SOCKS5 或混合代理端口。
+- Linux 已运行 SSH 服务，并允许该账号进行反向端口转发。
+- 在组织允许的网络使用范围内配置。
+
+VPN 不一定自带代理端口。请在本地软件中查找“HTTP Port”“SOCKS Port”“Mixed Port”等设置；如果只有系统级 VPN，需要另外提供代理服务，并确认其流量经过 VPN。
+
+连接路径：
+
+```text
+Linux 程序 → Linux 127.0.0.1:17890
+           → SSH 反向隧道
+           → Windows 127.0.0.1:7890
+           → 本地代理 / VPN → 目标网站
+```
+
+本节使用以下示例值，请按实际情况替换：
+
+| 参数 | 示例 | 含义 |
+|---|---|---|
+| SSH 端口 | 自己的服务器端口 | 服务器 SSH 服务端口 |
+| 服务器代理入口 | 17890 | Linux 程序连接的代理端口 |
+| Windows 代理端口 | 自己的 VPN 代理端口 | Windows 代理软件实际监听的端口 |
+
+Linux 通常不需要额外安装代理程序。SSH 服务会建立监听端口，且无需向公网开放 17890。Windows 也不需要公网 IP。
+
+### 2. 在 Windows 配置 SSH 隧道
+
+在 PowerShell 中打开 SSH 配置文件：
+
+```powershell
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.ssh" | Out-Null
+notepad "$env:USERPROFILE\.ssh\config"
+```
+
+加入以下内容，将服务器地址、用户名、SSH 端口和 Windows 代理端口替换为实际值。文件名是 `config`，不要保存成 `config.txt`。
+
+```sshconfig
+Host linux-proxy
+    HostName 服务器地址
+    User 用户名
+    Port 连接端口
+    RemoteForward 127.0.0.1:17890 127.0.0.1:自己的代理端口
+    ExitOnForwardFailure yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+```
+
+启动隧道：
+
+```powershell
+ssh -N -T linux-proxy
+```
+
+登录成功后没有命令提示符是正常现象：`-N` 表示不运行远程命令，`-T` 表示不分配终端。保持该窗口运行；按 `Ctrl+C` 可断开。
+
+如果提示远程转发失败，检查端口是否被占用、服务器是否允许转发。SSH 管理员可能需要检查 `AllowTcpForwarding`、`DisableForwarding`、监听限制以及账号或密钥限制。
+
+保持代理入口绑定到 `127.0.0.1`，避免将代理暴露到公网。保活参数用于检测断线，不会自动重连。
+
+### 3. 在 Linux 测试代理
+
+如果 Windows 的端口支持 HTTP 或混合代理：
+
+```bash
+curl -I --proxy http://127.0.0.1:17890 https://www.google.com
+```
+
+如果端口只支持 SOCKS5：
+
+```bash
+curl -I --proxy socks5h://127.0.0.1:17890 https://www.google.com
+```
+
+`socks5h` 会通过代理解析目标域名。代理类型必须与 Windows 端口一致，SSH 隧道本身不转换协议。
+
+### 4. 为 Linux 终端持久设置代理
+
+下面适用于 Bash，且 Windows 端口支持 HTTP 代理。只执行一次，避免重复追加：
+
+```bash
+cat >> ~/.bashrc <<'EOF'
+
+# Windows SSH 隧道代理
+export http_proxy=http://127.0.0.1:17890
+export https_proxy=http://127.0.0.1:17890
+export no_proxy=localhost,127.0.0.1,::1
+EOF
+
+source ~/.bashrc
+```
+
+新开的交互式 Bash 终端会自动读取配置。使用 Zsh 时应配置 `~/.zshrc`。
+
+检查：
+
+```bash
+echo "$https_proxy"
+curl -I https://www.google.com
+```
+
+`https_proxy` 的值使用 `http://` 是正常的，HTTPS 请求可通过 HTTP 代理的 CONNECT 功能传输。
+
+在当前终端临时关闭：
+
+```bash
+unset http_proxy https_proxy no_proxy
+```
+
+永久关闭则删除或注释启动文件中的对应配置，并在当前终端执行上述 `unset`。
+
+注意：这些变量不会接管整个系统的网络。程序是否支持代理变量取决于其实现；图形应用、系统服务和容器可能需要独立配置。Windows 休眠、VPN 断开或 SSH 隧道退出后，依赖该代理的请求会失败。
+
+### 5. 配置服务器上的 Firefox
+
+Firefox 通常不会使用终端中设置的代理变量，需要单独配置。
+
+打开：**设置 → 常规 → 网络设置 → 设置 → 手动配置代理**。
+
+#### HTTP 或混合代理端口
+
+| 设置项 | 值 |
+|---|---|
+| HTTP 代理 | 127.0.0.1 |
+| 端口 | 17890 |
+| 也将此代理用于 HTTPS | 勾选 |
+
+如果界面单独列出 HTTPS 代理，同样填写 `127.0.0.1` 和 `17890`。
+
+#### 仅 SOCKS5 代理端口
+
+- HTTP / HTTPS 代理栏留空。
+- SOCKS 主机填写 `127.0.0.1`，端口填写 `17890`。
+- 选择 SOCKS v5。
+- 勾选“使用 SOCKS v5 时代理 DNS”，具体名称可能因版本不同而变化。
+
+选择与本地代理端口相符的一种配置。保存后重新访问目标网站。
+
+### 6. Shadowdesk 远程桌面分辨率
+
+#### 先尝试调整 Windows 浏览器
+
+自适应分辨率已开启，当前较小尺寸可能与浏览器可用区域、网页缩放或 Windows 显示缩放有关，尚未确认具体原因。
+
+浏览器页面中的 `Ctrl+/-`、`F11` 可能被远程页面捕获并发送到 Linux，因此可以用浏览器右上角的“…”操作：
+
+1. 在服务器桌面右键，打开“Display Settings”，便于查看缩放状态下的分辨率
+2. 点击对应的全屏图标。
+3. 在“缩放”处尝试不同缩放比例，直到服务器分辨率达到 1920 × 1080 的原始值。
+
+### 7. 常见问题
+
+| 现象 | 优先检查 |
+|---|---|
+| 新终端没有代理 | 是否写入了当前 Shell 对应的启动文件 |
+| 终端可访问，Firefox 不可访问 | Firefox 是否单独设置了代理，协议是否匹配 |
+| 连接 17890 被拒绝 | Windows SSH 隧道是否仍在运行 |
+| 隧道已建立，但请求失败 | Windows 代理端口、VPN 和本地代理是否可用 |
+| 域名解析失败 | SOCKS 是否使用 `socks5h`，Firefox 是否开启 SOCKS DNS |
+| SSH 报远程端口转发失败 | 服务器端口占用、SSH 服务或账号转发限制 |
+| 远程桌面快捷键无效 | 按键可能发往 Linux，尝试用鼠标操作 Edge 菜单 |
+
+---
 
 ## 实验目的
 
