@@ -1757,7 +1757,7 @@
 <p><a href="https://www.runoob.com/nodejs/nodejs-install-setup.html">Node.js 安装配置 — 菜鸟教程</a></p>
 <h3 id="12-git">1.2 安装 Git</h3>
 <p>Claude Code 启动时依赖 Git，没装会拒绝运行。</p>
-<p><strong>Windows：</strong>打开 PowerShell，执行：</p>
+<p>**Windows：**打开 PowerShell，执行：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Git</span><span class="p">.</span><span class="n">Git</span> <span class="n">-e</span> <span class="p">-</span><span class="n">-source</span> <span class="n">winget</span>
 </code></pre></div>
 <p>成功输出大致如下（版本号以实际安装为准）：</p>
@@ -1772,7 +1772,7 @@
 <a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>Successfully installed
 </code></pre></div>
 <p>安装完成后，关闭并重新打开终端，使新的 PATH 生效。</p>
-<p><strong>macOS：</strong>打开终端，执行：</p>
+<p>**macOS：**打开终端，执行：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>--version
 </code></pre></div>
 <p>如果系统弹窗提示安装「命令行开发者工具」（Command Line Tools），点「安装」即可（约几分钟下载）。已经装过则会直接显示版本号，类似 <code>git version 2.39.5 (Apple Git-154)</code>。</p>
@@ -1793,13 +1793,13 @@
 <p>官方定价页：<a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing">DeepSeek 模型与价格</a>。</p>
 <p>后续教程以 DeepSeek V4 为示例。你也可以换成其他喜欢的模型（如 GLM、Kimi 等），但配置上会略有差异。</p>
 <h3 id="21-claude-code">2.1 打开 Claude Code 配置目录</h3>
-<p><strong>Windows：</strong>键盘按下 Win + R，在弹出的「运行」对话框中输入下面这行后回车：</p>
+<p>**Windows：**键盘按下 Win + R，在弹出的「运行」对话框中输入下面这行后回车：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>%userprofile%\.claude
 </code></pre></div>
 <p>资源管理器会打开 Claude Code 的配置目录。如果提示目录不存在，可以先在 PowerShell 中执行：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Directory</span> <span class="n">-Force</span> <span class="s2">"$env:USERPROFILE\.claude"</span>
 </code></pre></div>
-<p><strong>macOS：</strong>打开「访达」（Finder），菜单栏选 前往 → 前往文件夹…（快捷键 Cmd + Shift + G），输入下面这行后回车：</p>
+<p>**macOS：**打开「访达」（Finder），菜单栏选 前往 → 前往文件夹…（快捷键 Cmd + Shift + G），输入下面这行后回车：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>~/.claude
 </code></pre></div>
 <p>访达会打开 Claude Code 的配置目录。如果目录不存在，先在终端执行：</p>
@@ -1942,7 +1942,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="p">&amp;</span> <span class="s2">"C:\iverilog\bin\iverilog.exe"</span> <span class="n">-V</span>
 <a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="p">&amp;</span> <span class="s2">"C:\iverilog\bin\vvp.exe"</span> <span class="n">-V</span>
 </code></pre></div>
-<p><strong>波形查看工具：GTKWave。</strong>可以从开始菜单或安装目录启动它。若安装包没有附带 GTKWave，或 GTKWave 无法启动，也可以使用 4.2 中的 Surfer 网页版，Windows 同样适用。</p>
+<p>**波形查看工具：GTKWave。**可以从开始菜单或安装目录启动它。若安装包没有附带 GTKWave，或 GTKWave 无法启动，也可以使用 4.2 中的 Surfer 网页版，Windows 同样适用。</p>
 <h3 id="42-macos">4.2 macOS</h3>
 <p>macOS 可以原生运行 Icarus Verilog。</p>
 <p>如果尚未安装 Homebrew，请先按照 <a href="https://brew.sh/">Homebrew 官网</a> 的说明安装，并完成安装结束时提示的 shell 环境配置。重新打开终端后执行：</p>
@@ -1952,7 +1952,7 @@
 <a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>vvp<span class="w"> </span>-V
 </code></pre></div>
 <p>能看到 <code>iverilog</code> 和 <code>vvp</code> 的版本信息，说明安装成功。Intel 和 Apple Silicon Mac 都可使用以上命令。</p>
-<p><strong>波形查看工具：Surfer。</strong>使用浏览器打开 <a href="https://app.surfer-project.org/">Surfer 网页版</a>，即可加载本地生成的 VCD 文件，无需额外安装波形软件。也可以从 <a href="https://surfer-project.org/">Surfer 官网</a> 获取适合自己系统的桌面版本。</p>
+<p>**波形查看工具：Surfer。**使用浏览器打开 <a href="https://app.surfer-project.org/">Surfer 网页版</a>，即可加载本地生成的 VCD 文件，无需额外安装波形软件。也可以从 <a href="https://surfer-project.org/">Surfer 官网</a> 获取适合自己系统的桌面版本。</p>
 <div class="admonition note">
 <p class="admonition-title">关于 macOS 上的 GTKWave</p>
 <p>截至本讲义修订时（2026-09-06），Homebrew 的旧 <code>gtkwave</code> cask 已停用，因此本教程不使用 <code>brew install --cask gtkwave</code> 作为 macOS 安装步骤。已有可用 GTKWave 的同学仍然可以用它打开相同的 VCD 文件。</p>

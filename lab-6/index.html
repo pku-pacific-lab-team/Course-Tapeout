@@ -2407,7 +2407,7 @@ SoC 的输出 <code>td_o</code> 接回下载器的 <strong>TDO</strong>。</p>
 <p>从上往下：</p>
 <ul>
 <li>与我们直接交互的<strong>软件</strong>是<strong>调试器（Debugger）</strong>，本实验用 RISC-V GDB，运行在电脑上</li>
-<li>调试器与<strong>调试转换器（Debug Translator）</strong>通信，本实验用 OpenOCD</li>
+<li>调试器与**调试转换器（Debug Translator）**通信，本实验用 OpenOCD</li>
 <li>调试转换器驱动<strong>调试传输硬件（Debug Transport Hardware）</strong>，也就是 USB-JTAG 下载器</li>
 <li>下载器通过 JTAG 信号连到 SoC 里的<strong>调试传输模块（DTM）</strong>，对应 Lab 3 SoC 里的 <code>dmi_jtag</code></li>
 <li>DTM 通过 <strong>DMI</strong> 访问<strong>调试模块（DM）</strong>，对应 <code>dm_top</code>。DM 能让 CPU 停下（halt）、

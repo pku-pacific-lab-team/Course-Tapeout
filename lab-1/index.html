@@ -1507,7 +1507,7 @@
 <ul>
 <li>✅ 端口签名、<code>generate</code> 数组、状态机骨架，都能给出像模像样的一稿</li>
 <li>✅ 解释一段 RTL、讲清时序、提示 testbench 怎么写，很好用</li>
-<li>⚠️ 经常生成<strong>「看着对、跑不通」</strong>的 RTL：忘了复位、位宽错、把 <code>rst_ni</code> 当成高有效、把 16 个 PE 偷换成一个组合大乘法器</li>
+<li>⚠️ 经常生成**「看着对、跑不通」**的 RTL：忘了复位、位宽错、把 <code>rst_ni</code> 当成高有效、把 16 个 PE 偷换成一个组合大乘法器</li>
 <li>⚠️ 写出的 testbench 经常<strong>覆盖不到边界</strong>（比如从来不测「连续跑两次」）</li>
 </ul>
 <p>所以本 Lab 的流程被设计成：<strong>AI 出一稿 → 你读 → tb 证伪 → 波形定位 → 你告诉 AI 错在哪 → 迭代</strong>。</p>
@@ -1874,7 +1874,7 @@
 </table>
 <p><strong>看不懂就追问</strong>，让 AI 解释到你懂为止。这是本 Lab 的核心训练内容。</p>
 <h4 id="b-4-testbench">B-4 · 写自己的 testbench 自测</h4>
-<p><strong>先用自己的 tb 跑通，再去碰验收 tb。</strong>自己的 tb 更小、报错更直接，调试效率高得多。</p>
+<p>**先用自己的 tb 跑通，再去碰验收 tb。**自己的 tb 更小、报错更直接，调试效率高得多。</p>
 <p>新建 <code>tb/tb_simple_npu.sv</code>，让 AI 帮你写，但你要确认前 6 步都覆盖到：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1">// 1. 时钟 + 复位</span>
 <a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="c1">// 2. 把 A/B 按列优先打包到 act/wgt：act[j*4+i] &lt;= A[i][j]</span>
