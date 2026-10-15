@@ -16,15 +16,29 @@
 
 ## 实验环境与获取实验代码
 
-实验在 xlab 服务器上进行。从共享目录把实验包复制到你自己的目录：
+实验在 xlab 服务器上进行。实验代码在 `/lec/lab4` 下（**不再使用 `/lec/shared`**，该共享目录的权限管理容易出错），其中 `pdk/` 子目录是工艺库。
+
+**先阅读 `/lec/lab4` 下的 README**，了解目录结构，并注意版本变化。
+
+把实验包子目录复制到你自己的目录（目录名以 README 为准）：
 
 ```bash
-cp -r /lec/shared/soc_cv32e40p_template_pnr-stu ~/soc_cv32e40p_template_pnr
+cp -r /lec/lab4/<实验包目录名> ~/soc_cv32e40p_template_pnr
+```
+
+再把工艺库复制到 `/home/almalinux/` 下：
+
+```bash
+cp -r /lec/lab4/pdk/* /home/almalinux/
 ```
 
 本文中的项目根目录写作 `/home/s24000xxxxx/chip-fullstack-2026/soc_cv32e40p_template_pnr`。
 请把它理解为（或替换为）你复制出来的目录，例如上面的 `~/soc_cv32e40p_template_pnr`。
-工艺库路径（`/home/almalinux/tsmc180/...`）是服务器上的共享路径，不需要复制。
+
+!!! note "为什么工艺库要复制到 /home/almalinux/"
+    这是为了配合部分脚本：它们按 `/home/almalinux/tsmc180/...` 的固定路径引用工艺库。
+    复制完成后可以用 `ls /home/almalinux/tsmc180` 确认工艺库就位。
+    后续你自己搭建 / 运行 flow 时，可以把工艺库复制到自己的本地根目录，并相应修改脚本中的路径。
 
 ## 使用约定与项目基线
 
