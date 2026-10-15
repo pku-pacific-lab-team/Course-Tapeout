@@ -7,29 +7,26 @@
     - **课时**：3 次实验课
     - **完成标准**：完成 Genus 综合与 Innovus 全部步骤，导出步骤 34.6 的交付清单。**本实验不需要提交任何材料**
 
-!!! warning "服务器共享文件处理中"
-    服务器上的共享文件还在处理中，**暂时无法读取工艺库文件**。恢复时间请留意课程群通知。
-
 本指南用于本实验包的 TSMC180 / `my_soc_top` 设计，第一部分介绍 Genus 逻辑综合，第二部分介绍从 postsyn 到 Innovus 最终导出的完整操作。已有综合结果时直接从[第二部分](#innovus)开始。
 
 本文给出操作、命令、检查标准和必要的异常处理；各阶段列出已验证的参考结果，常见故障处理与复跑注意事项集中在本文附录。执行时以当前运行生成的日志、报告和设计数据库为验收依据。V2LVS、Virtuoso、Calibre、Seal Ring 和 Dummy Fill 属于后续软件流程，本指南到 Innovus 文件导出与核对结束。
 
 ## 实验环境与获取实验代码
 
-实验在 xlab 服务器上进行。实验代码在 `/lec/lab4` 下（**不再使用 `/lec/shared`**，该共享目录的权限管理容易出错），其中 `pdk/` 子目录是工艺库。
+实验在 xlab 服务器上进行。实验代码在 `/lec/lab4` 下（**不再使用 `/lec/shared`**，该共享目录的权限管理容易出错）。
 
-**先阅读 `/lec/lab4` 下的 README**，了解目录结构，并注意版本变化。
+**先阅读 `/lec/lab4/readme`**，了解目录结构，并注意版本变化。
 
-把实验包子目录复制到你自己的目录（目录名以 README 为准）：
+把实验包复制到你自己的目录：
 
 ```bash
-cp -r /lec/lab4/<实验包目录名> ~/soc_cv32e40p_template_pnr
+cp -r /lec/lab4/soc_cv32e40p_template_pnr-stu ~/soc_cv32e40p_template_pnr
 ```
 
-再把工艺库复制到 `/home/almalinux/` 下：
+再把工艺库复制到 `/home/almalinux/` 下（工艺库在 `/lec/pdk`，与 `lab4/` 平级）：
 
 ```bash
-cp -r /lec/lab4/pdk/* /home/almalinux/
+cp -r /lec/pdk/* /home/almalinux/
 ```
 
 本文中的项目根目录写作 `/home/s24000xxxxx/chip-fullstack-2026/soc_cv32e40p_template_pnr`。
