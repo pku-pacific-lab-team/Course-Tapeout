@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/brand/pku_logo_red.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -33,10 +33,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1507,7 +1507,7 @@
 <ul>
 <li>✅ 端口签名、<code>generate</code> 数组、状态机骨架，都能给出像模像样的一稿</li>
 <li>✅ 解释一段 RTL、讲清时序、提示 testbench 怎么写，很好用</li>
-<li>⚠️ 经常生成**「看着对、跑不通」**的 RTL：忘了复位、位宽错、把 <code>rst_ni</code> 当成高有效、把 16 个 PE 偷换成一个组合大乘法器</li>
+<li>⚠️ 经常生成<strong>「看着对、跑不通」</strong>的 RTL：忘了复位、位宽错、把 <code>rst_ni</code> 当成高有效、把 16 个 PE 偷换成一个组合大乘法器</li>
 <li>⚠️ 写出的 testbench 经常<strong>覆盖不到边界</strong>（比如从来不测「连续跑两次」）</li>
 </ul>
 <p>所以本 Lab 的流程被设计成：<strong>AI 出一稿 → 你读 → tb 证伪 → 波形定位 → 你告诉 AI 错在哪 → 迭代</strong>。</p>
@@ -1874,7 +1874,7 @@
 </table>
 <p><strong>看不懂就追问</strong>，让 AI 解释到你懂为止。这是本 Lab 的核心训练内容。</p>
 <h4 id="b-4-testbench">B-4 · 写自己的 testbench 自测</h4>
-<p>**先用自己的 tb 跑通，再去碰验收 tb。**自己的 tb 更小、报错更直接，调试效率高得多。</p>
+<p><strong>先用自己的 tb 跑通，再去碰验收 tb。</strong>自己的 tb 更小、报错更直接，调试效率高得多。</p>
 <p>新建 <code>tb/tb_simple_npu.sv</code>，让 AI 帮你写，但你要确认前 6 步都覆盖到：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1">// 1. 时钟 + 复位</span>
 <a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="c1">// 2. 把 A/B 按列优先打包到 act/wgt：act[j*4+i] &lt;= A[i][j]</span>
@@ -2238,10 +2238,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.footer", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.footer", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="../assets/extra.js"></script>
       

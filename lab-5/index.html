@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/brand/pku_logo_red.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -33,10 +33,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -419,6 +419,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 5
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -435,6 +453,557 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 确认输入、路径和原始目录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 确认输入、路径和原始目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 输入文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 设置终端路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 原始 layout 目录中已有的文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-verilog-cdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从 Verilog 转换 CDL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 从 Verilog 转换 CDL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 自己建立 SRAM 接口声明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-v2lvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 运行 V2LVS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-virtuoso-gds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 准备 Virtuoso 库并导入原始 GDS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 准备 Virtuoso 库并导入原始 GDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-cdslib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 整理项目 cds.lib
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 从正确目录启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 创建项目库并导入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 每次打开版图都检查显示设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-seal-ring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 复制并适配 Seal Ring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 复制并适配 Seal Ring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 复制源环
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 调整四角及直边
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 调整参考边界并插入顶层
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-poc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 预先补 POC 标签
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dummy-gds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 导出 Dummy 前 GDS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dummy-drc-cor4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Dummy 前 DRC 和 CO.R.4 修正
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Dummy 前 DRC 和 CO.R.4 修正">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-drc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 检查 DRC 项目副本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-nmdrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 配置 nmDRC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 查看结果
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-cor4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 修正 CO.R.4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-dummy-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 配置并生成 Dummy Fill
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 配置并生成 Dummy Fill">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 修改两份规则的输入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-dummy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 金属 Dummy 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-odpo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 OD/PO 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 分别运行并检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 合并完整芯片和填充
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-gds-drc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 导入最终 GDS 并复查 DRC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-lvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 从原始规则建立 LVS 配置
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 从原始规则建立 LVS 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 修改项目规则副本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 设置本例电阻比较容差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-nmlvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 配置 nmLVS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 查看与判断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-erc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. ERC 查看与处理
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-gds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 最终 GDS 独立天线检查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-wire-bond-pad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. 从工艺原包取得 Wire Bond PAD 规则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. 从工艺原包取得 Wire Bond PAD 规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 提取项目规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 修改本例选项及路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 运行并验收
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. 最终复核和完成标准
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. 自己生成交付归档
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        附录：常用 GUI 动作与复跑提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -514,6 +1083,546 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 确认输入、路径和原始目录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 确认输入、路径和原始目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 输入文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 设置终端路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 原始 layout 目录中已有的文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-verilog-cdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从 Verilog 转换 CDL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 从 Verilog 转换 CDL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 自己建立 SRAM 接口声明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-v2lvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 运行 V2LVS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-virtuoso-gds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 准备 Virtuoso 库并导入原始 GDS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 准备 Virtuoso 库并导入原始 GDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-cdslib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 整理项目 cds.lib
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 从正确目录启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 创建项目库并导入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 每次打开版图都检查显示设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-seal-ring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 复制并适配 Seal Ring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 复制并适配 Seal Ring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 复制源环
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 调整四角及直边
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 调整参考边界并插入顶层
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-poc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 预先补 POC 标签
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dummy-gds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 导出 Dummy 前 GDS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dummy-drc-cor4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Dummy 前 DRC 和 CO.R.4 修正
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Dummy 前 DRC 和 CO.R.4 修正">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-drc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 检查 DRC 项目副本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-nmdrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 配置 nmDRC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 查看结果
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-cor4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 修正 CO.R.4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-dummy-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 配置并生成 Dummy Fill
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 配置并生成 Dummy Fill">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 修改两份规则的输入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-dummy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 金属 Dummy 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-odpo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 OD/PO 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 分别运行并检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 合并完整芯片和填充
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-gds-drc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 导入最终 GDS 并复查 DRC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-lvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 从原始规则建立 LVS 配置
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 从原始规则建立 LVS 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 修改项目规则副本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 设置本例电阻比较容差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-nmlvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 配置 nmLVS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 查看与判断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-erc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. ERC 查看与处理
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-gds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 最终 GDS 独立天线检查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-wire-bond-pad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. 从工艺原包取得 Wire Bond PAD 规则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. 从工艺原包取得 Wire Bond PAD 规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 提取项目规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 修改本例选项及路径
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 运行并验收
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. 最终复核和完成标准
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. 自己生成交付归档
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        附录：常用 GUI 动作与复跑提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -531,10 +1640,998 @@
 
 
 <h1 id="lab-5signoff-tapeout">Lab 5：Signoff &amp; Tapeout</h1>
-<div class="admonition note">
-<p class="admonition-title">尚未发布</p>
-<p>本次实验的具体要求尚未确定，确定后本页会更新为完整的实验说明。</p>
+<div class="admonition info">
+<p class="admonition-title">开始之前</p>
+<ul>
+<li><strong>主题</strong>：版图完成与签核：CDL 转换、Virtuoso、Seal Ring、Dummy、DRC、LVS/ERC、天线与 Wire Bond PAD 检查、归档</li>
+<li><strong>前置</strong>：<a href="../lab-4/">Lab 4</a>（完成步骤 34.6 的 Innovus 交付清单）</li>
+<li><strong>环境</strong>：xlab 服务器（Virtuoso IC618、Calibre 2022.3）</li>
+<li><strong>课时</strong>：2 次实验课</li>
+<li><strong>完成标准</strong>：按第 14 节的完成标准表逐项核对，并生成第 15 节的交付归档。<strong>本实验不需要提交任何材料</strong></li>
+</ul>
 </div>
+<p>本文承接 <a href="../lab-4/">Lab 4：逻辑综合 &amp; 物理实现</a> 的 <strong>34.6：确认 Innovus 交付清单</strong>，从仓库原始 <code>layout/</code> 目录开始，完成 CDL 转换、Virtuoso 导入、Seal Ring 适配、DRC 修正、Dummy 生成、LVS/ERC、最终天线及 Wire Bond PAD 检查和文件归档。</p>
+<p>阅读顺序：输入准备 → CDL → Virtuoso 与 Seal Ring → POC → Dummy 前 DRC → Dummy 与合并 → 最终 DRC → LVS/ERC → Antenna → Wire Bond PAD → 归档。</p>
+<p>适用基线：TSMC180 1P6M，顶层 <code>my_soc_top</code>，Die 为 1800.4×1800.4 µm，SRAM 为 <code>RA1SHD_2048x32M8</code>，六信号 PAD、28 供电/POC PAD、34 个 <code>PAD60LU_OBV</code>。坐标单位均为µm。使用其他芯片尺寸、IO 库或金属厚度时，先重新确定相应参数。</p>
+<p>所有操作由操作者逐项完成。本文写出的新文件均在相应步骤中创建，不需要拿到他人的已修改规则、接口文件、OA 库或 runset。示例环境为 Virtuoso IC618、Calibre 2022.3。</p>
+<h2 id="1">1. 确认输入、路径和原始目录</h2>
+<h3 id="11">1.1 输入文件</h3>
+<p>确认已完成《Lab 4：逻辑综合 &amp; 物理实现》步骤 34.6，在 <code>pnr/my_soc_top/outputs/manual_final/</code> 至少有：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>本阶段用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>my_soc_top.gds.gz</code></td>
+<td>合并标准单元、SRAM、IO、Bond PAD 的原始完整 GDS</td>
+</tr>
+<tr>
+<td><code>my_soc_top_flat_lvs.v</code></td>
+<td>含真实 PG 连接的 LVS 物理网表</td>
+</tr>
+<tr>
+<td><code>my_soc_top.def</code></td>
+<td>核对实例位置、方向与端口</td>
+</tr>
+<tr>
+<td>层次 Verilog、SDC、SPEF、SDF、LEF</td>
+<td>最终交付及后续仿真使用</td>
+</tr>
+</tbody>
+</table>
+<p>保留 Innovus 检查点和报告。本流程已在 Innovus 中完成电源端口和 IO 连接，发现缺项应回到《Lab 4》对应步骤修正并重新导出。</p>
+<h3 id="12">1.2 设置终端路径</h3>
+<p>打开 <strong>Linux bash 终端</strong>，先进入自己的项目根目录，再执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/你的实际路径/soc_cv32e40p_template_pnr
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SOC_ROOT</span><span class="o">=</span><span class="s2">"</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">"</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PDK_ROOT</span><span class="o">=</span>/home/almalinux/tsmc180
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CALIBRE_BIN</span><span class="o">=</span>/opt/eda/Mentor/aok_cal_2022.3_17.8/bin
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">printf</span><span class="w"> </span><span class="s1">'%s\n'</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">"</span>
+</code></pre></div>
+<p>第一行须替换成自己的实际路径；工艺库和工具安装位置也以所在服务器为准。后续终端命令均使用上述变量；新开终端时要重新设置。</p>
+<p><strong>GUI 表格中的 <code>&lt;项目根目录&gt;</code> 要替换为打印出的实际绝对路径，不能原样输入，也不要在 GUI 文件框里写 <code>$SOC_ROOT</code>。</strong> 相对文件名按表中的 Run Directory 解释。</p>
+<h3 id="13-layout">1.3 原始 layout 目录中已有的文件</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>layout/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  Makefile
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  rule/calibre.drc
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  rule/calibre.lvs
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  rule/ant.drc
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  runset/                       自带的参考配置
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  dummy/scripts/
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    Dummy_Metal_Calibre_0.18um.215a
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    Dummy_OD_PO_Calibre_0.18um.210a
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    run_dummy.csh
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  workspace/
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    cds.lib、lib.defs、.cdsinit、display.drf、techfile等
+</code></pre></div>
+<p>其中自带的 runset 含有原作者的路径、其他顶层名、SRAM Box、虚连及单项属性覆盖，<strong>本指南不加载这些自带 runset</strong>。从空白 Calibre 配置开始，按下文填写。</p>
+<p>在 Linux 终端创建工作目录，复制项目规则：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">"</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>layout/workspace/drc_preDummy
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>layout/workspace/drc_postDummy
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>layout/workspace/lvs_postDummy
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>layout/workspace/ant_postDummy
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>layout/workspace/wb_postDummy
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>layout/dummy/manual_final
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>cp<span class="w"> </span>layout/rule/calibre.drc<span class="w"> </span>layout/rule/my_soc_top.drc
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>cp<span class="w"> </span>layout/rule/calibre.lvs<span class="w"> </span>layout/rule/my_soc_top_postDummy.lvs
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>cp<span class="w"> </span>layout/rule/ant.drc<span class="w"> </span>layout/rule/my_soc_top_postDummy.ant.drc
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>cp<span class="w"> </span>layout/dummy/scripts/Dummy_Metal_Calibre_0.18um.215a<span class="w"> </span>layout/dummy/manual_final/
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>cp<span class="w"> </span>layout/dummy/scripts/Dummy_OD_PO_Calibre_0.18um.210a<span class="w"> </span>layout/dummy/manual_final/
+</code></pre></div>
+<p>这些 <code>cp</code> 只在首次准备时执行一次，后续重跑直接使用已配置的副本，避免覆盖自己的修改。原始 <code>rule/calibre.*</code>、<code>rule/ant.drc</code> 和 <code>dummy/scripts/</code> 保留不改。</p>
+<p>规则文件用文本编辑器打开，例如 <code>gedit 文件路径 &amp;</code>，或用 <code>vim</code>。配置修改后保存。命令执行环境分别为 Linux 终端、Virtuoso CIW；不要在 Innovus 提示符中执行本指南的 bash 或 SKILL 表达式。</p>
+<h2 id="2-verilog-cdl">2. 从 Verilog 转换 CDL</h2>
+<h3 id="21-sram">2.1 自己建立 SRAM 接口声明</h3>
+<p>在 Linux 终端执行，创建只含接口的 Verilog 文件：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">/pnr/my_soc_top/outputs/manual_final"</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>RA1SHD_2048x32M8_lvs_ports.v<span class="w"> </span><span class="s">&lt;&lt;'EOF'</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s">// SRAM interface for V2LVS; no functional implementation.</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="s">module RA1SHD_2048x32M8 (Q, CLK, CEN, WEN, A, D, OEN, VDD, VSS);</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="s">output [31:0] Q;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="s">input CLK, CEN, OEN;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="s">input [3:0] WEN;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="s">input [10:0] A;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="s">input [31:0] D;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="s">inout VDD, VSS;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="s">endmodule</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="s">EOF</span>
+</code></pre></div>
+<p>这是转换器读取的端口声明，SRAM 电路仍由原始 CDL 提供，后续 LVS 完整比较 SRAM。不要把此文件当成 SRAM 功能模型，也不要通过 SRAM Box 跳过比较。</p>
+<h3 id="22-v2lvs">2.2 运行 V2LVS</h3>
+<p>仍在上述 Linux 终端目录执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="s2">"</span><span class="nv">$CALIBRE_BIN</span><span class="s2">/v2lvs"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>-v<span class="w"> </span>my_soc_top_flat_lvs.v<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>-lsr<span class="w"> </span><span class="s2">"</span><span class="nv">$PDK_ROOT</span><span class="s2">/tcb018gbwp7t_290a/TSMCHOME/digital/Back_End/spice/tcb018gbwp7t_270a/tcb018gbwp7t_270a.spi"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>-lsr<span class="w"> </span><span class="s2">"</span><span class="nv">$PDK_ROOT</span><span class="s2">/tpd018nv_280a/TSMCHOME/digital/Back_End/spice/tpd018nv_270a/tpd018nv_1_2.spi"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span>-l<span class="w"> </span>RA1SHD_2048x32M8_lvs_ports.v<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span>-s<span class="w"> </span><span class="s2">"</span><span class="nv">$PDK_ROOT</span><span class="s2">/tcb018gbwp7t_290a/TSMCHOME/digital/Back_End/spice/tcb018gbwp7t_270a/tcb018gbwp7t_270a.spi"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span>-s<span class="w"> </span><span class="s2">"</span><span class="nv">$PDK_ROOT</span><span class="s2">/tpd018nv_280a/TSMCHOME/digital/Back_End/spice/tpd018nv_270a/tpd018nv_1_2.spi"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span>-s<span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">/src/macro/RA1SHD_2048x32M8/RA1SHD_2048x32M8.cdl"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span>-s0<span class="w"> </span>VSS<span class="w"> </span>-s1<span class="w"> </span>VDD<span class="w"> </span>-o<span class="w"> </span>my_soc_top.cdl<span class="w"> </span>&gt;<span class="w"> </span>v2lvs.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p><code>echo $?</code> 紧跟转换命令，预期 0。打开 <code>v2lvs.log</code>，确认转换完成且没有 ERROR，再检查 CDL 非空、三个 <code>.INCLUDE</code> 路径存在。</p>
+<p>CDL 顶层应为 <code>my_soc_top</code>，保留六信号和四个 PG 接口；四供电网独立，Decap 和 SRAM 保留。SRAM 通过命名引脚映射 Q/D 各 32 位、WEN4 位、A11 位，不凭 CDL 总线列表顺序猜测连接。</p>
+<p>若报 license 不足，加载课程指定的 Calibre 许可环境后重试，不改网表来绕过转换。Virtuoso 导入和 Seal Ring 编辑可先做，LVS 前必须有有效 CDL。</p>
+<h2 id="3-virtuoso-gds">3. 准备 Virtuoso 库并导入原始 GDS</h2>
+<h3 id="31-cdslib">3.1 整理项目 cds.lib</h3>
+<p>在文本编辑器中打开自己的 <code>layout/workspace/cds.lib</code>。保留可用的 <code>basic</code>、<code>analogLib</code> 和 <code>tsmc18</code> 定义；注释掉指向他人不存在目录的活动 <code>DEFINE</code>。示例技术库定义为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>DEFINE tsmc18 /home/almalinux/tsmc180/t018cmsp007k3_1_3a/tsmc18mm_1.8v_3.3v_T-018-CM-SP-007-K3_IC61_bsim4.5_pdk_v1.3a_20170119/PDK/tsmc18
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>DEFINE to_iohelpers /home/almalinux/tsmc180/io/T18_1P6M_CUP_IO
+</code></pre></div>
+<p>原文件中若有同一路径的 <code>DEFINE T18_1P6M_CUP_IO ...</code>，将其注释掉，只保留 <code>to_iohelpers</code>。源 Seal Ring 的内部实例引用这个库名；不要给同一目录同时注册两个名字。这里只改项目映射，不改工艺目录中的文件，也不删除库目录。</p>
+<p>确认 <code>layout/workspace/.cdsinit</code> 中的 Calibre 加载路径实际存在。本仓库参考行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">load</span><span class="p">(</span><span class="s">"/opt/eda/Mentor/aok_cal_2022.3_17.8/lib/calibre.OA.skl"</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="32">3.2 从正确目录启动</h3>
+<p>在 Linux 终端：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">/layout/workspace"</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>virtuoso<span class="w"> </span><span class="p">&amp;</span>
+</code></pre></div>
+<p>从 <code>workspace</code> 启动，让工具读取这里的库映射和初始化文件。若已经启动后才修改库映射，可在 CIW 执行 <code>ddUpdateLibList()</code>；旧名称缓存导致 master 仍无法解析时，保存自己的设计、正常退出，再从此目录重启。</p>
+<h3 id="33">3.3 创建项目库并导入</h3>
+<p>在 CIW 选择 <strong>File → New → Library</strong>，创建 <code>my_soc_top_manual</code>，选择 <strong>Attach to an existing technology library → tsmc18</strong>。</p>
+<p>然后 <strong>File → Import → Stream</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Library</td>
+<td>my_soc_top_manual</td>
+</tr>
+<tr>
+<td>Stream File</td>
+<td><code>&lt;项目根目录&gt;/pnr/my_soc_top/outputs/manual_final/my_soc_top.gds.gz</code></td>
+</tr>
+<tr>
+<td>Top Cell</td>
+<td>my_soc_top</td>
+</tr>
+<tr>
+<td>Attach Technology Library</td>
+<td>tsmc18</td>
+</tr>
+</tbody>
+</table>
+<p>文件选择器看不到 <code>.gz</code> 时改为 All files。点击 Translate，检查导入日志无 Error；在 Library Manager 打开 <code>my_soc_top_manual/my_soc_top/layout</code>。</p>
+<p><code>XSTRM-284</code> 提示源 GDS 与技术库 DBU 不同，应核对是否发生坐标舍入；不要直接改共享技术库精度。未定义 LPP 或未映射图形警告要核对实际层映射，不以导入结束作为完整性证明。</p>
+<h3 id="34">3.4 每次打开版图都检查显示设置</h3>
+<p>在版图窗口 <strong>Options → Display</strong>：</p>
+<ol>
+<li>Resolution 设为 <strong>Very High</strong>。</li>
+<li>勾选 <strong>Highest Resolution for P&amp;R Objects</strong>。</li>
+<li>Display Levels：Start=<code>0</code>、Stop=<code>31</code>。</li>
+<li>X/Y Snap Spacing 均为 <code>0.005</code> µm。</li>
+<li>Apply、OK；Layers 点击 AV，Objects 确认 Instances、Mosaics 及 Shapes 可见。</li>
+<li>鼠标回画布，按 <strong>Shift+F</strong> 展开显示、<strong>F</strong>适配全图。</li>
+</ol>
+<p>切换到 Seal Ring、副本或子单元时同样检查。细密环结构显示为黑屏时，先查显示分辨率、层可见性及 master 是否解析。</p>
+<h2 id="4-seal-ring">4. 复制并适配 Seal Ring</h2>
+<h3 id="41">4.1 复制源环</h3>
+<p>在 Library Manager 只读打开：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>to_iohelpers / tsmc_c018_sealring_1p6m / layout
+</code></pre></div>
+<p>确认能看见完整环。选中该 layout，<strong>Edit → Copy</strong>：目标 Library=<code>my_soc_top_manual</code>，Cell=<code>sealring_my_soc_top</code>，View=<code>layout</code>，<strong>Copy Hierarchy 关闭</strong>。以编辑模式打开新副本；后续只改此副本，edge/corner 仍引用源库。</p>
+<p>在副本为当前版图窗口时，CIW 输入只读查询：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nv">setof</span><span class="p">(</span><span class="nv">i</span><span class="w"> </span><span class="nv">geGetEditCellView</span><span class="p">()</span><span class="nv">~&gt;instances</span><span class="w"> </span><span class="nv">i~&gt;cellName</span><span class="w"> </span><span class="nv">==</span><span class="w"> </span><span class="s">"tsmc_c018_sealring_corner_1p6m"</span><span class="p">)</span><span class="nv">~&gt;xy</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nv">setof</span><span class="p">(</span><span class="nv">i</span><span class="w"> </span><span class="nv">geGetEditCellView</span><span class="p">()</span><span class="nv">~&gt;instances</span><span class="w"> </span><span class="nv">i~&gt;cellName</span><span class="w"> </span><span class="nv">==</span><span class="w"> </span><span class="s">"tsmc_c018_sealring_corner_1p6m"</span><span class="p">)</span><span class="nv">~&gt;orient</span>
+</code></pre></div>
+<p>本源环的原尺寸为：prBoundary1860×1990，外框 <code>(-15,-15)–(1875,2005)</code>，edge 沿边长度 1。四角及本项目目标值如下：</p>
+<table>
+<thead>
+<tr>
+<th>角</th>
+<th>原 Origin</th>
+<th>目标 Origin</th>
+<th>保持 Orientation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左下</td>
+<td>(-15,-15)</td>
+<td>(-15,-15)</td>
+<td>R0</td>
+</tr>
+<tr>
+<td>右下</td>
+<td>(1875,-15)</td>
+<td>(1816,-15)</td>
+<td>R90</td>
+</tr>
+<tr>
+<td>左上</td>
+<td>(-15,2005)</td>
+<td>(-15,1816)</td>
+<td>MX</td>
+</tr>
+<tr>
+<td>右上</td>
+<td>(1875,2005)</td>
+<td>(1816,1816)</td>
+<td>MYR90</td>
+</tr>
+</tbody>
+</table>
+<p>只有实测源尺寸符合时才使用下述位移。保持 1 µm 节距，将参考边界适配为 1801×1801，横向缩短 59、纵向缩短 189；不缩放工艺图形。</p>
+<h3 id="42">4.2 调整四角及直边</h3>
+<p>先保存副本。逐个选中 corner，按 <strong>Q</strong>，Origin 改成上表目标值，保持原方向。左下不移动。</p>
+<p>随后按以下顺序处理直边，每次操作前按 Esc 清除旧选择：</p>
+<ol>
+<li><strong>删上下边右端多余 edge。</strong> 只选 <code>tsmc_c018_seal_ring_edge_1p6m</code>，横边方向 R0/MX，Origin X 在 <code>[1806,1865)</code> 的 59 段/边，共 118 段。避开 corner 和边界。</li>
+<li><strong>下移上横边。</strong> 只选剩余的上边整排 edge，按 M、F3 打开 Move。取消勾选 <strong>Treat as absolute point</strong>，Delta X=<code>0</code>、Delta Y=<code>-189</code>，Apply 一次后 Esc。上边 edge Origin Y 应由 1990 变为 1801。</li>
+<li><strong>删左右边上端多余 edge。</strong> 每边删除 189 个 1 µm 段，保留到上端接合边界 1806。只选竖边 edge，不能删进已移动的上横边或 corner。可用 <strong>Tools → Find/Replace</strong>，筛选 Cell Name 为 edge、范围为 current cellView、区域模式 Enclosed Figures；区域覆盖 <code>(-20,1806)–(1880,1995)</code>，符合此源环时预期 378 段。图形选择数量不符先查清，勿直接 Delete。</li>
+<li><strong>左移右竖边。</strong> 只选剩余右边整排 edge，M、F3，取消 Treat as absolute point，Delta X=<code>-59</code>、Delta Y=<code>0</code>，Apply 一次后 Esc。左边、下边及已调整 corner 不移动。</li>
+</ol>
+<p>按 Delete 执行删除；Find 窗口不要点 Replace All。无需在画布底部坐标栏输入位置；可手动框选并用 Q 核对对象，或使用下面的精确横边选择。</p>
+<p>若横边难以框选，在 CIW 逐条输入，然后回画布按 Delete：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">geDeselectAllFig</span><span class="p">()</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nv">geSelectFigs</span><span class="p">(</span><span class="nv">setof</span><span class="p">(</span><span class="nv">i</span><span class="w"> </span><span class="nv">geGetEditCellView</span><span class="p">()</span><span class="nv">~&gt;instances</span><span class="w"> </span><span class="nv">i~&gt;cellName</span><span class="w"> </span><span class="nv">==</span><span class="w"> </span><span class="s">"tsmc_c018_seal_ring_edge_1p6m"</span><span class="w"> </span><span class="nv">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="nv">i~&gt;orient</span><span class="w"> </span><span class="nv">==</span><span class="w"> </span><span class="s">"R0"</span><span class="w"> </span><span class="err">||</span><span class="w"> </span><span class="nv">i~&gt;orient</span><span class="w"> </span><span class="nv">==</span><span class="w"> </span><span class="s">"MX"</span><span class="p">)</span><span class="w"> </span><span class="nv">&amp;&amp;</span><span class="w"> </span><span class="nv">xCoord</span><span class="p">(</span><span class="nv">i~&gt;xy</span><span class="p">)</span><span class="w"> </span><span class="nb">&gt;=</span><span class="w"> </span><span class="mi">1806</span><span class="w"> </span><span class="nv">&amp;&amp;</span><span class="w"> </span><span class="nv">xCoord</span><span class="p">(</span><span class="nv">i~&gt;xy</span><span class="p">)</span><span class="w"> </span><span class="nb">&lt;</span><span class="w"> </span><span class="mi">1865</span><span class="p">))</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">length</span><span class="p">(</span><span class="nv">geGetSelSet</span><span class="p">())</span>
+</code></pre></div>
+<p>上述源尺寸下应选中 118 个。1806 是沿边方向的接缝边界，不能理解为“所有 X 或 Y 大于 1806 的对象都删除”。</p>
+<h3 id="43">4.3 调整参考边界并插入顶层</h3>
+<p>选中副本的 prBoundary，按 Q，将矩形设为 <code>(0,0)–(1801,1801)</code>；若显示顶点列表，改成对应四个矩形顶点。仅改参考边界。</p>
+<p>放大检查四角和接缝，确认无缺口、重叠、长尾。副本外框应为 <code>(-15,-15)–(1816,1816)</code>，上/右边径向边界约 1805.82–1816。保存副本。</p>
+<p>打开 <code>my_soc_top_manual/my_soc_top/layout</code>，按 <strong>I</strong>，选择自己的 <code>sealring_my_soc_top/layout</code>，Orientation=<code>R0</code>。<strong>先在画布任意位置放置一次，Esc 退出；选中新实例，按 Q，把 Origin 改为 <code>(-0.3,-0.3)</code>。</strong></p>
+<p>最终环外框应为 <code>(-15.3,-15.3)–(1815.7,1815.7)</code>，本例参考边界相对 1800.4 die 居中。原环已含 15 µm 外扩，不能再把实例原点设成 <code>(-15,-15)</code>。保存芯片顶层。</p>
+<div class="admonition note">
+<p class="admonition-title">Core、Die 与 Seal Ring 外框：本例尺寸与你的上限</p>
+<p>上面出现的坐标都是<strong>本例</strong>的数值，不要当成自己设计的固定尺寸。
+这里把几个"框"分开，方便你核对自己的版图：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>本例尺寸</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core（标准单元可用区域）</td>
+<td>约 1500.24 × 1500.24 µm</td>
+</tr>
+<tr>
+<td>原始 Die（不含 Seal Ring）</td>
+<td>1800.4 × 1800.4 µm，即 1.8004 × 1.8004 mm，约 3.24144 mm²</td>
+</tr>
+<tr>
+<td>Seal Ring 的参考边界 <code>prBoundary</code></td>
+<td>1801 × 1801 µm</td>
+</tr>
+<tr>
+<td>加 Seal Ring 后的最终外框</td>
+<td>1831 × 1831 µm，即 1.831 × 1.831 mm，约 3.35256 mm²</td>
+</tr>
+</tbody>
+</table>
+<p>本例 Seal Ring 的尺寸是这样来的：</p>
+<ul>
+<li>环本身宽约 <strong>15 µm</strong>；实例原点放在 <code>(-0.3,-0.3)</code>，最终外框为 <code>(-15.3,-15.3)–(1815.7,1815.7)</code></li>
+<li>因此相对原始 Die，<strong>每一边向外增加 15.3 µm</strong>，每维增加 30.6 µm：<code>1800.4 + 15.3 × 2 = 1831 µm</code></li>
+</ul>
+<p><strong>你自己做设计时，请遵守以下约束：</strong></p>
+<ul>
+<li>原始 Die 尺寸<strong>不超过 1950 × 1950 µm</strong>；加 Seal Ring 后的最终外框<strong>不超过 1980 × 1980 µm</strong></li>
+<li>Seal Ring 的单元结构、环宽和工艺图形<strong>不要改动</strong>：只按本节的复制、按边裁剪和平移来适配你的 Die，不要自行缩放或重新设计环</li>
+</ul>
+</div>
+<h2 id="5-poc">5. 预先补 POC 标签</h2>
+<p>本 IO 源 SPI 含 <code>.GLOBAL POC ...</code>，LVS 源侧会出现 POC 端口；需要在版图较高层放置可被读取的 POC 文字。直接在 <strong>Dummy 前的芯片顶层</strong>补好，让后续合并自动带入。</p>
+<p>在 <code>my_soc_top_manual/my_soc_top/layout</code> 中：</p>
+<ol>
+<li>找到底边 <code>i_pad_S_vddio</code>，master=<code>PVDD2CDG</code>。本布局 Origin=<code>(1100,0)</code>、R0。</li>
+<li>显示 <strong>METAL3 drawing</strong> 与 <strong>METAL3 pin</strong>。该 PAD 本地 POC 轨为 <code>(0,111.595)–(60,113.715)</code>；顶层对应 <code>(1100,111.595)–(1160,113.715)</code>。</li>
+<li>按 <strong>L</strong> 创建 Label：Mode=<code>Manual</code>，文字=<code>POC</code>，Label Layer/Purpose=<code>Select layer → METAL3 pin</code>，<strong>取消 Attach</strong>。</li>
+<li>先放置一次，Esc 退出，选中文字按 Q，将锚点位置改为 <code>(1130,113.215)</code>，保证在上述 M3 轨内部。</li>
+<li>保存顶层，不进入工艺库 PAD master 修改。</li>
+</ol>
+<p>这里<strong>不要求已有 METAL3 pin 矩形</strong>。物理导体是 METAL3 drawing，文字用 METAL3 pin 层；不另画金属、不把 POC 接到 VDD/VDDPST。映射中 M3 drawing 为 28/0，METAL3 pin 文字为 42/0；LVS 使用文字锚点附着到 M3 导体。</p>
+<p>若同学的 PAD 位置不同，先按 Q 读取实际 Origin 和方向，按变换后的 POC 轨放置，不能套用本坐标。文字可以伸出窄轨，锚点必须落在正确导体内。</p>
+<h2 id="6-dummy-gds">6. 导出 Dummy 前 GDS</h2>
+<p>保存芯片顶层。在 CIW <strong>File → Export → Stream</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Run Directory</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace</code></td>
+</tr>
+<tr>
+<td>Library</td>
+<td>my_soc_top_manual</td>
+</tr>
+<tr>
+<td>Top Cell</td>
+<td>my_soc_top</td>
+</tr>
+<tr>
+<td>View</td>
+<td>layout</td>
+</tr>
+<tr>
+<td>Stream File</td>
+<td>my_soc_top_preDummy.gds</td>
+</tr>
+<tr>
+<td>Technology Library</td>
+<td>tsmc18</td>
+</tr>
+<tr>
+<td>Layer Map</td>
+<td>下列 tsmc18.layermap 的实际绝对路径</td>
+</tr>
+</tbody>
+</table>
+<p>参考 Layer Map：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/home/almalinux/tsmc180/t018cmsp007k3_1_3a/tsmc18mm_1.8v_3.3v_T-018-CM-SP-007-K3_IC61_bsim4.5_pdk_v1.3a_20170119/PDK/tsmc18/tsmc18.layermap
+</code></pre></div>
+<p>导出完整层次，保留 Seal Ring 和原生库引用，不只导出顶层 shape，不额外 flatten。Translate 完成后看日志，确认无 Error 且输出文件更新。Technology Library 只是指定工艺，不需要把整个 tsmc18 库作为版图一起导出。</p>
+<p>Run Directory 为上述 workspace 时，Stream File 只填文件名即可。若报 XSTRM-15，检查日志中是否把 <code>home/...</code> 误写为缺少开头 <code>/</code> 的相对路径，导致路径重复拼接，先修正路径。</p>
+<h2 id="7-dummy-drc-cor4">7. Dummy 前 DRC 和 CO.R.4 修正</h2>
+<h3 id="71-drc">7.1 检查 DRC 项目副本</h3>
+<p>打开第 1 节复制的 <code>layout/rule/my_soc_top.drc</code>，确认与本基线一致：</p>
+<table>
+<thead>
+<tr>
+<th>开关</th>
+<th>本基线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FULL_CHIP、WITH_SEALRING、SmallSealringCorner</td>
+<td>开启</td>
+</tr>
+<tr>
+<td>1.8V、3.3V</td>
+<td>开启</td>
+</tr>
+<tr>
+<td>THICK_20K、THICK_40K</td>
+<td>关闭</td>
+</tr>
+</tbody>
+</table>
+<p>保留原有其他检查和数值，不全局关闭 ESD/LUP 等规则。这里 <code>#DEFINE 名称</code> 表示开启，行首 <code>//</code> 表示注释。输入 GDS、Top 和输出路径通过下一步 GUI 设置；规则中原有 GDSFILENAME/TOPCELLNAME 占位由 Calibre 配置覆盖。</p>
+<h3 id="72-nmdrc">7.2 配置 nmDRC</h3>
+<p>在 Virtuoso 版图窗口选择 <strong>Calibre → Run nmDRC</strong>，从空白配置填写：</p>
+<table>
+<thead>
+<tr>
+<th>页面／字段</th>
+<th>填写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rules / Rules File</td>
+<td><code>&lt;项目根目录&gt;/layout/rule/my_soc_top.drc</code></td>
+</tr>
+<tr>
+<td>Rules / Run Directory</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace/drc_preDummy</code></td>
+</tr>
+<tr>
+<td>Rules / Check Selection / Recipe</td>
+<td>Checks selected in the rules file</td>
+</tr>
+<tr>
+<td>Inputs / Format</td>
+<td>GDSII</td>
+</tr>
+<tr>
+<td>Inputs / Layout File</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace/my_soc_top_preDummy.gds</code></td>
+</tr>
+<tr>
+<td>Inputs / Top</td>
+<td>my_soc_top</td>
+</tr>
+<tr>
+<td>Export from Layout Viewer</td>
+<td>取消勾选</td>
+</tr>
+<tr>
+<td>Results Database</td>
+<td>my_soc_top_preDummy.drc.results，ASCII</td>
+</tr>
+<tr>
+<td>Summary Report</td>
+<td>my_soc_top_preDummy.drc.summary</td>
+</tr>
+</tbody>
+</table>
+<p>Check Selection 在左侧 <strong>Rules</strong> 页内。Run Control 可按服务器资源启用多核和 Hyper；点击 <strong>Run DRC</strong>，等待正常完成。GUI 没有 Maximum Results 等字段时无需寻找，实际输出是否截断以报告为准。</p>
+<p>保存 GUI 配置用 <strong>File/Files → Save Runset As</strong>，写到 <code>layout/runset/my_soc_top_preDummy.drc.runset</code>。<strong>runset 不能保存成规则文件名</strong>；把 runset 覆盖到 <code>.drc</code> 里会报 SYN1 unrecognized operation。</p>
+<h3 id="73">7.3 查看结果</h3>
+<p>RVE 中展开具体规则，点击标记缩放到版图，阅读规则说明及报告坐标。<code>4-vertex polygon</code> 只是标记形状，<code>Not Waived</code> 表示未豁免结果，均不是 DRC 错误类别。</p>
+<p>Dummy 前可能有 M2.R.1/M5.R.1/M6.R.1 金属密度不足、DOD.R.1 缺少 Dummy OD。这些留到第 8 节生成填充后复查，不能此时当作最终通过。</p>
+<p>本实验的教学口径单独排除 <strong>DRM、ESD、MOM、LUP</strong> 四类；保留原始报告，其他规则必须处理。此口径不等于工艺正式豁免，不把原始非零报告写成 0 违规。</p>
+<h3 id="74-cor4">7.4 修正 CO.R.4</h3>
+<p>若出现本 IO 库的 CO.R.4，显示 <strong>CONT、PIMP、NIMP、POLY1、RPDUMMY</strong>，查看接触孔是否伸出 PIMP 覆盖范围。规则中的 RPDMY 在 Virtuoso 实际层名为 <code>RPDUMMY</code>，不是 RPO。</p>
+<ol>
+<li>先备份自己的 OA 版图或导出一份修改前 GDS。</li>
+<li>在 RVE 定位后，到自己的导入库中进入报错的 IO 子单元；File → Make Editable 启用编辑。必须确认窗口所属库是 <code>my_soc_top_manual</code>，不编辑共享 PDK 库。</li>
+<li>选择 <strong>PIMP drawing</strong>，按 R 画矩形扩展原 PIMP 区域，覆盖伸出的 CONT，接成原区域的连续延伸；下边与原 PIMP 矩形上沿衔接、右边与相邻 NIMP 边沿对齐。不得越过相邻器件边界盲目扩大。</li>
+<li>保存修改过的子单元，回到芯片顶层保存；按第 6 节覆盖导出 <code>my_soc_top_preDummy.gds</code>，重跑本节 DRC。</li>
+<li>确认 CO.R.4 归零，且未产生新的 implant 间距、器件几何等违规。</li>
+</ol>
+<p>同一 master 的修改影响其全部实例，因此既要检查原标记消失，也要检查新增违规。参考轮 CO.R.4 为 1 个层次标记、展开 8 处；自己的数量以实际报告为准。</p>
+<h2 id="8-dummy-fill">8. 配置并生成 Dummy Fill</h2>
+<p>使用第 1 节已经复制到 <code>layout/dummy/manual_final/</code> 的两份规则。本文逐条运行生成与合并命令，不调用原始 <code>make dummy</code> 或 <code>run_dummy.csh</code>，避免其中的原始路径和默认参数直接覆盖项目状态。</p>
+<h3 id="81">8.1 修改两份规则的输入</h3>
+<p>在文本编辑器中，分别找到并替换两份文件中的输入行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>LAYOUT PATH "&lt;项目根目录&gt;/layout/workspace/my_soc_top_preDummy.gds"
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>LAYOUT PRIMARY "my_soc_top"
+</code></pre></div>
+<p>实际文件中必须写真实绝对路径。原值是 <code>../../cv32e40p_wrapper.gds</code> 和 <code>cv32e40p_wrapper</code>，不要保留。</p>
+<p>输出保持原值：金属规则 <code>DM.gds</code>/<code>DM.sum</code>，OD/PO 规则 <code>DOD.gds</code>/<code>DOD.sum</code>；输出到执行命令时的目录。</p>
+<h3 id="82-dummy">8.2 金属 Dummy 参数</h3>
+<p>打开 <code>Dummy_Metal_Calibre_0.18um.215a</code> 项目副本：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WithSealring</td>
+<td>保持开启，输入已包含环</td>
+</tr>
+<tr>
+<td>FILL_M1 至 FILL_M6</td>
+<td>保持开启</td>
+</tr>
+<tr>
+<td>MIXED_SCHEME</td>
+<td>保持开启，层/数据类型沿用原规则</td>
+</tr>
+<tr>
+<td>THICK_40K_M6</td>
+<td>把原来的 <code>#DEFINE THICK_40K_M6</code> 改为 <code>//#DEFINE THICK_40K_M6</code></td>
+</tr>
+<tr>
+<td>其他 THICK_M6、THICK_30K_M6</td>
+<td>保持关闭，与普通顶层金属一致</td>
+</tr>
+<tr>
+<td>普通 M6 分支的 dmW_M6、dmL_M6</td>
+<td>两项均由 0.6 改为 0.8</td>
+</tr>
+</tbody>
+</table>
+<p>最后一项具体搜索下面两行，只改普通分支的这两行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>VARIABLE dmW_M6  0.8
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>VARIABLE dmL_M6  0.8
+</code></pre></div>
+<p>文件中其他条件分支还有 3.0 或 4.5 的同名参数，不能全部替换。保留其余间距、中/大填充尺寸、输出层和密度参数。</p>
+<p>修改原因：本基线 DRC 的 M6.A.1 要求面积至少 0.562 µm²，普通默认 0.6×0.6=0.36 会报错；0.8×0.8=0.64 满足该面积下限，仍需通过最终间距和密度检查。参考轮此问题落在 SRAM 子层次，是新加 Dummy，不是原 SRAM 功能金属损坏。</p>
+<h3 id="83-odpo">8.3 OD/PO 参数</h3>
+<p>打开 <code>Dummy_OD_PO_Calibre_0.18um.210a</code> 副本，保持 <strong>WithSealring、ADD_DPO_ALSO、MIXED_SCHEME</strong> 开启；其余参数沿用原值，不开启 REVISE_DOD/REVISE_DPO。保存两份规则。</p>
+<h3 id="84">8.4 分别运行并检查</h3>
+<p>Linux 终端逐条执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">/layout/dummy/manual_final"</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="s2">"</span><span class="nv">$CALIBRE_BIN</span><span class="s2">/calibre"</span><span class="w"> </span>-hyper<span class="w"> </span>-turbo<span class="w"> </span>-hier<span class="w"> </span>-drc<span class="w"> </span>Dummy_Metal_Calibre_0.18um.215a<span class="w"> </span>&gt;<span class="w"> </span>METAL.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p>退出码 0 后打开 METAL.log、DM.sum，确认正常结束、无 ERROR/FATAL 且 DM.gds 非空。再执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="s2">"</span><span class="nv">$CALIBRE_BIN</span><span class="s2">/calibre"</span><span class="w"> </span>-hyper<span class="w"> </span>-turbo<span class="w"> </span>-hier<span class="w"> </span>-drc<span class="w"> </span>Dummy_OD_PO_Calibre_0.18um.210a<span class="w"> </span>&gt;<span class="w"> </span>OD_PO.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p>同样检查 OD_PO.log、DOD.sum、DOD.gds。这些生成报告中的 RESULTS 表示输出的填充图形，不是完整芯片 DRC 违规数。</p>
+<h3 id="85">8.5 合并完整芯片和填充</h3>
+<p>仍在 <code>layout/dummy/manual_final</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="s2">"</span><span class="nv">$CALIBRE_BIN</span><span class="s2">/calibredrv"</span><span class="w"> </span>-a<span class="w"> </span>layout<span class="w"> </span>filemerge<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span>-in<span class="w"> </span>../../workspace/my_soc_top_preDummy.gds<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span>-in<span class="w"> </span>DOD.gds<span class="w"> </span>-in<span class="w"> </span>DM.gds<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span>-rename<span class="w"> </span>-createtop<span class="w"> </span>my_soc_top_postDummy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">  </span>-out<span class="w"> </span>../../workspace/my_soc_top_postDummy.gds<span class="w"> </span>&gt;<span class="w"> </span>merge.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p>确认退出码 0、merge.log 成功结束、最终 GDS 非空。输出是新增顶层 <code>my_soc_top_postDummy</code> 包住原芯片及填充；后续 Layout 的 Top 必须跟着改。不要把 DM.gds 或 DOD.gds 单独当成最终芯片。</p>
+<p>若重新生成 Dummy，合并输入始终使用干净的 preDummy GDS，不能拿上一次 postDummy 再叠一轮。覆盖 DM 或最终 GDS 前先保留需要的旧版本。</p>
+<h2 id="9-gds-drc">9. 导入最终 GDS 并复查 DRC</h2>
+<p>在 CIW 新建项目库 <code>my_soc_top_final</code>，Attach 到 <code>tsmc18</code>。File → Import → Stream：Library=<code>my_soc_top_final</code>，Stream File 为 <code>&lt;项目根目录&gt;/layout/workspace/my_soc_top_postDummy.gds</code>，Top Cell=<code>my_soc_top_postDummy</code>。Translate 后打开该顶层 layout，按第 3.4 节设置显示。</p>
+<p>检查原芯片、Seal Ring 和 Dummy 都存在；不要误打开 <code>my_soc_top</code> 子层次或狭长的 SRAM WORD_ROWS 后就认为顶层不完整。</p>
+<p>在 nmDRC 沿用第 7 节设置，仅修改：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>Dummy 后值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Run Directory</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace/drc_postDummy</code></td>
+</tr>
+<tr>
+<td>Layout File</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace/my_soc_top_postDummy.gds</code></td>
+</tr>
+<tr>
+<td>Top</td>
+<td>my_soc_top_postDummy</td>
+</tr>
+<tr>
+<td>Results Database</td>
+<td>my_soc_top_postDummy.drc.results</td>
+</tr>
+<tr>
+<td>Summary Report</td>
+<td>my_soc_top_postDummy.drc.summary</td>
+</tr>
+</tbody>
+</table>
+<p>确认 Rules File 仍为自己的 <code>my_soc_top.drc</code>、Export from Layout Viewer 关闭，运行 DRC。保存新 runset 到 <code>layout/runset/my_soc_top_postDummy.drc.runset</code>。</p>
+<p>验收：M2.R.1/M5.R.1/M6.R.1、DOD.R.1、CO.R.4、M6.A.1 及 SR.S.1 归零；按课程口径排除四类后无其余违规。参考轮 523 项检查，原始非零 1036 层次/6206 展开，仅用于核对，不要求自己的计数与之相等。</p>
+<p>若 M6.A.1 落在 SRAM 内，先查 DM.gds 中对应形状及第 8.2 节参数；需重新生成金属 Dummy、用原 preDummy 重合并，OD/PO 输入未变时无需重跑 DOD 生成。不要通过修改 SRAM 电路来消除填充错误。</p>
+<h2 id="10-lvs">10. 从原始规则建立 LVS 配置</h2>
+<h3 id="101">10.1 修改项目规则副本</h3>
+<p>打开第 1 节由原始 <code>calibre.lvs</code> 复制出的 <code>layout/rule/my_soc_top_postDummy.lvs</code>。逐项搜索修改：</p>
+<table>
+<thead>
+<tr>
+<th>原语句</th>
+<th>替换为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LAYOUT PATH "ts_allcelllvs.gds"</code></td>
+<td><code>LAYOUT PATH "&lt;项目根目录&gt;/layout/workspace/my_soc_top_postDummy.gds"</code></td>
+</tr>
+<tr>
+<td><code>LAYOUT PRIMARY "ts_allcelllvs"</code></td>
+<td><code>LAYOUT PRIMARY "my_soc_top_postDummy"</code></td>
+</tr>
+<tr>
+<td><code>SOURCE PATH "ts_allcelllvs.cdl"</code></td>
+<td><code>SOURCE PATH "&lt;项目根目录&gt;/pnr/my_soc_top/outputs/manual_final/my_soc_top.cdl"</code></td>
+</tr>
+<tr>
+<td><code>SOURCE PRIMARY "ts_allcelllvs"</code></td>
+<td><code>SOURCE PRIMARY "my_soc_top"</code></td>
+</tr>
+<tr>
+<td><code>TEXT DEPTH PRIMARY</code></td>
+<td><code>TEXT DEPTH 1</code></td>
+</tr>
+<tr>
+<td><code>PORT DEPTH PRIMARY</code></td>
+<td><code>PORT DEPTH 1</code></td>
+</tr>
+<tr>
+<td><code>VIRTUAL CONNECT COLON YES</code></td>
+<td><code>VIRTUAL CONNECT COLON NO</code></td>
+</tr>
+<tr>
+<td><code>LVS REDUCE SPLIT GATES NO</code></td>
+<td><code>LVS REDUCE SPLIT GATES YES</code></td>
+</tr>
+</tbody>
+</table>
+<p>Top 是 GUI 字段名，PRIMARY 是规则语言的关键字，不要把规则代码中的 PRIMARY 改成 TOP。</p>
+<p>TEXT/PORT DEPTH 设 1，用于读取合并后外壳及下一层原芯片的文字端口。关闭 COLON 虚连，避免按名字代替真实连接。Split Gate 允许归约信号 PAD 内部等效的分拆 MOS 网络，不是忽略缺失器件。</p>
+<h3 id="102">10.2 设置本例电阻比较容差</h3>
+<p>在同一个副本中搜索 <strong><code>TRACE PROPERTY R(PR) R R</code></strong>。原文件有三条，末尾分别为 2、2、0，全部改为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>TRACE PROPERTY R(PR) R R 3.48
+</code></pre></div>
+<p>三个条件分支仍保留，运行时激活相应分支。只改这三条 PR 阻值容差，不改其他属性、RVPR、器件提取公式或源 SPI/CDL，不为了此设置开启 ACCURACY 或 RC_DECK。</p>
+<p>本例 IO 电阻的版图提取值相对源值系统性偏高约 3.47%，例如 248.8 Ω对应 257.44 Ω；源值来自 IO SPI，并非 Innovus 布线寄生。3.48%是此教学实例采用的比较容差，不是自动适用于其他工艺/设计的标准，也不代表修复了模型系列差异。其他同学若出现不同偏差，应先查模型和实际几何，不能持续放大容差求通过。</p>
+<h3 id="103-nmlvs">10.3 配置 nmLVS</h3>
+<p>在最终版图窗口 <strong>Calibre → Run nmLVS</strong>。从空白配置开始，填写：</p>
+<table>
+<thead>
+<tr>
+<th>页面／字段</th>
+<th>填写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rules / Rules File</td>
+<td><code>&lt;项目根目录&gt;/layout/rule/my_soc_top_postDummy.lvs</code></td>
+</tr>
+<tr>
+<td>Rules / Run Directory</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace/lvs_postDummy</code></td>
+</tr>
+<tr>
+<td>Inputs / Run</td>
+<td>Hierarchical</td>
+</tr>
+<tr>
+<td>Inputs / Step</td>
+<td>Layout vs Netlist</td>
+</tr>
+<tr>
+<td>Layout Format</td>
+<td>GDSII</td>
+</tr>
+<tr>
+<td>Layout File</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace/my_soc_top_postDummy.gds</code></td>
+</tr>
+<tr>
+<td>Layout 区域 / Top</td>
+<td>my_soc_top_postDummy</td>
+</tr>
+<tr>
+<td>Export from Layout Viewer</td>
+<td>取消勾选</td>
+</tr>
+<tr>
+<td>Inputs / Layout Netlist</td>
+<td>my_soc_top_postDummy.layout.sp</td>
+</tr>
+<tr>
+<td>Source/Schematic Format</td>
+<td>SPICE</td>
+</tr>
+<tr>
+<td><strong>SPICE_FILE</strong></td>
+<td><code>&lt;项目根目录&gt;/pnr/my_soc_top/outputs/manual_final/my_soc_top.cdl</code></td>
+</tr>
+<tr>
+<td>Source/Schematic 区域 / <strong>Top</strong></td>
+<td>my_soc_top</td>
+</tr>
+<tr>
+<td>Export from Source/Schematic Viewer</td>
+<td>取消勾选</td>
+</tr>
+<tr>
+<td>Outputs / LVS Report</td>
+<td>my_soc_top_postDummy.lvs.report</td>
+</tr>
+<tr>
+<td>SVDB Directory</td>
+<td>svdb，保留 QUERY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Layout Netlist 在 Inputs 中</strong>，是本次提取网表的保存文件；不是拿它代替 SPICE_FILE 输入。Step 使用 Layout vs Netlist，不能选 Netlist vs Netlist 去比较旧提取结果。</p>
+<p>在左侧 <strong>Options → Gate Reduction</strong> 勾选 <strong>Reduce split gates</strong>。Options 没显示时，用 <strong>Settings → Show Pages → Options</strong> 打开。Classic 界面对应 Setup → LVS Options → Gates。</p>
+<p>在 <strong>Options → Trace Property：取消勾选，下面表格留空，不用填写 3.48%。</strong> Classic 界面对应 Properties 中的 Use settings from rules。不要加载自带 runset 中的单项 PR 表格；此前这种配置会把完整 605 条属性检查缩减成 1 条。</p>
+<p>Hcells/Box 不新增 SRAM Box，Virtual Connect 不新增虚连。保持 VDD/VDDPST 为 POWER、VSS/VSSPST 为 GROUND；本规则已经包含这些名称，不合并四个供电网。</p>
+<p>ERC 页：<strong>LVS Execute ERC=Yes</strong>，Check Selection Recipe=<code>Checks selected in the rules file</code>，结果库 <code>my_soc_top_postDummy.erc.results</code>，摘要 <code>calibre_erc.sum</code>。若 ERC 页未显示，用 Settings → Show Pages 显示。</p>
+<p>保存配置到 <code>layout/runset/my_soc_top_postDummy.lvs.runset</code>，不要覆盖 <code>.lvs</code> 规则。点击 <strong>Run LVS</strong>。</p>
+<h3 id="104">10.4 查看与判断</h3>
+<p>打开 <code>my_soc_top_postDummy.lvs.report</code>，检查 <strong>OVERALL COMPARISON RESULTS = CORRECT</strong>，再检查 LVS PARAMETERS：</p>
+<ul>
+<li><code>LVS REDUCE SPLIT GATES YES</code>。</li>
+<li>PR 属性语句为 <code>TRACE PROPERTY r(pr) r r 3.48</code>。</li>
+<li>完整属性列表仍保留，本基线参考 605 条。</li>
+<li>没有 SRAM Box 或用虚连掩盖断路。</li>
+</ul>
+<p>检查本次生成的 <code>_my_soc_top_postDummy.lvs_</code> 是否引用正确 GDS/CDL 及规则；它是工具自动生成的 wrapper，用于核对，不手工改它。</p>
+<p>也可在 Linux 终端核对实际报告中的属性条目（下面用的是 <code>rg</code>，即 ripgrep；服务器上没有安装时，改用等价的 <code>grep -c</code> / <code>grep -n -i</code>，其余参数不变）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>rg<span class="w"> </span>-c<span class="w"> </span><span class="s1">'^[[:space:]]*TRACE PROPERTY[[:space:]]'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">/layout/workspace/lvs_postDummy/my_soc_top_postDummy.lvs.report"</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>rg<span class="w"> </span>-n<span class="w"> </span>-i<span class="w"> </span><span class="s1">'TRACE PROPERTY[[:space:]]+r\(pr\)|LVS REDUCE SPLIT GATES'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">/layout/workspace/lvs_postDummy/my_soc_top_postDummy.lvs.report"</span>
+</code></pre></div>
+<p>本基线应看到 605 条、PR3.48 及 Split Gates YES。若只有 1 条，先检查是否误勾 GUI Trace Property；不要以此时的 CORRECT 替代完整属性验收。</p>
+<p>参考轮端口 11/11、网络 142757/142757、器件 216153/216153 匹配。CDL 原顶层声明六信号加四 PG 共 10 个，IO 的 GLOBAL POC 使源端口比较出现第 11 个，不需要手工把 POC 硬塞进功能 RTL。</p>
+<p>常见问题：</p>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>检查／处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>specify schematic cell</td>
+<td>Source/Schematic 区域 Top 填 my_soc_top，取消 Export from Source/Schematic Viewer</td>
+</tr>
+<tr>
+<td>缺少 POC 端口</td>
+<td>查第 5 节标签是否在正确层次、锚点在 M3 导体内，以及导出的实际 GDS 和 TEXT/PORT DEPTH</td>
+</tr>
+<tr>
+<td>六个信号 PAD 出现成组器件/网络差异</td>
+<td>核对 Split Gate YES 实际生效，再看真实连接，不先删器件</td>
+</tr>
+<tr>
+<td>只剩 PR 阻值属性差异</td>
+<td>核对三处 3.48、GUI Trace Property 未勾选及本次实际生效参数</td>
+</tr>
+<tr>
+<td>缺少 cell 定义</td>
+<td>查 CDL 的 include 路径及对应库内容，不能用 Box 直接跳过</td>
+</tr>
+</tbody>
+</table>
+<p>若必须在 Dummy 后补标签：编辑 <code>my_soc_top_final/my_soc_top_postDummy/layout</code>，保存并以 Top Cell=<code>my_soc_top_postDummy</code>、Stream File=<code>my_soc_top_postDummy.gds</code> 重新导出，再复跑。把同样标签同步到 preDummy 源 OA，否则以后重合并会丢失该修正。仅增加标签不需要重新生成 Dummy。</p>
+<h2 id="11-erc">11. ERC 查看与处理</h2>
+<p>ERC 是 Electrical Rule Check，检查井/衬底偏置及可疑电气连接。LVS CORRECT 不代表 ERC 也无结果。</p>
+<p>在 RVE 中选择 <strong>View → ERC → ERC Results</strong>，展开规则，选中标记查看位置和层次。此基线参考残项：</p>
+<table>
+<thead>
+<tr>
+<th>规则</th>
+<th>层次数（展开数）</th>
+<th>已知来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mnpg</td>
+<td>4（832）</td>
+<td>IO 原库的跨电源轨保护 MOS</td>
+</tr>
+<tr>
+<td>floating.nxwell_float</td>
+<td>1（72）</td>
+<td>PVSS1CDG 内保护二极管的井连接</td>
+</tr>
+<tr>
+<td>npvss49</td>
+<td>1（72）</td>
+<td>同一原库保护二极管结构</td>
+</tr>
+<tr>
+<td>floating.psub_float</td>
+<td>1（1）</td>
+<td>IO 的 PSUB2 分隔带之外、包含 Seal Ring 的外圈提取衬底</td>
+</tr>
+</tbody>
+</table>
+<p>这组计数用于识别本例，不表示可忽略所有同名错误。新增核心区浮井、实际供电开路等须修复。原库保护电路的端点不得为消标记随意改接。</p>
+<p><strong>不要跨 Seal Ring 装配隔离带画金属接 VSS。</strong> 曾经四边加宽金属使 psub 标记消失，但引入四处真实 SR.S.1；该规则要求 5 µm 装配隔离禁布。把环改接 VSS、缩窄线或换金属层都不能绕过禁布要求，也不能靠虚假标签假装接地。</p>
+<p>外圈 psub 标记的几何形成机制已定位，源环单元与工艺样例一致，但尚无适用于本项目的正式豁免或已验证修正。本次教学流程将其及原库项留待评审；课程验收时保留具体结果，并向负责人确认验收口径。<strong>不关闭 ERC、不写 ERC Clean，也不把暂缓处理说成已修复。</strong> 可继续以下独立天线与 WB 检查。</p>
+<h2 id="12-gds">12. 最终 GDS 独立天线检查</h2>
+<p>使用第 1 节从原始 <code>ant.drc</code> 复制出的 <code>layout/rule/my_soc_top_postDummy.ant.drc</code>。编辑其输入输出为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>LAYOUT PATH "&lt;项目根目录&gt;/layout/workspace/my_soc_top_postDummy.gds"
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>LAYOUT PRIMARY "my_soc_top_postDummy"
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>DRC RESULTS DATABASE "&lt;项目根目录&gt;/layout/workspace/ant_postDummy/my_soc_top_postDummy.ant.results" ASCII
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>DRC SUMMARY REPORT "&lt;项目根目录&gt;/layout/workspace/ant_postDummy/my_soc_top_postDummy.ant.summary"
+</code></pre></div>
+<p>填写真实绝对路径，其余工艺选项沿用原 ant 规则；本基线 THICK_20K/40K 均关闭，不额外添加 DRC SELECT/UNSELECT。</p>
+<p>在 nmDRC 填写：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rules File</td>
+<td><code>&lt;项目根目录&gt;/layout/rule/my_soc_top_postDummy.ant.drc</code></td>
+</tr>
+<tr>
+<td>Run Directory</td>
+<td><code>&lt;项目根目录&gt;/layout/workspace/ant_postDummy</code></td>
+</tr>
+<tr>
+<td>Rules / Check Selection Recipe</td>
+<td>Checks selected in the rules file</td>
+</tr>
+<tr>
+<td>Layout File / Top</td>
+<td>最终 postDummy GDS / my_soc_top_postDummy</td>
+</tr>
+<tr>
+<td>Export from Layout Viewer</td>
+<td>取消勾选</td>
+</tr>
+<tr>
+<td>Results Database</td>
+<td>my_soc_top_postDummy.ant.results，ASCII</td>
+</tr>
+<tr>
+<td>Summary Report</td>
+<td>my_soc_top_postDummy.ant.summary</td>
+</tr>
+</tbody>
+</table>
+<p>运行，保存 runset 到 <code>layout/runset/my_soc_top_postDummy.ant.runset</code>。读取摘要，确认正确规则与最终输入、完整层次、检查非空、天线违规 0；本基线参考 62 项/0 违规。Innovus 中 Dummy 前的天线 0 不能替代这次检查。</p>
+<p>若出现天线违规，按具体网络与天线规则定位，回到可维护的设计源修正，再重新生成受影响输出及最终验证；不能通过关闭天线规则取得 0。</p>
+<h2 id="13-wire-bond-pad">13. 从工艺原包取得 Wire Bond PAD 规则</h2>
+<p>原始 <code>layout/rule/</code> 没有 WB 规则，需要同学自行从服务器工艺归档取得。</p>
+<h3 id="131">13.1 提取项目规则</h3>
+<p>在 Linux 终端执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">"</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>layout/rule/wb_reference
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>unzip<span class="w"> </span>-p<span class="w"> </span><span class="s2">"</span><span class="nv">$PDK_ROOT</span><span class="s2">/tsmc180/Foundry Design Documents/t000cldr002c1_1_9_1a.zip"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span>DRC_Calibre_AL_WB_FC_v19_1a1.tar.gz<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">  </span>&gt;<span class="w"> </span>layout/rule/wb_reference/DRC_Calibre_AL_WB_FC_v19_1a1.tar.gz
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p>确认退出码 0、tar.gz 非空，再执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>tar<span class="w"> </span>-xOf<span class="w"> </span>layout/rule/wb_reference/DRC_Calibre_AL_WB_FC_v19_1a1.tar.gz<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span>wire_bond/0.18um/C18_WIRE_BOND_6M.19_1a1<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span>&gt;<span class="w"> </span>layout/rule/my_soc_top_postDummy.wb.drc
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p>确认文件头是 <code>C18_WIRE_BOND_6M.19_1a1</code> 规则。若工艺包路径不存在，先取得课程使用的同版 Wire Bond 包，不用 ant.drc 或普通几何 DRC 替代。</p>
+<h3 id="132">13.2 修改本例选项及路径</h3>
+<p>打开提取出的项目文件：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>#DEFINE PITCH_55_SINGLE
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>//#DEFINE PITCH_60_STAGGER
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>#DEFINE OBV_CUP
+</code></pre></div>
+<p>PITCH_55_SINGLE 原来是注释，需启用；60_STAGGER 原来开启，需关闭；OBV_CUP 原来注释，需启用。其他 pitch、TRL_CUP、TRL_DFS、OBV_DFS、MIX 保持关闭。</p>
+<p>本例 34 个 <code>PAD60LU_OBV</code> 四边单排，同边最小节距 100 µm，CB 开窗 53×66 µm，匹配此单排类别和 OBV CUP 结构。55 是规则类别的最低节距，不是把实际间距改成 55。不同 PAD 型号或排列要重新确定选项。</p>
+<p>输入输出改为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>LAYOUT PATH "&lt;项目根目录&gt;/layout/workspace/my_soc_top_postDummy.gds"
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>LAYOUT PRIMARY "my_soc_top_postDummy"
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>DRC RESULTS DATABASE "&lt;项目根目录&gt;/layout/workspace/wb_postDummy/my_soc_top_postDummy.wb.results" ASCII
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>DRC SUMMARY REPORT "&lt;项目根目录&gt;/layout/workspace/wb_postDummy/my_soc_top_postDummy.wb.summary"
+</code></pre></div>
+<p>填写真实绝对路径，保留 <code>VARIABLE SRwidth 15.0</code> 及其余规则数值、原 EXCL 处理，不新增豁免。</p>
+<h3 id="133">13.3 运行并验收</h3>
+<p>在 nmDRC 把 Rules File 切换到该 WB 副本、Run Directory 切到 <code>&lt;项目根目录&gt;/layout/workspace/wb_postDummy</code>，Layout File 和 Top 仍是最终 postDummy；Export from Layout Viewer 关闭，Recipe 为 Checks selected in the rules file。</p>
+<p>输出栏也改成 <code>my_soc_top_postDummy.wb.results</code> 和 <code>my_soc_top_postDummy.wb.summary</code>，避免沿用天线报告名；Run DRC，保存 runset 到 <code>layout/runset/my_soc_top_postDummy.wb.runset</code>。</p>
+<p>本基线参考 64 项检查/0 违规，包括 CUPVIAT.DN.1_。PAD 库依据旧版 WB 规则，其 release note 中的旧版已知豁免不能自动套到新版 deck；如命中应核对具体规则及几何。自动 WB 检查之外的线径、探针/键合工艺和未编码人工规则另行确认。</p>
+<h2 id="14">14. 最终复核和完成标准</h2>
+<p>所有最终检查应对应 <strong>同一个最终 GDS</strong>。最后一次版图修改和导出完成后，依次重跑几何 DRC、LVS/ERC、Antenna 和 WB；确认每次实际 wrapper 中的输入路径、Top 和 INCLUDE 正确。已有结果只要仍对应相同输入即可使用，改过版图不能沿用修改前结果。</p>
+<p>可以在 Linux 终端记录输入哈希，再进行检查：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">"</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>sha256sum<span class="w"> </span>layout/workspace/my_soc_top_postDummy.gds<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">  </span>pnr/my_soc_top/outputs/manual_final/my_soc_top.cdl<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">  </span>&gt;<span class="w"> </span>layout/workspace/final_inputs.sha256
+</code></pre></div>
+<p>检查全部结束后：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">"</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>sha256sum<span class="w"> </span>-c<span class="w"> </span>layout/workspace/final_inputs.sha256
+</code></pre></div>
+<p>都为 OK 说明记录后输入内容未变；还须核对各报告实际读的是这些文件。若输入变过，更新哈希并重跑受影响检查。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>完成条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>几何 DRC</td>
+<td>课程四类排除后无其余违规，原始结果及例外单独保留</td>
+</tr>
+<tr>
+<td>LVS</td>
+<td>CORRECT，完整属性检查、3.48%教学 PR 容差和 Split Gate 实际生效</td>
+</tr>
+<tr>
+<td>ERC</td>
+<td>查看并记录；真实错误修正，本例原库/外圈残项保留待评审，不冒充 Clean</td>
+</tr>
+<tr>
+<td>Antenna</td>
+<td>最终 GDS 独立检查 0 违规</td>
+</tr>
+<tr>
+<td>Wire Bond PAD</td>
+<td>正确规则及 PAD 选项下独立检查 0 违规</td>
+</tr>
+<tr>
+<td>文件一致性</td>
+<td>最终 GDS、CDL、配置和报告对应，保存日志和输入哈希</td>
+</tr>
+</tbody>
+</table>
+<p>参考轮各项通过数不能代替自己的报告。工具正常结束、退出码 0、RVE 显示笑脸，都要结合对应检查和完整报告判断。</p>
+<p>到这里可完成本课程的版图制作与已列明的教学验证。正式投片还需处理 ERC 验收口径、工艺模型适配、Dummy 后寄生/STA、IR/EM 及封装人工规则；本指南不把这些未执行项目列为通过。</p>
+<h2 id="15">15. 自己生成交付归档</h2>
+<p>准备一份本次验收说明，写明设计名、最终 GDS 和 CDL 的 Top、各报告路径和结论、DRC 四类实验排除、PR3.48%容差、ERC 残项及其他限制，不复制他人的“通过”状态。</p>
+<p>从项目根目录执行下面命令，把<strong>自己本轮生成</strong>的文件打包：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">"</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SOC_DELIVERY</span><span class="o">=</span><span class="s2">"</span><span class="nv">$SOC_ROOT</span><span class="s2">/deliverables/my_soc_top_</span><span class="k">$(</span>date<span class="w"> </span>+%Y%m%d_%H%M%S<span class="k">)</span><span class="s2">"</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_DELIVERY</span><span class="s2">"</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>tar<span class="w"> </span>-czf<span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_DELIVERY</span><span class="s2">/design_and_reports.tar.gz"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="w">  </span>pnr/my_soc_top/outputs/manual_final<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="w">  </span>pnr/my_soc_top/reports/postFiller<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="w">  </span>pnr/my_soc_top/my_soc_top_postFiller_antenna.rpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="w">  </span>pnr/my_soc_top/my_soc_top_postFiller_drc.rpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="w">  </span>pnr/my_soc_top/my_soc_top_postFiller_pg.rpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="w">  </span>pnr/my_soc_top/my_soc_top_postFiller_place.rpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="w">  </span>pnr/my_soc_top/my_soc_top_postFiller_signal.rpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a><span class="w">  </span>config<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a><span class="w">  </span>layout/workspace/my_soc_top_preDummy.gds<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a><span class="w">  </span>layout/workspace/my_soc_top_postDummy.gds<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a><span class="w">  </span>layout/workspace/final_inputs.sha256<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a><span class="w">  </span>layout/workspace/drc_preDummy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a><span class="w">  </span>layout/workspace/drc_postDummy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a><span class="w">  </span>layout/workspace/lvs_postDummy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a><span class="w">  </span>layout/workspace/ant_postDummy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a><span class="w">  </span>layout/workspace/wb_postDummy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a><span class="w">  </span>layout/rule/my_soc_top.drc<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a><span class="w">  </span>layout/rule/my_soc_top_postDummy.lvs<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-23" name="__codelineno-26-23" href="#__codelineno-26-23"></a><span class="w">  </span>layout/rule/my_soc_top_postDummy.ant.drc<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-24" name="__codelineno-26-24" href="#__codelineno-26-24"></a><span class="w">  </span>layout/rule/my_soc_top_postDummy.wb.drc<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-25" name="__codelineno-26-25" href="#__codelineno-26-25"></a><span class="w">  </span>layout/dummy/manual_final<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-26" name="__codelineno-26-26" href="#__codelineno-26-26"></a><span class="w">  </span>layout/runset/my_soc_top_preDummy.drc.runset<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-27" name="__codelineno-26-27" href="#__codelineno-26-27"></a><span class="w">  </span>layout/runset/my_soc_top_postDummy.drc.runset<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-28" name="__codelineno-26-28" href="#__codelineno-26-28"></a><span class="w">  </span>layout/runset/my_soc_top_postDummy.lvs.runset<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-29" name="__codelineno-26-29" href="#__codelineno-26-29"></a><span class="w">  </span>layout/runset/my_soc_top_postDummy.ant.runset<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-30" name="__codelineno-26-30" href="#__codelineno-26-30"></a><span class="w">  </span>layout/runset/my_soc_top_postDummy.wb.runset<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-31" name="__codelineno-26-31" href="#__codelineno-26-31"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p>退出码应为 0；若提示文件不存在，补齐对应产物或按自己的实际名称修正清单，不能忽略打包失败。把自己写的验收说明另存入 <code>$SOC_DELIVERY</code>。</p>
+<p>校验压缩包并生成校验值：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>gzip<span class="w"> </span>-t<span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_DELIVERY</span><span class="s2">/design_and_reports.tar.gz"</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$SOC_DELIVERY</span><span class="s2">"</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>sha256sum<span class="w"> </span>design_and_reports.tar.gz<span class="w"> </span>&gt;<span class="w"> </span>SHA256SUMS
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>sha256sum<span class="w"> </span>-c<span class="w"> </span>SHA256SUMS
+</code></pre></div>
+<p>保留活动 OA 库及 Innovus 检查点和配套 <code>.enc.dat</code>，上述包不包含完整可恢复工作环境。CDL 仍引用原工艺 SPI/SRAM 库绝对路径，迁移时须提供相应库环境并更新工作副本路径。</p>
+<p>最终物理版图是 <strong><code>my_soc_top_postDummy.gds</code></strong>；Innovus 导出的 <code>my_soc_top.gds.gz</code> 没有后来加入的 Seal Ring/Dummy。已有 SPEF/SDF 和时序报告属于 Innovus 阶段，不表示做过 Dummy 后重新提取。</p>
+<h2 id="gui">附录：常用 GUI 动作与复跑提示</h2>
+<table>
+<thead>
+<tr>
+<th>动作</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>编辑模式</td>
+<td>File → Make Editable</td>
+</tr>
+<tr>
+<td>查看／改属性</td>
+<td>选中对象后 Q</td>
+</tr>
+<tr>
+<td>实例精确放置</td>
+<td>I 放一次、Esc、Q 改 Origin</td>
+</tr>
+<tr>
+<td>矩形／路径／标签</td>
+<td>R / P / L，先确认当前 Layer/Purpose</td>
+</tr>
+<tr>
+<td>相对定长移动</td>
+<td>M、F3，取消 Treat as absolute point，填 Delta，Apply 一次</td>
+</tr>
+<tr>
+<td>退出命令</td>
+<td>Esc</td>
+</tr>
+<tr>
+<td>完整层次显示</td>
+<td>显示设置后 Shift+F、F</td>
+</tr>
+<tr>
+<td>保存 GUI 配置</td>
+<td>Save Runset As，写入 layout/runset，不覆盖规则</td>
+</tr>
+<tr>
+<td>查 ERC</td>
+<td>RVE：View → ERC → ERC Results</td>
+</tr>
+</tbody>
+</table>
+<p>补线前先确认导体所属网络及跨层 via。不要沿用手工补 M6 供电线的做法，本流程已由 Innovus 完成四边 sroute；不要因为 LEF 抽象的 VDDPST/VSSPST no routing 提示就擅自合并电源。最终原生 GDS 连通由完整 LVS 验证。</p>
+<p>运行结果找不到时，先检查 GUI 实际 Run Directory 和输出文件名。GUI 可能保留上次目录或覆盖规则中的输出名；以实际 wrapper 及 summary 判断，不能因预期文件名不存在就宣布通过或失败。</p>
+<p>本文与《Lab 4：逻辑综合 &amp; 物理实现》配套使用；最终天线 / WB 等完整检查要求可对照<a href="https://pku-pacific-lab-team.github.io/Tape-out_template_doc/">课程 Template 文档</a>。上述四类 DRC 教学排除不能扩大成 ERC 全部豁免。</p>
 
 
 
@@ -557,7 +2654,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月19日 13:08:36 UTC">2026年9月19日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月29日 12:10:30 UTC">2026年10月29日</span>
   </span>
 
     
@@ -688,10 +2785,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.footer", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.footer", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="../assets/extra.js"></script>
       
