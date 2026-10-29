@@ -17,7 +17,7 @@
 | [Lab 2](lab-2.md) | SoC 中的 CPU 仿真 | 已发布 | 不交报告 |
 | [Lab 3](lab-3.md) | SoC 的集成与仿真 | 已发布 | 不交报告 |
 | [Lab 4](lab-4.md) | 逻辑综合 & 物理实现 | 已发布 | 不交报告 |
-| [Lab 5](lab-5.md) | Signoff & Tapeout | 未发布 | 待定 |
+| [Lab 5](lab-5.md) | Signoff & Tapeout | 已发布 | 不交报告 |
 | [Lab 6](lab-6.md) | FPGA 原型验证 | 已发布 | 不交报告 |
 | [Final Project](final-project.md) | 自主设计：AI 辅助的加速器设计 | 部分发布 | 待定 |
 
